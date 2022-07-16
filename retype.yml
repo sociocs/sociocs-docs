@@ -1,0 +1,21 @@
+input: .
+output: .retype
+url: https://docs.sociocs.com
+favicon: static/sociocs-icon-32.png
+branding:
+  title: Sociocs
+  label: Docs
+  colors:
+    label:
+      # text: "#ffffff"
+      # background: "#000"
+
+links:
+- text: Sociocs.com
+  link: https://www.sociocs.com
+- text: Web App
+  link: https://app.sociocs.com  
+- text: Mobile app
+  link: https://www.mobile
+footer:
+  copyright: "&copy; {{ year }}. All rights reserved."
