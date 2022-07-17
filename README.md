@@ -19,12 +19,20 @@ When you see a mention of channel on Sociocs, it means a communication mechanism
 
 ## Which channels are supported?
 
-We support: Google Business Messages, Google Play Reviews, Google Reviews & Questions, Facebook (Messenger, Reviews & Comments), Telegram, Text / SMS, Viber, Web chat, Website Forms, WhatsApp
+We support: Google Business Messages, Google Play Reviews, Google Reviews & Questions, Facebook (Messenger, Reviews & Comments), Telegram, Text / SMS, Viber, Web chat, Website Forms, WhatsApp.
 
 ## Is bulk messaging supported?
 
 Bulk messaging is supported for sending text / SMS to multiple recipients. It also allows dynamic parameters to personalize sent messages.
 
-## Does bulk messaging allow sending images?
+## Does the bulk messaging allow sending images?
 
 Yes. Our bulk text messaging also supports sending one image along with the text message. It's also known as MMS. Supported image types are JPG, JPEG, PNG and GIF.
+
+## Does Sociocs have a mobile app?
+
+Yes. Mobile apps are available for Android and iOS platforms. You can download for your phone <a href="https://mobileapps.page.link/sociocs" target="_blank">here</a>.
+
+## Would I get a notification on a new incoming message?
+
+Yes. Our web app and mobile apps generate notifications when new messages are received in your inbox.

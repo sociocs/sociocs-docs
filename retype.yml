@@ -22,11 +22,14 @@ links:
 - text: Mobile app
   link: https://mobileapps.page.link/sociocs
   target: blank
+- text: Pricing
+  link: https://www.sociocs.com/pricing/
+  target: blank
 - text: Blog
   link: https://www.sociocs.com/blog/
   target: blank
-- text: Pricing
-  link: https://www.sociocs.com/pricing/
+- text: Contact us
+  link: https://www.sociocs.com/contact-us/
   target: blank
 
 footer:
