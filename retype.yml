@@ -1,7 +1,9 @@
 input: .
 output: .retype
+
 url: https://docs.sociocs.com
 favicon: static/sociocs-icon-32.png
+
 branding:
   title: Sociocs
   label: Docs
@@ -13,9 +15,19 @@ branding:
 links:
 - text: Sociocs.com
   link: https://www.sociocs.com
-- text: Web App
-  link: https://app.sociocs.com  
+  target: blank
+- text: Web app
+  link: https://app.sociocs.com
+  target: blank
 - text: Mobile app
-  link: https://www.mobile
+  link: https://mobileapps.page.link/sociocs
+  target: blank
+- text: Blog
+  link: https://www.sociocs.com/blog/
+  target: blank
+- text: Pricing
+  link: https://www.sociocs.com/pricing/
+  target: blank
+
 footer:
   copyright: "&copy; {{ year }}. All rights reserved."
