@@ -2,7 +2,7 @@ input: .
 output: .retype
 
 url: https://docs.sociocs.com
-favicon: static/sociocs-icon-32.png
+favicon: static/images/sociocs-icon-32.png
 
 branding:
   title: Sociocs

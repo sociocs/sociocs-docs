@@ -19,7 +19,7 @@ When you see a mention of channel on Sociocs, it means a communication mechanism
 
 ## Which channels are supported?
 
-We support: Google Business Messages, Google Play Reviews, Google Reviews & Questions, Facebook (Messenger, Reviews & Comments), Telegram, Text / SMS, Viber, Web chat, Website Forms, WhatsApp.
+We support — Google Business Messages, Google Play Reviews, Google Reviews & Questions, Facebook (Messenger, Reviews & Comments), Telegram, Text / SMS, Viber, Web chat, Website Forms, WhatsApp.
 
 ## Is bulk messaging supported?
 
@@ -36,3 +36,7 @@ Yes. Mobile apps are available for Android and iOS platforms. You can download f
 ## Would I get a notification on a new incoming message?
 
 Yes. Our web app and mobile apps generate notifications when new messages are received in your inbox.
+
+## What do you mean by web app?
+
+Web app is our website / web portal available at <a href="https://app.sociocs.com" target="_blank">app.sociocs.com</a>.
