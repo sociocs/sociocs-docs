@@ -20,7 +20,7 @@ This plugin offers two actions, you can use either or both depending upon your u
 
 1. *Save Sociocs Incoming* - To add an incoming message from your user/customer (e.g. a form submission or a simulated entry to save details which can be useful later.)
 
-[!ref target="blank" text="Plugin page on Bubble"](https://bubble.io/plugin/sociocs---send-text-messages-1649178097706x937880861409017900)
+[!button variant="info" target="blank" text="Plugin page on Bubble"](https://bubble.io/plugin/sociocs---send-text-messages-1649178097706x937880861409017900)
 
 ## Supported channels
 

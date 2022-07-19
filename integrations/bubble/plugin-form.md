@@ -10,7 +10,7 @@ Form plugin (e.g. Contact Us, Appointment Request, Pricing Inquiry form etc.) fo
 
 When the end user submits the form, it is received in the Sociocs Inbox, form where, you can reply back.
 
-[!ref target="blank" text="Plugin page on Bubble"](https://bubble.io/plugin/sociocs---form-1649951381780x698622226169069600)
+[!button variant="info" target="blank" text="Demo"](https://sociocs-plugins.bubbleapps.io/version-test/form_demo) [!button variant="info" target="blank" text="Plugin page on Bubble"](https://bubble.io/plugin/sociocs---form-1649951381780x698622226169069600)
 
 ## Plugin Installation
 

@@ -10,7 +10,7 @@ This plugin adds a chat bubble on your website that draw user's attention, and g
 
 When your web app user initiates the inquiry, it shows up in your Sociocs Inbox, from where you can reply to the user, and continue the conversation.
 
-[!ref target="blank" text="Plugin page on Bubble"](https://bubble.io/plugin/sociocs---click-to-chat-by-whatsapp-1649935178739x469570815670353900)
+[!button variant="info" target="blank" text="Demo"](https://sociocs-plugins.bubbleapps.io/version-test/c2cwa_demo) [!button variant="info" target="blank" text="Plugin page on Bubble"](https://bubble.io/plugin/sociocs---click-to-chat-by-whatsapp-1649935178739x469570815670353900)
 
 ## Plugin Installation
 
