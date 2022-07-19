@@ -1,6 +1,7 @@
 ---
 label: Sociocs - Send Text Messages
 title: "Bubble plugin :: Sociocs - Send Text Messages"
+order: -400
 ---
 
 !!!
@@ -41,7 +42,7 @@ This plugin offers two actions, you can use either or both depending upon your u
 
 ### Sociocs
 
-1. Sign up or login on <https://app.sociocs.com>.
+1. Sign up or login on <a href="https://app.sociocs.com" target="_blank">app.sociocs.com</a>.
 
 1. Connect "*SMS (with Twilio)*", "*WhatsApp (with Gupshup)*", or "*WhatsApp (with Twilio)*" channel on the "*Connect a new channel*" page. If you are an existing user, after logging in, click on "*Channels*" menu on the top, click on "*+*" button to go to the "*Connect a new channel*" page.
 
