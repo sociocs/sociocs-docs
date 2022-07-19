@@ -6,7 +6,7 @@ order: -300
 
 ## Introduction
 
-This plugin adds a chat bubble on your website that draw user's attention, and gives them an easy way to reach out to you. It converts the inquiries into SMS / text messaging based conversation, so that your user doesn't have to wait on the website for a response.
+This plugin adds a chat bubble on your website that draw user's attention, and gives them an easy way to reach out to you. It converts an inquiry into SMS / text messaging based conversation, so that your user doesn't have to wait on the website for a response.
 
 When your web app user initiates the inquiry, it shows up in your Sociocs Inbox, from where you can reply to the user, and continue the conversation.
 
