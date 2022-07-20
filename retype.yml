@@ -34,3 +34,5 @@ links:
 
 footer:
   copyright: "&copy; {{ year }}. All rights reserved."
+
+poweredByRetype: false
