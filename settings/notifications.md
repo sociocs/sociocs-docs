@@ -9,7 +9,7 @@ We send notifications when new messages arrive in your inbox. You can enable or 
 
 ## Web app
 
-!!!
+!!!warning
 Enabling or disabling notifications takes effect only on the browser you are using. To change notifications setting for a different browser, log in to Sociocs on that browser, and follow the same steps.
 !!!
 
