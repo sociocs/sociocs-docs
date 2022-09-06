@@ -34,6 +34,3 @@ links:
 
 footer:
   copyright: "&copy; {{ year }}. All rights reserved."
-
-data:
-  signup: Sign up or login on <a href="https://app.sociocs.com" target="_blank">app.sociocs.com</a>.
