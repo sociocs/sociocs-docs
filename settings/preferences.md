@@ -6,7 +6,7 @@ order: -300
 # Preferences
 
 !!!
-All Preference changes are applicable at the organization level, which means they apply to all the users in your business account.
+All preferences are at the organization level, which means they apply to all the users in your business account.
 !!!
 
 ## How to go to *Preferences*?
