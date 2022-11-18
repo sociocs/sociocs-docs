@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.722095013286">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.722095923160">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -21,21 +21,23 @@
     <meta property="og:url" content="https://docs.sociocs.com/integrations/webflow/form/">
     <meta property="og:title" content="Webflow :: Sociocs - Form">
     <meta property="og:description" content="Form integration (e.g. Contact Us, Appointment Request, Pricing Inquiry form etc.) for Webflow websites.">
+    <meta property="og:image" content="https://user-images.githubusercontent.com/12301512/202721606-37bb57fe-5f4a-4bb8-b840-9cdd011c49ac.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.sociocs.com/integrations/webflow/form/">
     <meta property="twitter:title" content="Webflow :: Sociocs - Form">
     <meta property="twitter:description" content="Form integration (e.g. Contact Us, Appointment Request, Pricing Inquiry form etc.) for Webflow websites.">
+    <meta property="twitter:image" content="https://user-images.githubusercontent.com/12301512/202721606-37bb57fe-5f4a-4bb8-b840-9cdd011c49ac.png">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../static/images/sociocs-icon-32.png" rel="icon" />
-    <link href="../../../resources/css/retype.css?v=2.4.0.722095013286" rel="stylesheet" />
+    <link href="../../../resources/css/retype.css?v=2.4.0.722095923160" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.722095013286" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.722095923160" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.722095013286" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.722095923160" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -256,17 +258,37 @@
 </li>
 <li><p>Select &quot;<em>Form</em>&quot; in the &quot;<em>Connect a new channel</em>&quot; page. If you are an existing user, after logging in, click on &quot;<em>Channels</em>&quot; menu on the top, click on &quot;<em>+</em>&quot; button to go to the &quot;<em>Connect a new channel</em>&quot; page.</p>
 </li>
-<li><p>Enter &quot;<em>Form name</em>&quot;, check &quot;<em>Restrict to domain</em>&quot;, enter your website domain (e.g. sociocs-form-demo.webflow.io).</p>
+<li><p>Enter &quot;<em>Form name</em>&quot;, check &quot;<em>Restrict to domain</em>&quot;, enter your website domain (e.g. sociocs-form-demo.webflow.io).
+<figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/12301512/202721606-37bb57fe-5f4a-4bb8-b840-9cdd011c49ac.png" alt="image" />
+    <figcaption class="caption">image</figcaption>
+</figure>
+</p>
 </li>
-<li><p>If you are planning to add reCAPTCHA to your Webflow form, check &quot;<em>reCAPTCHA v2</em>&quot;, enter your reCAPTCHA secret key.</p>
+<li><p>If you are planning to add reCAPTCHA to your Webflow form, check &quot;<em>reCAPTCHA v2</em>&quot;, enter your reCAPTCHA secret key.
+<figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/12301512/202721739-297755c4-cd44-452a-91f6-b73c574c1776.png" alt="image" />
+    <figcaption class="caption">image</figcaption>
+</figure>
+</p>
 </li>
 <li><p>In the &quot;<em>Redirect URL</em>&quot;, enter URL of the page where the user should be redirected after the form submission (e.g. thank you page), If you don&#x27;t add a URL, user will be shown a thank you page on Sociocs form page, with a button to go back to your site. <em>This step is optional.</em></p>
 </li>
-<li><p>Enter &quot;<em>Website URL</em>&quot;, which gets added to the conversation emails sent to the user. <em>This step is optional.</em></p>
+<li><p>Enter &quot;<em>Website URL</em>&quot;, which gets added to the conversation emails sent to the user. <em>This step is optional.</em>
+<figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/12301512/202721761-bc6ce0e8-1ad6-4c32-ad4f-a47f199fb0d0.png" alt="image" />
+    <figcaption class="caption">image</figcaption>
+</figure>
+</p>
 </li>
 <li><p>Click &quot;<em>Next</em>&quot;. On the next page, click &quot;<em>Done</em>&quot;, which should take you to the Channels page.</p>
 </li>
-<li><p>Click on the &quot;<em>Form</em>&quot; channel you just added, and find form&#x27;s endpoint URL.</p>
+<li><p>Click on the &quot;<em>Form</em>&quot; channel you just added, and find form&#x27;s endpoint URL.
+<figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/12301512/202722000-3e197f36-097a-41f3-a84d-f23a1155ddda.png" alt="image" />
+    <figcaption class="caption">image</figcaption>
+</figure>
+</p>
 </li>
 </ol>
 <doc-anchor-target id="webflow">
@@ -282,17 +304,32 @@
     </h4>
 </doc-anchor-target>
 <ol>
-<li><p>Add a &quot;<em>Form Block</em>&quot; on your page.</p>
+<li><p>Add a &quot;<em>Form Block</em>&quot; on your page.
+<figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/12301512/202722113-35368347-f3ff-4878-a481-13a5b6f1f4ae.png" alt="image" />
+    <figcaption class="caption">image</figcaption>
+</figure>
+</p>
 </li>
 <li><p>By default Webflow adds &quot;<em>Name</em>&quot; and &quot;<em>Email address</em>&quot; fields in the form. <strong>Email address is required for the form to work correctly in Sociocs.</strong></p>
 </li>
-<li><p>In the field settings, go to &quot;<em>Element Settings</em>&quot;. In &quot;<em>Text Fields Settings -&gt; Name</em>&quot;, change value for the &quot;<em>Name</em>&quot; to &quot;name&quot; and for the &quot;<em>Email Address</em>&quot; field to &quot;email&quot; in lowercase. <strong>These field names MUST be exactly as mentioned and in lowercase.</strong></p>
+<li><p>In the field settings, go to &quot;<em>Element Settings</em>&quot;. In &quot;<em>Text Fields Settings -&gt; Name</em>&quot;, change value for the &quot;<em>Name</em>&quot; to &quot;name&quot; and for the &quot;<em>Email Address</em>&quot; field to &quot;email&quot; in lowercase. <strong>These field names MUST be exactly as mentioned and in lowercase.</strong>
+<figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/12301512/202722401-5406007d-2296-48ba-a6d5-d02c2b6b607f.png" alt="image" />
+    <figcaption class="caption">image</figcaption>
+</figure>
+</p>
 </li>
 <li><p>Add additional fields you would like to capture (e.g. &quot;<em>Message</em>&quot;). Unlike &quot;<em>Name</em>&quot;, and &quot;<em>Email Address</em>&quot; fields, you can name these additional fields whatever you like.</p>
 </li>
 <li><p>If you enabled &quot;<em>reCAPTCHA v2</em>&quot; in the Sociocs Form channel, add the reCAPTCHA element to the form.</p>
 </li>
-<li><p>Select any field or form block on your form, and go to &quot;<em>Element Settings</em>&quot; again. In &quot;<em>Form Settings -&gt; Action</em>&quot;, enter form&#x27;s endpoint URL from Sociocs.</p>
+<li><p>Select any field or form block on your form, and go to &quot;<em>Element Settings</em>&quot; again. In &quot;<em>Form Settings -&gt; Action</em>&quot;, enter form&#x27;s endpoint URL from Sociocs. Select &quot;<em>Method</em>&quot; as &quot;<em>POST</em>&quot;.
+<figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/12301512/202722857-2122e68c-5e64-406e-8413-4cb89c823097.png" alt="image" />
+    <figcaption class="caption">image</figcaption>
+</figure>
+</p>
 </li>
 <li><p>You are all set to accept form submissions in your Webflow site!</p>
 </li>
@@ -338,11 +375,21 @@
     </h4>
 </doc-anchor-target>
 <ol>
-<li><p>Add a &quot;<em>Form Block</em>&quot; on your page.</p>
+<li><p>Add a &quot;<em>Form Block</em>&quot; on your page.
+<figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/12301512/202722113-35368347-f3ff-4878-a481-13a5b6f1f4ae.png" alt="image" />
+    <figcaption class="caption">image</figcaption>
+</figure>
+</p>
 </li>
 <li><p>By default Webflow adds &quot;<em>Name</em>&quot; and &quot;<em>Email address</em>&quot; fields in the form. <strong>Email address is required for the form to work correctly in Sociocs.</strong></p>
 </li>
-<li><p>In the field settings, go to &quot;<em>Element Settings</em>&quot;. In &quot;<em>Text Fields Settings -&gt; Name</em>&quot;, change value for the &quot;<em>Name</em>&quot; to &quot;name&quot; and for the &quot;<em>Email Address</em>&quot; field to &quot;email&quot; in lowercase. <strong>These field names MUST be exactly as mentioned and in lowercase.</strong></p>
+<li><p>In the field settings, go to &quot;<em>Element Settings</em>&quot;. In &quot;<em>Text Fields Settings -&gt; Name</em>&quot;, change value for the &quot;<em>Name</em>&quot; to &quot;name&quot; and for the &quot;<em>Email Address</em>&quot; field to &quot;email&quot; in lowercase. <strong>These field names MUST be exactly as mentioned and in lowercase.</strong>
+<figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/12301512/202722401-5406007d-2296-48ba-a6d5-d02c2b6b607f.png" alt="image" />
+    <figcaption class="caption">image</figcaption>
+</figure>
+</p>
 </li>
 <li><p>Add additional fields you would like to capture (e.g. &quot;<em>Message</em>&quot;). Unlike &quot;<em>Name</em>&quot;, and &quot;<em>Email Address</em>&quot; fields, you can name these additional fields whatever you like.</p>
 </li>
@@ -356,14 +403,29 @@
     </h4>
 </doc-anchor-target>
 <ol>
-<li><p>Go to &quot;<em>Project Settings</em>&quot;, and go to &quot;<em>Integrations</em>&quot; tab.</p>
+<li><p>Go to &quot;<em>Project Settings</em>&quot;, and go to &quot;<em>Integrations</em>&quot; tab.
+<figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/12301512/202723776-26a92bd4-d635-4eec-bd16-cc11246ed8fa.png" alt="image" />
+    <figcaption class="caption">image</figcaption>
+</figure>
+</p>
 </li>
-<li><p>Scroll down to &quot;<em>Webhooks</em>&quot; section, and click on &quot;<em>+ Add Webhook</em>&quot;.</p>
+<li><p>Scroll down to &quot;<em>Webhooks</em>&quot; section, and click on &quot;<em>+ Add Webhook</em>&quot;.
+<figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/12301512/202723863-94ad6f07-e35a-4b32-8679-049551e582f6.png" alt="image" />
+    <figcaption class="caption">image</figcaption>
+</figure>
+</p>
 </li>
 <li><p>Under &quot;<em>Trigger Type</em>&quot;, select &quot;Form submission&quot;. Under &quot;<em>Webhook URL</em>&quot;, enter form&#x27;s API URL from Sociocs with &quot;<em>apikey</em>&quot; as query string.</p>
 <ul>
 <li>Here is the format of how the URL should be entered - <code v-pre>[your form's API URL]?apikey=[your secret key]</code>.</li>
-<li>Example URL (<strong>DO NOT USE THIS IT IN YOUR FORM</strong>): <code v-pre>https://forms.sociocs.com/v1/ABXLpcxfV78tngkZq6bbq3/1238703332685678?apikey=ABCDTeuZJMTkAbkWs8O456KAa09CsXYZ</code>.</li>
+<li>Example URL (<strong>DO NOT USE THIS IT IN YOUR FORM</strong>): <code v-pre>https://forms.sociocs.com/v1/ABXLpcxfV78tngkZq6bbq3/1238703332685678?apikey=ABCDTeuZJMTkAbkWs8O456KAa09CsXYZ</code>.
+<figure class="content-center">
+    <img src="https://user-images.githubusercontent.com/12301512/202724033-9607053b-dca3-4ce5-8843-58fd529576f2.png" alt="image" />
+    <figcaption class="caption">image</figcaption>
+</figure>
+</li>
 </ul>
 </li>
 <li><p>Click &quot;<em>Add Webhook</em>&quot;. You are all set to accept form submissions in your Webflow site!</p>
