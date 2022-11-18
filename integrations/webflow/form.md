@@ -23,6 +23,7 @@ When the end user submits the form, it is received in the Sociocs Inbox, form wh
     - It is a better choice when you have only one form on your website.
     - Form submission takes place using AJAX without user getting redirected.
     - If avoiding user redirects is a must have, one workaround for multiple forms is to add additional hidden field (e.g. "form_type") in each form to identify form type in the Sociocs Inbox. Still, it's not as convenient as seeing specific form name attached to the conversations.
+    - ***This option is not LIVE yet. It's planned to be released on 21-Nov-2022 8AM Eastern Time***
 
 ## Setup for Option 1 - Direct submission to Sociocs
 
@@ -67,9 +68,11 @@ When the end user submits the form, it is received in the Sociocs Inbox, form wh
 1. Select any field or form block on your form, and go to "*Element Settings*" again. In "*Form Settings -> Action*", enter form's endpoint URL from Sociocs. Select "*Method*" as "*POST*".
 ![image](https://user-images.githubusercontent.com/12301512/202722857-2122e68c-5e64-406e-8413-4cb89c823097.png)
 
-1. You are all set to accept form submissions in your Webflow site!
+1. Publish your website. You are all set to accept form submissions in your Webflow site!
 
 ## Setup for Option 2 - Webhook based submission
+
+***This option is not LIVE yet. It's planned to be released on 21-Nov-2022 8AM Eastern Time***
 
 ### Sociocs
 
@@ -113,7 +116,9 @@ When the end user submits the form, it is received in the Sociocs Inbox, form wh
 
 1. Under "*Trigger Type*", select "Form submission". Under "*Webhook URL*", enter form's API URL from Sociocs with "*apikey*" as query string.
     - Here is the format of how the URL should be entered - `[your form's API URL]?apikey=[your secret key]`.
-    - Example URL (**DO NOT USE THIS IT IN YOUR FORM**): `https://forms.sociocs.com/v1/ABXLpcxfV78tngkZq6bbq3/1238703332685678?apikey=ABCDTeuZJMTkAbkWs8O456KAa09CsXYZ`.
+    - Example URL (**NOT A REAL URL. DO NOT USE IT IN YOUR FORM**): `https://forms.sociocs.com/v1/ABXLpcxfV78tngkZq6bbq3/1238703332685678?apikey=ABCDTeuZJMTkAbkWs8O456KAa09CsXYZ`.
 ![image](https://user-images.githubusercontent.com/12301512/202724033-9607053b-dca3-4ce5-8843-58fd529576f2.png)
 
-1. Click "*Add Webhook*". You are all set to accept form submissions in your Webflow site!
+1. Click "*Add Webhook*".
+
+1. Publish your website. You are all set to accept form submissions in your Webflow site!
