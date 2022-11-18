@@ -26,7 +26,7 @@ When the end user submits the form, it is received in the Sociocs Inbox, form wh
 
 ### Sociocs
 
-1. Sign up or login on <a href="https://app.sociocs.com" target="_blank">app.sociocs.com</a>.
+1. Sign up or log in on <a href="https://app.sociocs.com" target="_blank">app.sociocs.com</a>.
 
 1. Select "*Form*" in the "*Connect a new channel*" page. If you are an existing user, after logging in, click on "*Channels*" menu on the top, click on "*+*" button to go to the "*Connect a new channel*" page.
 
