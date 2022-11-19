@@ -34,39 +34,39 @@ When the end user submits the form, it is received in the Sociocs Inbox, form wh
 1. Select "*Form*" in the "*Connect a new channel*" page. If you are an existing user, after logging in, click on "*Channels*" menu on the top, click on "*+*" button to go to the "*Connect a new channel*" page.
 
 1. Enter "*Form name*", check "*Restrict to domain*", enter your website domain (e.g. sociocs-form-demo.webflow.io).
-![image](https://user-images.githubusercontent.com/12301512/202721606-37bb57fe-5f4a-4bb8-b840-9cdd011c49ac.png)
+    ![image](https://user-images.githubusercontent.com/12301512/202721606-37bb57fe-5f4a-4bb8-b840-9cdd011c49ac.png)
 
 1. If you are planning to add reCAPTCHA to your Webflow form, check "*reCAPTCHA v2*", enter your reCAPTCHA secret key.
-![image](https://user-images.githubusercontent.com/12301512/202721739-297755c4-cd44-452a-91f6-b73c574c1776.png)
+    ![image](https://user-images.githubusercontent.com/12301512/202721739-297755c4-cd44-452a-91f6-b73c574c1776.png)
 
 1. In the "*Redirect URL*", enter URL of the page where the user should be redirected after the form submission (e.g. thank you page), If you don't add a URL, user will be shown a thank you page on Sociocs form page, with a button to go back to your site. *This step is optional.*
 
 1. Enter "*Website URL*", which gets added to the conversation emails sent to the user. *This step is optional.*
-![image](https://user-images.githubusercontent.com/12301512/202721761-bc6ce0e8-1ad6-4c32-ad4f-a47f199fb0d0.png)
+    ![image](https://user-images.githubusercontent.com/12301512/202721761-bc6ce0e8-1ad6-4c32-ad4f-a47f199fb0d0.png)
 
 1. Click "*Next*". On the next page, click "*Done*", which should take you to the Channels page.
 
 1. Click on the "*Form*" channel you just added, and find form's endpoint URL.
-![image](https://user-images.githubusercontent.com/12301512/202722000-3e197f36-097a-41f3-a84d-f23a1155ddda.png)
+    ![image](https://user-images.githubusercontent.com/12301512/202722000-3e197f36-097a-41f3-a84d-f23a1155ddda.png)
 
 ### Webflow
 
 #### Create a form in the Designer
 
 1. Add a "*Form Block*" on your page.
-![image](https://user-images.githubusercontent.com/12301512/202722113-35368347-f3ff-4878-a481-13a5b6f1f4ae.png)
+    ![image](https://user-images.githubusercontent.com/12301512/202722113-35368347-f3ff-4878-a481-13a5b6f1f4ae.png)
 
 1. By default Webflow adds "*Name*" and "*Email address*" fields in the form. **Email address is required for the form to work correctly in Sociocs.**
 
 1. In the field settings, go to "*Element Settings*". In "*Text Fields Settings -> Name*", change value for the "*Name*" to "name" and for the "*Email Address*" field to "email" in lowercase. **These field names MUST be exactly as mentioned and in lowercase.**
-![image](https://user-images.githubusercontent.com/12301512/202722401-5406007d-2296-48ba-a6d5-d02c2b6b607f.png)
+    ![image](https://user-images.githubusercontent.com/12301512/202722401-5406007d-2296-48ba-a6d5-d02c2b6b607f.png)
 
 1. Add additional fields you would like to capture (e.g. "*Message*"). Unlike "*Name*", and "*Email Address*" fields, you can name these additional fields whatever you like.
 
 1. If you enabled "*reCAPTCHA v2*" in the Sociocs Form channel, add the reCAPTCHA element to the form.
 
 1. Select any field or form block on your form, and go to "*Element Settings*" again. In "*Form Settings -> Action*", enter form's endpoint URL from Sociocs. Select "*Method*" as "*POST*".
-![image](https://user-images.githubusercontent.com/12301512/202722857-2122e68c-5e64-406e-8413-4cb89c823097.png)
+    ![image](https://user-images.githubusercontent.com/12301512/202722857-2122e68c-5e64-406e-8413-4cb89c823097.png)
 
 1. Publish your website. You are all set to accept form submissions in your Webflow site!
 
@@ -95,12 +95,12 @@ When the end user submits the form, it is received in the Sociocs Inbox, form wh
 #### Create a form in the Designer
 
 1. Add a "*Form Block*" on your page.
-![image](https://user-images.githubusercontent.com/12301512/202722113-35368347-f3ff-4878-a481-13a5b6f1f4ae.png)
+    ![image](https://user-images.githubusercontent.com/12301512/202722113-35368347-f3ff-4878-a481-13a5b6f1f4ae.png)
 
 1. By default Webflow adds "*Name*" and "*Email address*" fields in the form. **Email address is required for the form to work correctly in Sociocs.**
 
 1. In the field settings, go to "*Element Settings*". In "*Text Fields Settings -> Name*", change value for the "*Name*" to "name" and for the "*Email Address*" field to "email" in lowercase. **These field names MUST be exactly as mentioned and in lowercase.**
-![image](https://user-images.githubusercontent.com/12301512/202722401-5406007d-2296-48ba-a6d5-d02c2b6b607f.png)
+    ![image](https://user-images.githubusercontent.com/12301512/202722401-5406007d-2296-48ba-a6d5-d02c2b6b607f.png)
 
 1. Add additional fields you would like to capture (e.g. "*Message*"). Unlike "*Name*", and "*Email Address*" fields, you can name these additional fields whatever you like.
 
@@ -109,15 +109,15 @@ When the end user submits the form, it is received in the Sociocs Inbox, form wh
 #### Add webhook in Project Settings
 
 1. Go to "*Project Settings*", and go to "*Integrations*" tab.
-![image](https://user-images.githubusercontent.com/12301512/202723776-26a92bd4-d635-4eec-bd16-cc11246ed8fa.png)
+    ![image](https://user-images.githubusercontent.com/12301512/202723776-26a92bd4-d635-4eec-bd16-cc11246ed8fa.png)
 
 1. Scroll down to "*Webhooks*" section, and click on "*+ Add Webhook*".
-![image](https://user-images.githubusercontent.com/12301512/202723863-94ad6f07-e35a-4b32-8679-049551e582f6.png)
+    ![image](https://user-images.githubusercontent.com/12301512/202723863-94ad6f07-e35a-4b32-8679-049551e582f6.png)
 
 1. Under "*Trigger Type*", select "Form submission". Under "*Webhook URL*", enter form's API URL from Sociocs with "*apikey*" as query string.
     - Here is the format of how the URL should be entered - `[your form's API URL]?apikey=[your secret key]`.
     - Example URL (**NOT A REAL URL. DO NOT USE IT IN YOUR FORM**): `https://forms.sociocs.com/v1/ABXLpcxfV78tngkZq6bbq3/1238703332685678?apikey=ABCDTeuZJMTkAbkWs8O456KAa09CsXYZ`.
-![image](https://user-images.githubusercontent.com/12301512/202724033-9607053b-dca3-4ce5-8843-58fd529576f2.png)
+    ![image](https://user-images.githubusercontent.com/12301512/202724033-9607053b-dca3-4ce5-8843-58fd529576f2.png)
 
 1. Click "*Add Webhook*".
 
