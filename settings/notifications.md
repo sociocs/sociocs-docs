@@ -5,17 +5,19 @@ order: -400
 
 # Notifications
 
+## Push notifications
+
 We send notifications when new messages arrive in your inbox. You can enable or disable these notifications. **We recommend that you keep them on so that you can reply to your customers quickly.**
 
-## Web app
+### Web app
 
 !!!warning
 Enabling or disabling notifications takes effect only on the browser you are using. To change notifications setting for a different browser, log in to Sociocs on that browser, and follow the same steps.
 !!!
 
-### Enable notifications
+#### Enable notifications
 
-#### First time user
+##### First time user
 
 When you go to the inbox for the first time, you will receive a confirmation popup to enable notifications for the browser you are using.
 
@@ -24,60 +26,81 @@ When you go to the inbox for the first time, you will receive a confirmation pop
 1. Click *Allow* on the confirmation popup.
 2. You may receive another confirmation popup (from your browser this time) to give notifications access to Sociocs. Click *Allow*.
 
-#### Returning user
+##### Returning user
 
 - Click on the dropdown menu on top right.
 - Select *Notifications* on the left side.
 - Toggle *Receive notifications on this browser* switch to on.
 
-### Disable notifications
+#### Disable notifications
 
 **We do not recommend disabling notifications.**
 
-#### First time user
+##### First time user
 
 Click *No Thanks* on the confirmation popup.
 
-#### Returning user
+##### Returning user
 
 - Click on the dropdown menu on top right.
 - Select *Notifications* on the left side.
 - Toggle *Receive notifications on this browser* switch to off.
 
-## Android app
+### Android app
 
-### Enable notifications
+#### Enable notifications
 
-#### First time user
+##### First time user
 
 Notifications are automatically enabled on the Android app.
 
-#### Returning user
+##### Returning user
 
 Go to your device's notifications setting, and turn notifications on for Sociocs.
 
-### Disable notifications
+#### Disable notifications
 
 Go to your device's notifications setting, and turn notifications off for Sociocs.
 
-## iOS app
+### iOS app
 
-### Enable notifications
+#### Enable notifications
 
-#### First time user
+##### First time user
 
 After you log in to the app, you will receive a confirmation popup to allow notifications from Sociocs. Tap on *Allow*.
 
-#### Returning user
+##### Returning user
 
 Go to your device's notifications setting, and turn notifications off for Sociocs.
 
-### Disable notifications
+#### Disable notifications
 
-#### First time user
+##### First time user
 
 Tap *Don't Allow* on the notifications confirmation popup.
 
-#### Returning user
+##### Returning user
 
 Go to your device's notifications setting, and turn notifications off for Sociocs.
+
+## Daily performance updates
+
+We send a performance update email everyday to users having "Owner" or "Admin" role. This email contains a summary of previous day's conversations.
+
+**This email is turned on by default.**
+
+### How to disable or re-enable daily performance updates?
+
+#### Web app
+
+- Click on the dropdown menu on top right.
+- Select *Notifications* on the left side.
+- Toggle *Daily performance updates* switch to off or on.
+
+#### Mobile app
+
+- Open drawer menu on top left.
+- Tap on *Profile & settings*.
+- Select *Notifications* in the list.
+- Toggle *Daily performance updates* switch to off or on.
