@@ -1,7 +1,7 @@
 ---
-label: Sociocs - Form
+label: Form
 title: "Bubble plugin :: Sociocs - Form"
-order: -100
+order: -300
 ---
 
 ## Introduction

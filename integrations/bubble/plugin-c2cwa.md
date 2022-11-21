@@ -1,5 +1,5 @@
 ---
-label: Sociocs - Click to Chat by WhatsApp
+label: Click to Chat by WhatsApp
 title: "Bubble plugin :: Sociocs - Click to Chat by WhatsApp"
 order: -200
 ---

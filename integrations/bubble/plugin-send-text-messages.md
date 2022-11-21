@@ -1,5 +1,5 @@
 ---
-label: Sociocs - Send Text Messages
+label: Send Text Messages
 title: "Bubble plugin :: Sociocs - Send Text Messages"
 order: -400
 ---

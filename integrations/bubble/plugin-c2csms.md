@@ -1,7 +1,7 @@
 ---
-label: Sociocs - "Live Chat" by Text
-title: 'Bubble plugin :: Sociocs - "Live Chat" by Text'
-order: -300
+label: Click to Chat by Text
+title: 'Bubble plugin :: Sociocs - Click to Chat by Text'
+order: -100
 ---
 
 ## Introduction
@@ -37,9 +37,11 @@ When your web app user initiates the inquiry, it shows up in your Sociocs Inbox,
 
 1. Finish the channel setup by following the instructions.
 
-1. Go to "*Connect a new channel*" page again (click on "*Channels*" on the top menu, and click on "*+*" button), and select "*Click to Chat by Text/SMS*". Enter information and click "*Next*".
+1. Go to "*Connect a new channel*" page again (click on "*Channels*" on the top menu, and click on "*+*" button), and select "*Click to Chat by Text/SMS*".
 
-1. You should see a code sample, find these values in the code sample: "*data-channel*", "*data-primary-color*", and "*data-prompt-text*". These fields are referred without "*data-*" prefix in the below step (e.g. "*data-channel*" is referred as "*channel*" etc.)
+1. Enter information for your Web Chat plugin and customize the chat prompt UI (if needed), and click "*Next*".
+
+1. You should see the plugin code, find these values in the code: "*data-channel*", "*data-primary-color*", and "*data-prompt-text*". These fields are referred without "*data-*" prefix in the below step (e.g. "*data-channel*" is referred as "*channel*" etc.)
     ![image](https://user-images.githubusercontent.com/12301512/179742406-bbf28620-0024-44da-b532-4155fca6829f.png)
 
 ### Bubble Editor
