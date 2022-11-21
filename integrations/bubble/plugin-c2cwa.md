@@ -26,7 +26,7 @@ When your web app user initiates the inquiry, it shows up in your Sociocs Inbox,
 
 ### Sociocs
 
-1. Sign up or log in on <a href="https://app.sociocs.com" target="_blank">app.sociocs.com</a>.
+1. {{include "signup-or-login"}}
 
 1. Select "*WhatsApp (with Twilio)*" or "*WhatsApp (with Gupshup)*" in the "*Connect a new channel*" page. If you are an existing user, after logging in, click on "*Channels*" menu on the top, click on "*+*" button to go to the "*Connect a new channel*" page.
 

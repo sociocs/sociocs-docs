@@ -26,9 +26,7 @@ When the end user submits the form, it is received in the Sociocs Inbox, form wh
 
 ### Sociocs
 
-1. Sign up or log in on <a href="https://app.sociocs.com" target="_blank">app.sociocs.com</a>.
-
-1. Select "*Form*" in the "*Connect a new channel*" page. If you are an existing user, after logging in, click on "*Channels*" menu on the top, click on "*+*" button to go to the "*Connect a new channel*" page.
+{{include "form-channel-initial-steps"}}
 
 1. Enter "*Form name*", check "*Key authorization*", and click "*Next*". **You don't need to add fill out any other information.** (Even if you would like to add "*reCAPTCHA*" validation in your form, leave "*reCAPTCHA v2*" unchecked in Sociocs. You would have to use Bubble's reCAPTCHA plugin. Instructions are below. For now, you can continue with these steps.)
     ![image](https://user-images.githubusercontent.com/12301512/163722991-2b6a2b66-c343-4cd9-9dd4-eaf04b5208e5.png)
