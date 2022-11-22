@@ -9,24 +9,24 @@
     <meta name="generator" content="Retype 2.4.0">
 
     <!-- Primary Meta Tags -->
-    <title>Send message</title>
-    <meta name="title" content="Send message">
-    <meta name="description" content="Send a message on Twilio SMS, Twilio WhatsApp or Gupshup WhatsApp channel. You can also send one or more images or a file." />
+    <title>Authentication</title>
+    <meta name="title" content="Authentication">
+    <meta name="description" content="API calls are authenticated using API key." />
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.sociocs.com/api/send-message/" />
+    <link rel="canonical" href="https://docs.sociocs.com/api/auhentication/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.sociocs.com/api/send-message/">
-    <meta property="og:title" content="Send message">
-    <meta property="og:description" content="Send a message on Twilio SMS, Twilio WhatsApp or Gupshup WhatsApp channel. You can also send one or more images or a file.">
+    <meta property="og:url" content="https://docs.sociocs.com/api/auhentication/">
+    <meta property="og:title" content="Authentication">
+    <meta property="og:description" content="API calls are authenticated using API key.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.sociocs.com/api/send-message/">
-    <meta property="twitter:title" content="Send message">
-    <meta property="twitter:description" content="Send a message on Twilio SMS, Twilio WhatsApp or Gupshup WhatsApp channel. You can also send one or more images or a file.">
+    <meta property="twitter:url" content="https://docs.sociocs.com/api/auhentication/">
+    <meta property="twitter:title" content="Authentication">
+    <meta property="twitter:description" content="API calls are authenticated using API key.">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -36,7 +36,6 @@
     <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.722457583380" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
     <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.722457583380" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.722457583380" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -198,197 +197,27 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="send-message" class="break-words">
+<doc-anchor-target id="authentication" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#send-message">#</doc-anchor-trigger>
-        <span>Send message</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#authentication">#</doc-anchor-trigger>
+        <span>Authentication</span>
     </h1>
 </doc-anchor-target>
-<p>Send a message on Twilio SMS, Twilio WhatsApp or Gupshup WhatsApp channel. You can also send one or more images or a file.</p>
-<doc-anchor-target id="method">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#method">#</doc-anchor-trigger>
-        <span>Method</span>
-    </h2>
-</doc-anchor-target>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>POST</span>
-</span></p>
-<doc-anchor-target id="path">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#path">#</doc-anchor-trigger>
-        <span>Path</span>
-    </h2>
-</doc-anchor-target>
-<p><code v-pre>/message</code></p>
-<doc-anchor-target id="body-parameters">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#body-parameters">#</doc-anchor-trigger>
-        <span>Body parameters</span>
-    </h2>
-</doc-anchor-target>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="compact">
-<thead>
-<tr>
-<th>Name</th>
-<th>Value</th>
-<th>Required?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>provider</td>
-<td><code v-pre>twlo</code> (for Twilio SMS), <br /><code v-pre>twlowa</code> (for Twilio WhatsApp), <br /><code v-pre>gswa</code> (for Gupshup WhatsApp)</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>channel_key</td>
-<td>Channel key value from <em>Profile &amp; settings -&gt; API</em></td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>to</td>
-<td>Phone number in E. 164 format e.g. +16175551212</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>name</td>
-<td>Customer name</td>
-<td>No</td>
-</tr>
-<tr>
-<td>text</td>
-<td>Message text</td>
-<td>No (when image_url, image_urls or file_url is present)</td>
-</tr>
-<tr>
-<td>image_url</td>
-<td>Publicly accessible image URL</td>
-<td>No (when text, image_urls or file_url is present)</td>
-</tr>
-<tr>
-<td>image_urls</td>
-<td>Array of publicly accessible image URLs</td>
-<td>No (when text, image_url or file_url is present)</td>
-</tr>
-<tr>
-<td>file_url</td>
-<td>Publicly accessible file URL</td>
-<td>No (when text, image_url or image_urls is present)</td>
-</tr>
-</tbody>
-</table>
-</div>
-<doc-anchor-target id="response">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#response">#</doc-anchor-trigger>
-        <span>Response</span>
-    </h2>
-</doc-anchor-target>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="compact">
-<thead>
-<tr>
-<th>Name</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>status</td>
-<td><code v-pre>success</code> or <code v-pre>error</code></td>
-<td>-</td>
-</tr>
-<tr>
-<td>errors</td>
-<td>Array of map <code v-pre>{ msg: [error detail] }</code></td>
-<td>Only present when status is <code v-pre>error</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-<doc-anchor-target id="code-samples">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#code-samples">#</doc-anchor-trigger>
-        <span>Code samples</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="sending-only-text-content">
+<p>API calls are authenticated using API key.</p>
+<doc-anchor-target id="generating-api-key">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#sending-only-text-content">#</doc-anchor-trigger>
-        <span>Sending only text content</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#generating-api-key">#</doc-anchor-trigger>
+        <span>Generating API key</span>
     </h3>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="curl">
-<template #title>cURL</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-bash"><code v-pre class="language-bash">curl --location --request POST 'https://api.sociocs.com/message' \
---header 'apikey: [your api key]' \
---header 'Content-Type: application/json' \
---data-raw '{
-    &quot;provider&quot;: &quot;[provider]&quot;,
-    &quot;channel_key&quot;: &quot;[your channel key]&quot;,
-    &quot;to&quot;: &quot;[phone number]&quot;,
-    &quot;name&quot;: &quot;[recipient name]&quot;,
-    &quot;text&quot;: &quot;[message]&quot;
-}'</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
-<doc-anchor-target id="sending-text--image">
+<p>To generate API key, go to <em>Profile &amp; settings -&gt; API</em> on <a href="https://app.sociocs.com" target="_blank">app.sociocs.com</a>.</p>
+<doc-anchor-target id="using-the-key-in-api-calls">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#sending-text--image">#</doc-anchor-trigger>
-        <span>Sending text &amp; image</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#using-the-key-in-api-calls">#</doc-anchor-trigger>
+        <span>Using the key in API calls</span>
     </h3>
 </doc-anchor-target>
-<doc-tabs>
-<doc-tab id="curl">
-<template #title>cURL</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-bash"><code v-pre class="language-bash">curl --location --request POST 'https://api.sociocs.com/message' \
---header 'apikey: [your api key]' \
---header 'Content-Type: application/json' \
---data-raw '{
-    &quot;provider&quot;: &quot;[provider]&quot;,
-    &quot;channel_key&quot;: &quot;[your channel key]&quot;,
-    &quot;to&quot;: &quot;[phone number]&quot;,
-    &quot;name&quot;: &quot;[recipient name]&quot;,
-    &quot;text&quot;: &quot;[message]&quot;,
-    &quot;image_url&quot;: &quot;[image url]&quot;
-}'</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
-<doc-anchor-target id="sending-only-images">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#sending-only-images">#</doc-anchor-trigger>
-        <span>Sending only images</span>
-    </h3>
-</doc-anchor-target>
-<doc-tabs>
-<doc-tab id="curl">
-<template #title>cURL</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-bash"><code v-pre class="language-bash">curl --location --request POST 'https://api.sociocs.com/message' \
---header 'apikey: [your api key]' \
---header 'Content-Type: application/json' \
---data-raw '{
-    &quot;provider&quot;: &quot;[provider]&quot;,
-    &quot;channel_key&quot;: &quot;[your channel key]&quot;,
-    &quot;to&quot;: &quot;[phone number]&quot;,
-    &quot;name&quot;: &quot;[recipient name]&quot;,
-    &quot;image_urls&quot;: [
-        &quot;[image url 1]&quot;,
-        &quot;[image url 2]&quot;,
-        &quot;[image url 3]&quot;
-    ]
-}'</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+<p>Pass a request header <code v-pre>apikey</code> with your account&#x27;s API key as value.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -398,20 +227,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../api/auhentication/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../api/introduction/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Authentication</span>
+                                                <span class="block mt-1">Introduction</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../api/save-incoming/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../api/send-message/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Save incoming message</span>
+                                                <span class="block mt-1">Send message</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -455,6 +284,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Send message", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Authentication", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
