@@ -9,35 +9,34 @@
     <meta name="generator" content="Retype 2.4.0">
 
     <!-- Primary Meta Tags -->
-    <title>Webflow :: Sociocs - Click to Chat by Text</title>
-    <meta name="title" content="Webflow :: Sociocs - Click to Chat by Text">
-    <meta name="description" content="Sociocs Web Chat plugin adds a chat bubble on your website that draw user's attention, and gives them an easy way to reach out to you." />
+    <title>Save incoming message</title>
+    <meta name="title" content="Save incoming message">
+    <meta name="description" content="Save a message in the inbox. You can use it to save a message received on an external platform or create a mock message with information you may need..." />
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.sociocs.com/integrations/webflow/c2csms/" />
+    <link rel="canonical" href="https://docs.sociocs.com/api/save-incoming/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.sociocs.com/integrations/webflow/c2csms/">
-    <meta property="og:title" content="Webflow :: Sociocs - Click to Chat by Text">
-    <meta property="og:description" content="Sociocs Web Chat plugin adds a chat bubble on your website that draw user's attention, and gives them an easy way to reach out to you.">
-    <meta property="og:image" content="https://user-images.githubusercontent.com/12301512/203017406-4b197d3f-6094-496d-a76c-f84a0865c783.png">
+    <meta property="og:url" content="https://docs.sociocs.com/api/save-incoming/">
+    <meta property="og:title" content="Save incoming message">
+    <meta property="og:description" content="Save a message in the inbox. You can use it to save a message received on an external platform or create a mock message with information you may need...">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.sociocs.com/integrations/webflow/c2csms/">
-    <meta property="twitter:title" content="Webflow :: Sociocs - Click to Chat by Text">
-    <meta property="twitter:description" content="Sociocs Web Chat plugin adds a chat bubble on your website that draw user's attention, and gives them an easy way to reach out to you.">
-    <meta property="twitter:image" content="https://user-images.githubusercontent.com/12301512/203017406-4b197d3f-6094-496d-a76c-f84a0865c783.png">
+    <meta property="twitter:url" content="https://docs.sociocs.com/api/save-incoming/">
+    <meta property="twitter:title" content="Save incoming message">
+    <meta property="twitter:description" content="Save a message in the inbox. You can use it to save a message received on an external platform or create a mock message with information you may need...">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../../static/images/sociocs-icon-32.png" rel="icon" />
-    <link href="../../../resources/css/retype.css?v=2.4.0.722456836294" rel="stylesheet" />
+    <link href="../../static/images/sociocs-icon-32.png" rel="icon" />
+    <link href="../../resources/css/retype.css?v=2.4.0.722456836294" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.722456836294" data-turbo-eval="false" defer></script>
-    <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.722456836294" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.722456836294" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.722456836294" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.722456836294" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -52,7 +51,7 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../../../" class="flex items-center leading-snug text-2xl">
+                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-2xl">
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Sociocs</span>
                         </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
                     </div>
@@ -199,84 +198,125 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="webflow--sociocs---click-to-chat-by-text" class="break-words">
+<doc-anchor-target id="save-incoming-message" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#webflow--sociocs---click-to-chat-by-text">#</doc-anchor-trigger>
-        <span>Webflow :: Sociocs - Click to Chat by Text</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#save-incoming-message">#</doc-anchor-trigger>
+        <span>Save incoming message</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="introduction">
+<p>Save a message in the inbox. You can use it to save a message received on an external platform or create a mock message with information you may need during the conversation.</p>
+<doc-anchor-target id="method">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#introduction">#</doc-anchor-trigger>
-        <span>Introduction</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#method">#</doc-anchor-trigger>
+        <span>Method</span>
     </h2>
 </doc-anchor-target>
-<p>Sociocs Web Chat plugin adds a chat bubble on your website that draw user&#x27;s attention, and gives them an easy way to reach out to you. It converts an inquiry into SMS / text messaging based conversation, so that your user doesn&#x27;t have to wait on the website for a response.</p>
-<p>When your web app user initiates the inquiry, it shows up in your Sociocs Inbox, from where you can reply to the user, and continue the conversation.</p>
-<p><figure class="content-center">
-    <img src="https://user-images.githubusercontent.com/12301512/203017406-4b197d3f-6094-496d-a76c-f84a0865c783.png" alt="image" />
-    <figcaption class="caption">image</figcaption>
-</figure>
-</p>
-<doc-anchor-target id="setup">
+<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>POST</span>
+</span></p>
+<doc-anchor-target id="path">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#setup">#</doc-anchor-trigger>
-        <span>Setup</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#path">#</doc-anchor-trigger>
+        <span>Path</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="twilio">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#twilio">#</doc-anchor-trigger>
-        <span>Twilio</span>
-    </h3>
+<p><code v-pre>/incoming</code></p>
+<doc-anchor-target id="body-parameters">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#body-parameters">#</doc-anchor-trigger>
+        <span>Body parameters</span>
+    </h2>
 </doc-anchor-target>
-<!-- markdownlint-disable-next-line -->
-<ul>
-<li>You can skip this step if you already have an account with Twilio.</li>
-<li>If you don&#x27;t have an account with Twilio, you can sign up for a <a href="https://www.twilio.com/try-twilio">free trial account</a>. (Once you sign up for a trial, you should consider upgrading right away to avoid outbound SMS restrictions.)</li>
-</ul>
-<doc-anchor-target id="sociocs">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#sociocs">#</doc-anchor-trigger>
-        <span>Sociocs</span>
-    </h3>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Required?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>provider</td>
+<td><code v-pre>twlo</code> (for Twilio SMS), <br /><code v-pre>twlowa</code> (for Twilio WhatsApp), <br /><code v-pre>gswa</code> (for Gupshup WhatsApp)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>channel_key</td>
+<td>Channel key value from <em>Profile &amp; settings -&gt; API</em></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>from</td>
+<td>Phone number in E. 164 format e.g. +16175551212</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>name</td>
+<td>Customer name</td>
+<td>No</td>
+</tr>
+<tr>
+<td>text</td>
+<td>Message text</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="response">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#response">#</doc-anchor-trigger>
+        <span>Response</span>
+    </h2>
 </doc-anchor-target>
-<!-- markdownlint-disable-next-line -->
-<!-- markdownlint-disable-next-line -->
-<ol>
-<li><p>Sign up or log in on <a href="https://app.sociocs.com" target="_blank">app.sociocs.com</a>.</p>
-</li>
-<li><p>Select &quot;<em>SMS (with Twilio)</em>&quot; in the &quot;<em>Connect a new channel</em>&quot; page. If you are an existing user, after logging in, click on &quot;<em>Channels</em>&quot; menu on the top, click on &quot;<em>+</em>&quot; button to go to the &quot;<em>Connect a new channel</em>&quot; page.</p>
-</li>
-<li><p>Connect your Twilio phone by following the instructions.</p>
-</li>
-<li><p>Go to &quot;<em>Connect a new channel</em>&quot; page again (click on &quot;<em>Channels</em>&quot; on the top menu, and click on &quot;<em>+</em>&quot; button), and select &quot;<em>Click to Chat by Text/SMS</em>&quot;.</p>
-</li>
-<li><p>Enter information for your Web Chat plugin and customize the chat prompt UI (if needed), and click &quot;<em>Next</em>&quot;.</p>
-</li>
-<li><p>You should see the plugin code. You will be using this code in your Webflow site in the instruction below.</p>
-</li>
-</ol>
-<doc-anchor-target id="webflow-designer">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#webflow-designer">#</doc-anchor-trigger>
-        <span>Webflow Designer</span>
-    </h3>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td><code v-pre>success</code> or <code v-pre>error</code></td>
+<td>-</td>
+</tr>
+<tr>
+<td>errors</td>
+<td>Array of map <code v-pre>{ msg: [error detail] }</code></td>
+<td>Only present when status is <code v-pre>error</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="code-sample">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#code-sample">#</doc-anchor-trigger>
+        <span>Code sample</span>
+    </h2>
 </doc-anchor-target>
-<doc-anchor-target id="add-custom-code-in-project-settings">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#add-custom-code-in-project-settings">#</doc-anchor-trigger>
-        <span>Add Custom Code in Project Settings</span>
-    </h4>
-</doc-anchor-target>
-<ol>
-<li><p>Go to &quot;<em>Project Settings</em>&quot;, and go to &quot;<em>Custom Code</em>&quot; tab.</p>
-</li>
-<li><p>Copy and past code from Sociocs in the &quot;<em>Footer Code</em>&quot; section.</p>
-</li>
-<li><p>Publish your website. That&#x27;s it! Refresh your Webflow website page, and you should see a chat bubble on bottom right.</p>
-</li>
-</ol>
+<doc-tabs>
+<doc-tab id="curl">
+<template #title>cURL</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">curl --location --request POST 'https://api.sociocs.com/incoming' \
+--header 'apikey: [your api key]' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    &quot;provider&quot;: &quot;[provider]&quot;,
+    &quot;channel_key&quot;: &quot;[your channel key]&quot;,
+    &quot;from&quot;: &quot;[phone number]&quot;,
+    &quot;name&quot;: &quot;[sender name]&quot;,
+    &quot;text&quot;: &quot;[message]&quot;
+}'</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
 
                                 
                                 <!-- Required only on API pages -->
@@ -286,20 +326,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../integrations/bubble/plugin-send-text-messages/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../api/send-message/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Send Text Messages</span>
+                                                <span class="block mt-1">Send message</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../integrations/webflow/form/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../settings/business-profile/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Form</span>
+                                                <span class="block mt-1">Business profile</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -343,6 +383,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Click to Chat by Text", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Save incoming message", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
