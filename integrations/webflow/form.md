@@ -62,15 +62,11 @@ When the end user submits the form, it is received in the Sociocs Inbox, form wh
 
 ## Setup for Option 2 - Webhook based submission
 
-***This option is not LIVE yet. It's planned to be released on 22-Nov-2022 8AM Eastern Time***
-
 ### Sociocs
 
 {{include "form-channel-initial-steps"}}
 
-1. Enter "*Form name*", check "*Restrict to domain*", enter your website domain (e.g. sociocs-form-demo.webflow.io).
-
-1. You don't need to check "*reCAPTCHA v2*" here, even if you are planning to add it to your Webflow form. reCAPTCHA validation is handled by Webflow in this case.
+1. Enter "*Form name*", check "*Key authorization*". (Even if you would like to add "*reCAPTCHA*" validation in your form, leave "*reCAPTCHA v2*" unchecked in Sociocs. reCAPTCHA validation is completely handled by Webflow in this case.)
 
 1. Enter "*Website URL*", which gets added to the conversation emails sent to the user. *This step is optional.*
 

@@ -1,6 +1,6 @@
 ---
 icon: rocket
-order: 100
+order: -100
 ---
 
 # Getting started
