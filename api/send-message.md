@@ -28,6 +28,12 @@ file_url | Publicly accessible file URL | No (when text, image_url or image_urls
 
 ## Response
 
+### HTTP status codes
+
+{{include "http-status-codes"}}
+
+### Response object
+
 Name | Value | Description {class="compact"}
 --- | ---
 status | `success` or `error` | -

@@ -25,6 +25,12 @@ text | Message text | Yes
 
 ## Response
 
+### HTTP status codes
+
+{{include "http-status-codes"}}
+
+### Response object
+
 Name | Value | Description {class="compact"}
 --- | ---
 status | `success` or `error` | -
