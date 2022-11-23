@@ -17,7 +17,7 @@ Save a message in the inbox. You can use it to save a message received on an ext
 
 Name | Value | Required? {class="compact"}
 --- | ---
-provider | `twlo` (for Twilio SMS), <br />`twlowa` (for Twilio WhatsApp), <br />`gswa` (for Gupshup WhatsApp) | Yes
+provider | `twlo` (for Twilio SMS). No other providers supported yet. | Yes
 channel_key | Channel key value from *Profile & settings -> API* | Yes
 from | Phone number in E. 164 format e.g. +16175551212 | Yes
 name | Customer name | No
