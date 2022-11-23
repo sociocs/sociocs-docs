@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.722457583380">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.722520963216">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -31,12 +31,12 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/images/sociocs-icon-32.png" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.722457583380" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.722520963216" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.722457583380" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.722520963216" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.722457583380" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.722457583380" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.722520963216" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.722520963216" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -285,6 +285,55 @@
         <doc-anchor-trigger class="header-anchor-trigger" to="#response">#</doc-anchor-trigger>
         <span>Response</span>
     </h2>
+</doc-anchor-target>
+<doc-anchor-target id="http-status-codes">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#http-status-codes">#</doc-anchor-trigger>
+        <span>HTTP status codes</span>
+    </h3>
+</doc-anchor-target>
+<!-- markdownlint-disable-next-line -->
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Request was successful.</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Validation error or request body was incorrectly formatted.</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Authentication failed. Check <code v-pre>apikey</code> header.</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Requested API endpoint not found.</td>
+</tr>
+<tr>
+<td>429</td>
+<td>The rate limit has been reached.</td>
+</tr>
+<tr>
+<td>500-511</td>
+<td>There was a problem processing the request on our server. Try again later.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="response-object">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#response-object">#</doc-anchor-trigger>
+        <span>Response object</span>
+    </h3>
 </doc-anchor-target>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="compact">
