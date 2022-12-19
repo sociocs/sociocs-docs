@@ -1,6 +1,6 @@
 ---
 title: Save incoming message
-order: -300
+order: -200
 ---
 
 Save a message in the inbox. You can use it to save a message received on an external platform or create a mock message with information you may need during the conversation.
@@ -15,13 +15,13 @@ Save a message in the inbox. You can use it to save a message received on an ext
 
 ## Body parameters
 
-Name | Value | Required? {class="compact"}
+Name | Value | Data type | Required? {class="compact"}
 --- | ---
-provider | `twlo` (for Twilio SMS). No other providers supported yet. | Yes
-channel_key | Channel key value from *Profile & settings -> API* | Yes
-from | Phone number in E. 164 format e.g. +16175551212 | Yes
-name | Customer name | No
-text | Message text | Yes
+provider | `twlo` (for Twilio SMS). No other providers supported yet. | String | Yes
+channel_key | Channel key value from *Profile & settings -> API*  | String| Yes
+from | {{include "api/phone-number-value"}} | String | Yes
+name | Sender name | String | No
+text | Message text | String | Yes
 
 ## Response
 
@@ -34,7 +34,7 @@ text | Message text | Yes
 Name | Value | Description {class="compact"}
 --- | ---
 status | `success` or `error` | -
-errors | Array of map `{ msg: [error detail] }` | Only present when status is `error`
+errors | Array of object `{ msg: [error detail] }` | Only present when status is `error`
 
 ## Code sample
 

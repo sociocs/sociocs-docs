@@ -1,6 +1,6 @@
 ---
 title: Send message
-order: -200
+order: -300
 ---
 
 Send a message on Twilio SMS, Twilio WhatsApp or Gupshup WhatsApp channel. You can also send one or more images or a file.
@@ -15,16 +15,16 @@ Send a message on Twilio SMS, Twilio WhatsApp or Gupshup WhatsApp channel. You c
 
 ## Body parameters
 
-Name | Value | Required? {class="compact"}
+Name | Value | Data type | Required? {class="compact"}
 --- | ---
-provider | `twlo` (for Twilio SMS), <br />`twlowa` (for Twilio WhatsApp), <br />`gswa` (for Gupshup WhatsApp) | Yes
-channel_key | Channel key value from *Profile & settings -> API* | Yes
-to | Phone number in E. 164 format e.g. +16175551212 | Yes
-name | Customer name | No
-text | Message text | No (when image_url, image_urls or file_url is present)
-image_url | Publicly accessible image URL | No (when text, image_urls or file_url is present)
-image_urls | Array of publicly accessible image URLs | No (when text, image_url or file_url is present)
-file_url | Publicly accessible file URL | No (when text, image_url or image_urls is present)
+provider | `twlo` (for Twilio SMS), <br />`twlowa` (for Twilio WhatsApp), <br />`gswa` (for Gupshup WhatsApp) | String | Yes
+channel_key | Channel key value from *Profile & settings -> API* | String | Yes
+to | {{include "api/phone-number-value"}} | String | Yes
+name | Recipient name | String | No
+text | Message text | String | No (when image_url, image_urls or file_url is present)
+image_url | Publicly accessible image URL | String | No (when text, image_urls or file_url is present)
+image_urls | Array of publicly accessible image URLs | String | No (when text, image_url or file_url is present)
+file_url | Publicly accessible file URL | String | No (when text, image_url or image_urls is present)
 
 ## Response
 
@@ -37,7 +37,7 @@ file_url | Publicly accessible file URL | No (when text, image_url or image_urls
 Name | Value | Description {class="compact"}
 --- | ---
 status | `success` or `error` | -
-errors | Array of map `{ msg: [error detail] }` | Only present when status is `error`
+errors | Array of object `{ msg: [error detail] }` | Only present when status is `error`
 
 ## Code samples
 
