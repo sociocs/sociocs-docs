@@ -9,26 +9,24 @@
     <meta name="generator" content="Retype 2.4.0">
 
     <!-- Primary Meta Tags -->
-    <title>Bubble plugin :: Sociocs - Click to Chat by Text</title>
-    <meta name="title" content="Bubble plugin :: Sociocs - Click to Chat by Text">
-    <meta name="description" content="This plugin adds a chat bubble on your website that draw user's attention, and gives them an easy way to reach out to you." />
+    <title>Is contact blocked</title>
+    <meta name="title" content="Is contact blocked">
+    <meta name="description" content="Check if a contact is blocked." />
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.sociocs.com/integrations/bubble/plugin-c2csms/" />
+    <link rel="canonical" href="https://docs.sociocs.com/api/contacts/is-blocked/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.sociocs.com/integrations/bubble/plugin-c2csms/">
-    <meta property="og:title" content="Bubble plugin :: Sociocs - Click to Chat by Text">
-    <meta property="og:description" content="This plugin adds a chat bubble on your website that draw user's attention, and gives them an easy way to reach out to you.">
-    <meta property="og:image" content="https://user-images.githubusercontent.com/12301512/179742406-bbf28620-0024-44da-b532-4155fca6829f.png">
+    <meta property="og:url" content="https://docs.sociocs.com/api/contacts/is-blocked/">
+    <meta property="og:title" content="Is contact blocked">
+    <meta property="og:description" content="Check if a contact is blocked.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.sociocs.com/integrations/bubble/plugin-c2csms/">
-    <meta property="twitter:title" content="Bubble plugin :: Sociocs - Click to Chat by Text">
-    <meta property="twitter:description" content="This plugin adds a chat bubble on your website that draw user's attention, and gives them an easy way to reach out to you.">
-    <meta property="twitter:image" content="https://user-images.githubusercontent.com/12301512/179742406-bbf28620-0024-44da-b532-4155fca6829f.png">
+    <meta property="twitter:url" content="https://docs.sociocs.com/api/contacts/is-blocked/">
+    <meta property="twitter:title" content="Is contact blocked">
+    <meta property="twitter:description" content="Check if a contact is blocked.">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -38,6 +36,7 @@
     <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.724775364134" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
     <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.724775364134" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../../resources/js/prism.js?v=2.4.0.724775364134" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -199,96 +198,151 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="bubble-plugin--sociocs---click-to-chat-by-text" class="break-words">
+<doc-anchor-target id="is-contact-blocked" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#bubble-plugin--sociocs---click-to-chat-by-text">#</doc-anchor-trigger>
-        <span>Bubble plugin :: Sociocs - Click to Chat by Text</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#is-contact-blocked">#</doc-anchor-trigger>
+        <span>Is contact blocked</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="introduction">
+<p>Check if a contact is blocked.</p>
+<doc-anchor-target id="method">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#introduction">#</doc-anchor-trigger>
-        <span>Introduction</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#method">#</doc-anchor-trigger>
+        <span>Method</span>
     </h2>
 </doc-anchor-target>
-<p>This plugin adds a chat bubble on your website that draw user&#x27;s attention, and gives them an easy way to reach out to you. It converts an inquiry into SMS / text messaging based conversation, so that your user doesn&#x27;t have to wait on the website for a response.</p>
-<p>When your web app user initiates the inquiry, it shows up in your Sociocs Inbox, from where you can reply to the user, and continue the conversation.</p>
-<p><a href="https://sociocs-plugins.bubbleapps.io/version-test/live_chat_by_text_demo" target="_blank" class="no-link inline-flex items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-blue-100 hover:bg-blue-200 text-blue-600 px-4 h-10 text-sm rounded-md">
-    <span>Demo</span>
-</a> <a href="https://bubble.io/plugin/sociocs---live-chat-by-text-1649745550565x177374092711165950" target="_blank" class="no-link inline-flex items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-blue-100 hover:bg-blue-200 text-blue-600 px-4 h-10 text-sm rounded-md">
-    <span>Plugin page on Bubble</span>
-</a></p>
-<doc-anchor-target id="plugin-installation">
+<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>GET</span>
+</span></p>
+<doc-anchor-target id="path">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#plugin-installation">#</doc-anchor-trigger>
-        <span>Plugin Installation</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#path">#</doc-anchor-trigger>
+        <span>Path</span>
     </h2>
 </doc-anchor-target>
-<ol>
-<li><p>In the Bubble dashboard, go to &quot;<em>Plugins</em>&quot;.</p>
-</li>
-<li><p>Click on &quot;<em>+ Add Plugins</em>&quot;.</p>
-</li>
-<li><p>Search for &#x27;Sociocs - &quot;<em>Live Chat</em>&quot; by Text&#x27;.</p>
-</li>
-<li><p>Click on &quot;<em>Install</em>&quot;.</p>
-</li>
-</ol>
-<doc-anchor-target id="plugin-configuration">
+<p><code v-pre>/contact/isblocked/[phone_number]</code></p>
+<doc-anchor-target id="path-parameter">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#plugin-configuration">#</doc-anchor-trigger>
-        <span>Plugin Configuration</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#path-parameter">#</doc-anchor-trigger>
+        <span>Path parameter</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="twilio">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Required?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>phone_number</td>
+<td><!-- markdownlint-disable-line -->Phone number starting with the country code with or without leading plus. e.g. +16175551212 or 16175551212</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="response">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#response">#</doc-anchor-trigger>
+        <span>Response</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="http-status-codes">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#twilio">#</doc-anchor-trigger>
-        <span>Twilio</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#http-status-codes">#</doc-anchor-trigger>
+        <span>HTTP status codes</span>
     </h3>
 </doc-anchor-target>
 <!-- markdownlint-disable-next-line -->
-<ul>
-<li>You can skip this step if you already have an account with Twilio.</li>
-<li>If you don&#x27;t have an account with Twilio, you can sign up for a <a href="https://www.twilio.com/try-twilio" target="_blank">free trial account</a>. (Once you sign up for a trial, you should consider upgrading right away to avoid outbound SMS restrictions.</li>
-</ul>
-<doc-anchor-target id="sociocs">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Request was successful.</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Validation error or request body was incorrectly formatted.</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Authentication failed. Check <code v-pre>apikey</code> header.</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Requested API endpoint not found.</td>
+</tr>
+<tr>
+<td>429</td>
+<td>The rate limit has been reached.</td>
+</tr>
+<tr>
+<td>500-511</td>
+<td>There was a problem processing the request on our server. Try again later.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="response-object">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#sociocs">#</doc-anchor-trigger>
-        <span>Sociocs</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#response-object">#</doc-anchor-trigger>
+        <span>Response object</span>
     </h3>
 </doc-anchor-target>
-<!-- markdownlint-disable-next-line -->
-<!-- markdownlint-disable-next-line -->
-<ol>
-<li><p>Sign up or log in on <a href="https://app.sociocs.com" target="_blank">app.sociocs.com</a>.</p>
-</li>
-<li><p>Select &quot;<em>SMS (with Twilio)</em>&quot; in the &quot;<em>Connect a new channel</em>&quot; page. If you are an existing user, after logging in, click on &quot;<em>Channels</em>&quot; menu on the top, click on &quot;<em>+</em>&quot; button to go to the &quot;<em>Connect a new channel</em>&quot; page.</p>
-</li>
-<li><p>Connect your Twilio phone by following the instructions.</p>
-</li>
-<li><p>Go to &quot;<em>Connect a new channel</em>&quot; page again (click on &quot;<em>Channels</em>&quot; on the top menu, and click on &quot;<em>+</em>&quot; button), and select &quot;<em>Click to Chat by Text/SMS</em>&quot;.</p>
-</li>
-<li><p>Enter information for your Web Chat plugin and customize the chat prompt UI (if needed), and click &quot;<em>Next</em>&quot;.</p>
-</li>
-<li><p>You should see the plugin code, find these values in the code: &quot;<em>data-channel</em>&quot;, &quot;<em>data-primary-color</em>&quot;, and &quot;<em>data-prompt-text</em>&quot;. These fields are referred without &quot;<em>data-</em>&quot; prefix in the below step (e.g. &quot;<em>data-channel</em>&quot; is referred as &quot;<em>channel</em>&quot; etc.)
-<img src="https://user-images.githubusercontent.com/12301512/179742406-bbf28620-0024-44da-b532-4155fca6829f.png" alt="image" /></p>
-</li>
-</ol>
-<doc-anchor-target id="bubble-editor">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#bubble-editor">#</doc-anchor-trigger>
-        <span>Bubble Editor</span>
-    </h3>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td><code v-pre>success</code> or <code v-pre>error</code></td>
+<td>-</td>
+</tr>
+<tr>
+<td>errors</td>
+<td>Array of object <code v-pre>{ msg: [error detail] }</code></td>
+<td>Only present when status is <code v-pre>error</code></td>
+</tr>
+<tr>
+<td>data</td>
+<td>Object <code v-pre>{ is_blocked: true | false}</code></td>
+<td>Only present when status is <code v-pre>success</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="code-sample">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#code-sample">#</doc-anchor-trigger>
+        <span>Code sample</span>
+    </h2>
 </doc-anchor-target>
-<ol>
-<li><p>Go to the &quot;<em>Sociocs - Click to Chat by WhatsApp</em>&quot; plugin in the Bubble Editor.</p>
-</li>
-<li><p>Add &quot;<em>channel</em>&quot;, &quot;<em>primary-color</em>&quot;, and &quot;<em>prompt-text</em>&quot; configuration parameters.</p>
-</li>
-<li><p>Bubble also shows fields for adding dev keys (i.e. &quot;<em>channel - dev.</em>&quot;, &quot;<em>primary-color - dev.</em>&quot;, and &quot;<em>prompt-text - dev.</em>&quot;). You can leave them blank.</p>
-</li>
-</ol>
-<p>That&#x27;s it! Refresh your Bubble web app page, and you should see a chat bubble on bottom right.</p>
+<doc-tabs>
+<doc-tab id="curl">
+<template #title>cURL</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">curl --location --request GET 'https://api.sociocs.com/contact/isblocked/16175551212' \
+--header 'apikey: [your api key]'</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
 
                                 
                                 <!-- Required only on API pages -->
@@ -298,20 +352,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../getting-started/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../api/contacts/unblock/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Getting started</span>
+                                                <span class="block mt-1">Unblock contact</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../integrations/bubble/plugin-c2cwa/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../api/save-incoming/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Click to Chat by Whats​App</span>
+                                                <span class="block mt-1">Save incoming message</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -355,6 +409,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Click to Chat by Text", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Is contact blocked", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
