@@ -23,7 +23,6 @@ When the end user submits the form, it is received in the Sociocs Inbox, form wh
     - It is a better choice when you have only one form on your website.
     - Form submission takes place using AJAX without user getting redirected.
     - If avoiding user redirects is a must have, one workaround for multiple forms is to add additional hidden field (e.g. "form_type") in each form to identify form type in the Sociocs Inbox. Still, it's not as convenient as seeing specific form name attached to the conversations.
-    - ***This option is not LIVE yet. It's planned to be released on 21-Nov-2022 8AM Eastern Time***
 
 ## Setup for Option 1 - Direct submission to Sociocs
 
