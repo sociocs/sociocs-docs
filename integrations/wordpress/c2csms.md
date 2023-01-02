@@ -10,6 +10,8 @@ Sociocs Web Chat plugin adds a chat bubble on your website that draw user's atte
 
 When your web app user initiates the inquiry, it shows up in your Sociocs Inbox, from where you can reply to the user, and continue the conversation.
 
+[!button variant="info" target="blank" text="Demo"](https://wordpress-demo.sociocs.com/)
+
 ![image](https://user-images.githubusercontent.com/12301512/203017406-4b197d3f-6094-496d-a76c-f84a0865c783.png)
 
 ## Setup
