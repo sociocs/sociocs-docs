@@ -9,24 +9,26 @@
     <meta name="generator" content="Retype 2.4.0">
 
     <!-- Primary Meta Tags -->
-    <title>Delete contact</title>
-    <meta name="title" content="Delete contact">
-    <meta name="description" content="Delete a contact." />
+    <title>WordPress :: Sociocs - Form</title>
+    <meta name="title" content="WordPress :: Sociocs - Form">
+    <meta name="description" content="Form integration (e.g. Contact Us, Appointment Request, Pricing Inquiry form etc.) for WordPress." />
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.sociocs.com/api/contacts/delete/" />
+    <link rel="canonical" href="https://docs.sociocs.com/integrations/wordpress/form/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.sociocs.com/api/contacts/delete/">
-    <meta property="og:title" content="Delete contact">
-    <meta property="og:description" content="Delete a contact.">
+    <meta property="og:url" content="https://docs.sociocs.com/integrations/wordpress/form/">
+    <meta property="og:title" content="WordPress :: Sociocs - Form">
+    <meta property="og:description" content="Form integration (e.g. Contact Us, Appointment Request, Pricing Inquiry form etc.) for WordPress.">
+    <meta property="og:image" content="https://user-images.githubusercontent.com/12301512/210250674-3371f72c-ad86-4a5b-a3c5-00bda432c769.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.sociocs.com/api/contacts/delete/">
-    <meta property="twitter:title" content="Delete contact">
-    <meta property="twitter:description" content="Delete a contact.">
+    <meta property="twitter:url" content="https://docs.sociocs.com/integrations/wordpress/form/">
+    <meta property="twitter:title" content="WordPress :: Sociocs - Form">
+    <meta property="twitter:description" content="Form integration (e.g. Contact Us, Appointment Request, Pricing Inquiry form etc.) for WordPress.">
+    <meta property="twitter:image" content="https://user-images.githubusercontent.com/12301512/210250674-3371f72c-ad86-4a5b-a3c5-00bda432c769.png">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -36,7 +38,6 @@
     <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.725991223645" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
     <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.725991223645" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../../resources/js/prism.js?v=2.4.0.725991223645" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -198,176 +199,137 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="delete-contact" class="break-words">
+<doc-anchor-target id="wordpress--sociocs---form" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#delete-contact">#</doc-anchor-trigger>
-        <span>Delete contact</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#wordpress--sociocs---form">#</doc-anchor-trigger>
+        <span>WordPress :: Sociocs - Form</span>
     </h1>
 </doc-anchor-target>
-<p>Delete a contact.</p>
-<doc-anchor-target id="method">
+<doc-anchor-target id="introduction">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#method">#</doc-anchor-trigger>
-        <span>Method</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#introduction">#</doc-anchor-trigger>
+        <span>Introduction</span>
     </h2>
 </doc-anchor-target>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>DELETE</span>
-</span></p>
-<doc-anchor-target id="path">
+<p>Form integration (e.g. Contact Us, Appointment Request, Pricing Inquiry form etc.) for WordPress.</p>
+<p>When the end user submits the form, it is received in the Sociocs Inbox, form where, you can reply back.</p>
+<p><a href="https://wordpress-demo.sociocs.com/contact-us-demo/" target="_blank" class="no-link inline-flex items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-blue-100 hover:bg-blue-200 text-blue-600 px-4 h-10 text-sm rounded-md">
+    <span>Demo</span>
+</a></p>
+<doc-anchor-target id="setup">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#path">#</doc-anchor-trigger>
-        <span>Path</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#setup">#</doc-anchor-trigger>
+        <span>Setup</span>
     </h2>
 </doc-anchor-target>
-<p><code v-pre>/contact/[phone_number]</code></p>
-<doc-anchor-target id="path-parameter">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#path-parameter">#</doc-anchor-trigger>
-        <span>Path parameter</span>
-    </h2>
-</doc-anchor-target>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="compact">
-<thead>
-<tr>
-<th>Name</th>
-<th>Value</th>
-<th>Required?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>phone_number</td>
-<td><!-- markdownlint-disable-line -->Phone number starting with the country code with or without leading plus. e.g. +16175551212 or 16175551212</td>
-<td>Yes</td>
-</tr>
-</tbody>
-</table>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>There are different ways (with and without plugins) to create forms on WordPress, and have them submitted to an API. This guide is based on the well known form plugin <code v-pre>Contact Form 7</code> to create the form, and another plugin <code v-pre>Contact Form to Any API</code> to submit it to Sociocs API.</p>
+        </div>
+    </div>
 </div>
-<doc-anchor-target id="body-parameters">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#body-parameters">#</doc-anchor-trigger>
-        <span>Body parameters</span>
-    </h2>
-</doc-anchor-target>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="compact">
-<thead>
-<tr>
-<th>Name</th>
-<th>Value</th>
-<th>Data type</th>
-<th>Required?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>list_id</td>
-<td>0 - to delete the contact (including from all the contact lists) or <br/> List ID - to delete only from a contact list (List ID is the value shown in the address bar when a list is selected on the Contacts page)</td>
-<td>Integer</td>
-<td>No (defaults to 0)</td>
-</tr>
-</tbody>
-</table>
-</div>
-<doc-anchor-target id="response">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#response">#</doc-anchor-trigger>
-        <span>Response</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="http-status-codes">
+<doc-anchor-target id="sociocs">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#http-status-codes">#</doc-anchor-trigger>
-        <span>HTTP status codes</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#sociocs">#</doc-anchor-trigger>
+        <span>Sociocs</span>
     </h3>
 </doc-anchor-target>
 <!-- markdownlint-disable-next-line -->
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="compact">
-<thead>
-<tr>
-<th>Code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>200</td>
-<td>Request was successful.</td>
-</tr>
-<tr>
-<td>400</td>
-<td>Validation error or request body was incorrectly formatted.</td>
-</tr>
-<tr>
-<td>401</td>
-<td>Authentication failed. Check <code v-pre>apikey</code> header.</td>
-</tr>
-<tr>
-<td>404</td>
-<td>Requested API endpoint not found.</td>
-</tr>
-<tr>
-<td>429</td>
-<td>The rate limit has been reached.</td>
-</tr>
-<tr>
-<td>500-511</td>
-<td>There was a problem processing the request on our server. Try again later.</td>
-</tr>
-</tbody>
-</table>
-</div>
-<doc-anchor-target id="response-object">
+<!-- markdownlint-disable-next-line -->
+<ol>
+<li><p>Sign up or log in on <a href="https://app.sociocs.com" target="_blank">app.sociocs.com</a>.</p>
+</li>
+<li><p>Select &quot;<em>Form</em>&quot; in the &quot;<em>Connect a new channel</em>&quot; page. If you are an existing user, after logging in, click on &quot;<em>Channels</em>&quot; menu on the top, click on &quot;<em>+</em>&quot; button to go to the &quot;<em>Connect a new channel</em>&quot; page.</p>
+</li>
+<li><p>Enter &quot;<em>Form name</em>&quot;, check &quot;<em>Key authorization</em>&quot;, and click &quot;<em>Next</em>&quot;. <strong>You don&#x27;t need to add fill out any other information.</strong> (Even if you would like to add &quot;<em>reCAPTCHA</em>&quot; validation in your form, leave &quot;<em>reCAPTCHA v2</em>&quot; unchecked in Sociocs. You would have to use Contact Form 7&#x27;s reCAPTCHA integration.)
+<img src="https://user-images.githubusercontent.com/12301512/210250674-3371f72c-ad86-4a5b-a3c5-00bda432c769.png" alt="image" /></p>
+</li>
+<li><p>On the next page, click &quot;<em>Done</em>&quot;, which should take you to the Channels page.</p>
+</li>
+<li><p>Click on the &quot;<em>Form</em>&quot; channel you just added, and find API URL, and API KEY (value shown under &quot;<em>Key authorization</em>&quot;).
+<img src="https://user-images.githubusercontent.com/12301512/210251544-1218ad9b-e4e4-44c3-b854-11bf2e3a276b.png" alt="image" /></p>
+</li>
+</ol>
+<doc-anchor-target id="wp-admin-dashboard">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#response-object">#</doc-anchor-trigger>
-        <span>Response object</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#wp-admin-dashboard">#</doc-anchor-trigger>
+        <span>WP Admin Dashboard</span>
     </h3>
 </doc-anchor-target>
+<doc-anchor-target id="create-a-form-using-contact-form-7">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#create-a-form-using-contact-form-7">#</doc-anchor-trigger>
+        <span>Create a form using Contact Form 7</span>
+    </h4>
+</doc-anchor-target>
+<p>Install &quot;<em>Contact Form 7</em>&quot; plugin through the &quot;<em>Plugins</em>&quot; menu in your admin dashboard. Create a form, and add it to a page on your website. Contact Form 7 documentation is available <a href="https://contactform7.com/docs/" target="_blank">here</a>.</p>
+<doc-anchor-target id="direct-form-submissions-to-sociocs-api">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#direct-form-submissions-to-sociocs-api">#</doc-anchor-trigger>
+        <span>Direct form submissions to Sociocs API</span>
+    </h4>
+</doc-anchor-target>
+<ol>
+<li><p>Install &quot;<em>Contact Form to Any API</em>&quot; plugin through the &quot;<em>Plugins</em>&quot; menu in your admin dashboard.</p>
+</li>
+<li><p>Go to &quot;<em>CF7 to API</em>&quot; from the menu, and click on &quot;<em>Add New CF7 API</em>&quot;.</p>
+</li>
+<li><p>Fill the API information as explained below:</p>
 <div class="table-wrapper scrollbar overflow-hidden">
-<table class="compact">
+<table class="comfortable">
 <thead>
 <tr>
-<th>Name</th>
+<th>Field</th>
 <th>Value</th>
-<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>status</td>
-<td><code v-pre>success</code> or <code v-pre>error</code></td>
-<td>-</td>
+<td>Title</td>
+<td>Name for this API entry. e.g. &quot;Contact us form to Sociocs&quot;</td>
 </tr>
 <tr>
-<td>errors</td>
-<td>Array of object <code v-pre>{ msg: [error detail] }</code></td>
-<td>Only present when status is <code v-pre>error</code></td>
+<td>Select Contact Form</td>
+<td>Select your Contact Form 7 form</td>
+</tr>
+<tr>
+<td>API Url</td>
+<td>Above mentioned API URL from Sociocs</td>
+</tr>
+<tr>
+<td>Header Request</td>
+<td>Add above mentioned API Key in this format <code v-pre>apikey: your-api-key</code></td>
+</tr>
+<tr>
+<td>Input Type</td>
+<td>Parameters - GET/POST</td>
+</tr>
+<tr>
+<td>Method</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>Map your Fields</td>
+<td>Email address field value must be <code v-pre>email</code>. Submitter name field value, if present, should be <code v-pre>name</code>. Other field values can be anything, and that&#x27;s how they will show up in the Sociocs inbox.</td>
 </tr>
 </tbody>
 </table>
 </div>
-<doc-anchor-target id="code-sample">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#code-sample">#</doc-anchor-trigger>
-        <span>Code sample</span>
-    </h2>
-</doc-anchor-target>
-<doc-tabs>
-<doc-tab id="curl">
-<template #title>cURL</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-bash"><code v-pre class="language-bash">curl --location --request DELETE 'https://api.sociocs.com/contact/16175551212' \
---header 'apikey: [your api key]'
---header 'Content-Type: application/json' \
---data-raw '{
-    &quot;list_id_&quot;: 0
-}'</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
+<p><img src="https://user-images.githubusercontent.com/12301512/210254398-7995321f-5e69-42e1-aca1-51c0fe863e5e.png" alt="image" /></p>
+</li>
+</ol>
+<p>You are all set to accept form submissions from your WordPress website!</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -377,20 +339,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../api/contacts/update/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../integrations/wordpress/c2csms/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Update contact</span>
+                                                <span class="block mt-1">Click to Chat by Text</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../api/contacts/block/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../api/introduction/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Block contact</span>
+                                                <span class="block mt-1">Introduction</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -434,6 +396,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Delete contact", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Form", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
