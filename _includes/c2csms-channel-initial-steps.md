@@ -7,4 +7,4 @@
 
 1. Go to "*Connect a new channel*" page again (click on "*Channels*" on the top menu, and click on "*+*" button), and select "*Click to Chat by Text/SMS*".
 
-1. Enter information for your Web Chat plugin and customize the chat prompt UI (if needed), and click "*Next*".
+1. Enter information for your Web Chat plugin and customize the chat prompt UI (if you want), and click "*Next*".
