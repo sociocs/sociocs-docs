@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.726034468176">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.729168977868">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -13,7 +13,7 @@
     <!-- Primary Meta Tags -->
     <title>Send message</title>
     <meta name="title" content="Send message">
-    <meta name="description" content="Send a message on Twilio SMS, Twilio WhatsApp or Gupshup WhatsApp channel. You can also send one or more images or a file." />
+    <meta name="description" content="Send a message on Twilio SMS, Twilio WhatsApp or Gupshup WhatsApp channel." />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.sociocs.com/api/send-message/" />
@@ -22,23 +22,23 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.sociocs.com/api/send-message/">
     <meta property="og:title" content="Send message">
-    <meta property="og:description" content="Send a message on Twilio SMS, Twilio WhatsApp or Gupshup WhatsApp channel. You can also send one or more images or a file.">
+    <meta property="og:description" content="Send a message on Twilio SMS, Twilio WhatsApp or Gupshup WhatsApp channel.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.sociocs.com/api/send-message/">
     <meta property="twitter:title" content="Send message">
-    <meta property="twitter:description" content="Send a message on Twilio SMS, Twilio WhatsApp or Gupshup WhatsApp channel. You can also send one or more images or a file.">
+    <meta property="twitter:description" content="Send a message on Twilio SMS, Twilio WhatsApp or Gupshup WhatsApp channel.">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/images/sociocs-icon-32.png" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.726034468176" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.729168977868" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.726034468176" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.729168977868" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.726034468176" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.726034468176" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.729168977868" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.729168977868" defer></script>
 </head>
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-33B2S1ZXGM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -208,7 +208,11 @@
         <span>Send message</span>
     </h1>
 </doc-anchor-target>
-<p>Send a message on Twilio SMS, Twilio WhatsApp or Gupshup WhatsApp channel. You can also send one or more images or a file.</p>
+<ul>
+<li>Send a message on Twilio SMS, Twilio WhatsApp or Gupshup WhatsApp channel.</li>
+<li>You can also send one or more images or a file.</li>
+<li>Optionally, you can also save recipient in a contact list.</li>
+</ul>
 <doc-anchor-target id="method">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#method">#</doc-anchor-trigger>
@@ -256,7 +260,7 @@
 </tr>
 <tr>
 <td>to</td>
-<td><!-- markdownlint-disable-line -->Phone number starting with the country code with or without leading plus. e.g. +16175551212 or 16175551212</td>
+<td><!-- markdownlint-disable-line -->Phone number starting with the country code with or without leading plus. e.g. <code v-pre>+16175551212</code> or <code v-pre>16175551212</code></td>
 <td>String</td>
 <td>Yes</td>
 </tr>
@@ -289,6 +293,51 @@
 <td>Publicly accessible file URL</td>
 <td>String</td>
 <td>No (when text, image_url or image_urls is present)</td>
+</tr>
+<tr>
+<td>contact_saving</td>
+<td>Object with instruction to save phone number and name as a contact after sending the message. See below</td>
+<td>Object</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="contact_saving">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#contact_saving">#</doc-anchor-trigger>
+        <span>contact_saving</span>
+    </h3>
+</doc-anchor-target>
+<p>This field is for passing instruction to save phone number and name as a contact. If the contact already exists, it will be updated. Extra custom fields can also be passed.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Data type</th>
+<th>Required?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>save</td>
+<td><code v-pre>true</code> - Save phone number, name and extra fields as a contact, <br /> <code v-pre>false</code> - Skip saving as contact</td>
+<td>Boolean</td>
+<td>No (defaults to <code v-pre>false</code>)</td>
+</tr>
+<tr>
+<td>list_id</td>
+<td><!-- markdownlint-disable-line --><code v-pre>0</code> - to add to &quot;All Contacts&quot; or <br/> List ID - to add to a contact list (List ID is the value shown in the address bar when a list is selected on the Contacts page)</td>
+<td>Integer</td>
+<td>No (defaults to <code v-pre>0</code>)</td>
+</tr>
+<tr>
+<td>extra_fields</td>
+<td><!-- markdownlint-disable-line -->Key value pair object with additional custom fields (e.g. <code v-pre>{ &quot;email_address&quot;: &quot;john@example.com&quot;, &quot;id&quot;: 987123 }</code>)</td>
+<td>Object</td>
+<td>No</td>
 </tr>
 </tbody>
 </table>

@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.726034468176">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.729168977868">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -33,12 +33,12 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../static/images/sociocs-icon-32.png" rel="icon" />
-    <link href="../../../resources/css/retype.css?v=2.4.0.726034468176" rel="stylesheet" />
+    <link href="../../../resources/css/retype.css?v=2.4.0.729168977868" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.726034468176" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.729168977868" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.726034468176" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../../resources/js/prism.js?v=2.4.0.726034468176" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.729168977868" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../../resources/js/prism.js?v=2.4.0.729168977868" defer></script>
 </head>
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-33B2S1ZXGM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -208,7 +208,7 @@
         <span>Add contacts bulk</span>
     </h1>
 </doc-anchor-target>
-<p>Add new contacts in bulk. When a given phone number already exists, it updates existing contact.</p>
+<p>Add new contacts in bulk. When a given phone number already exists, it updates existing contact. If existing contact gets updated, all information gets overwritten, including all extra fields.</p>
 <doc-anchor-target id="method">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#method">#</doc-anchor-trigger>
@@ -244,7 +244,7 @@
 <tbody>
 <tr>
 <td>list_id</td>
-<td>0 - to add to &quot;All Contacts&quot; or <br/> List ID - to add to a contact list (List ID is the value shown in the address bar when a list is selected on the Contacts page)</td>
+<td><!-- markdownlint-disable-line --><code v-pre>0</code> - to add to &quot;All Contacts&quot; or <br/> List ID - to add to a contact list (List ID is the value shown in the address bar when a list is selected on the Contacts page)</td>
 <td>Integer</td>
 <td>No (defaults to 0)</td>
 </tr>
@@ -256,9 +256,48 @@
 </tr>
 <tr>
 <td>records</td>
-<td>Array of up to 10,000 contacts <code v-pre>{ phone_number: [phone number starting with country code (required)], name: [contact name (optional)] }</code></td>
+<td>See below</td>
 <td>Array</td>
 <td>Yes</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="records">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#records">#</doc-anchor-trigger>
+        <span>records</span>
+    </h3>
+</doc-anchor-target>
+<p>The &#x27;records&#x27; field is supposed to be an array of <strong>up to 10,000</strong> contacts. Each item in the array should be as below.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Data type</th>
+<th>Required?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>phone_number</td>
+<td><!-- markdownlint-disable-line -->Phone number starting with the country code with or without leading plus. e.g. <code v-pre>+16175551212</code> or <code v-pre>16175551212</code></td>
+<td>String</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>name</td>
+<td>Contact person name</td>
+<td>String</td>
+<td>No</td>
+</tr>
+<tr>
+<td>extra_fields</td>
+<td><!-- markdownlint-disable-line -->Key value pair object with additional custom fields (e.g. <code v-pre>{ &quot;email_address&quot;: &quot;john@example.com&quot;, &quot;id&quot;: 987123 }</code>)</td>
+<td>Object</td>
+<td>No</td>
 </tr>
 </tbody>
 </table>
@@ -360,11 +399,17 @@
     &quot;records&quot;: [
         {
             &quot;phone_number&quot;: &quot;16175551212&quot;,
-            &quot;name&quot;: &quot;John Johnson&quot;
+            &quot;name&quot;: &quot;John Johnson&quot;,
+            &quot;extra_fields&quot;: {
+                &quot;email_address&quot;: john@example.com
+            }
         },
         {
             &quot;phone_number&quot;: &quot;16175551111&quot;,
-            &quot;name&quot;: &quot;David Davidson&quot;
+            &quot;name&quot;: &quot;David Davidson&quot;,
+            &quot;extra_fields&quot;: {
+                &quot;email_address&quot;: david@example.com
+            }
         }
     ]
 }'</code></pre>
