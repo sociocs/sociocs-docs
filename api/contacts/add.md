@@ -3,7 +3,7 @@ title: Add contact
 order: -100
 ---
 
-Add a new contact. When a given phone number already exists, it updates existing contact.
+Add a new contact. When a given phone number already exists, it updates existing contact. If existing contact gets updated, all information gets overwritten, including all extra fields.
 
 ## Method
 
@@ -23,9 +23,10 @@ phone_number | {{include "api/phone-number-value"}} | Yes
 
 Name | Value | Data type | Required? {class="compact"}
 --- | ---
-list_id | 0 - to add to "All Contacts" or <br/> List ID - to add to a contact list (List ID is the value shown in the address bar when a list is selected on the Contacts page) | Integer | No (defaults to 0)
+list_id | {{include "api/contact-list-id-value"}} | Integer | No (defaults to 0)
 phone_number_cc | Phone number country dial code (e.g. "1") | String | No
 name | Contact person name | String | No
+extra_fields | {{include "api/contact-extra-fields-value"}} | Object | No
 
 ## Response
 
@@ -52,7 +53,10 @@ curl --location --request POST 'https://api.sociocs.com/contact/16175551212' \
 --data-raw '{
     "list_id": 0,
     "phone_number_cc": "1",
-    "name": "John Johnson"
+    "name": "John Johnson",
+    "extra_fields": {
+        "email_address": john@example.com
+    }
 }'
 ```
 

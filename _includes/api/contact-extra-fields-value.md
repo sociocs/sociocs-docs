@@ -1,0 +1,1 @@
+<!-- markdownlint-disable-line -->Key value pair object with additional custom fields (e.g. `{ "email_address": "john@example.com", "id": 987123 }`)

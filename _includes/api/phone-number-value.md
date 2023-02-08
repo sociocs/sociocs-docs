@@ -1,1 +1,1 @@
-<!-- markdownlint-disable-line -->Phone number starting with the country code with or without leading plus. e.g. +16175551212 or 16175551212
+<!-- markdownlint-disable-line -->Phone number starting with the country code with or without leading plus. e.g. `+16175551212` or `16175551212`

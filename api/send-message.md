@@ -3,7 +3,9 @@ title: Send message
 order: -300
 ---
 
-Send a message on Twilio SMS, Twilio WhatsApp or Gupshup WhatsApp channel. You can also send one or more images or a file.
+- Send a message on Twilio SMS, Twilio WhatsApp or Gupshup WhatsApp channel.
+- You can also send one or more images or a file.
+- Optionally, you can also save recipient in a contact list.
 
 ## Method
 
@@ -25,6 +27,17 @@ text | Message text | String | No (when image_url, image_urls or file_url is pre
 image_url | Publicly accessible image URL | String | No (when text, image_urls or file_url is present)
 image_urls | Array of publicly accessible image URLs | String | No (when text, image_url or file_url is present)
 file_url | Publicly accessible file URL | String | No (when text, image_url or image_urls is present)
+contact_saving | Object with instruction to save phone number and name as a contact after sending the message. See below | Object | No
+
+### contact_saving
+
+This field is for passing instruction to save phone number and name as a contact. If the contact already exists, it will be updated. Extra custom fields can also be passed.
+
+Name | Value | Data type | Required? {class="compact"}
+--- | ---
+save | `true` - Save phone number, name and extra fields as a contact, <br /> `false` - Skip saving as contact | Boolean | No (defaults to `false`)
+list_id | {{include "api/contact-list-id-value"}} | Integer | No (defaults to `0`)
+extra_fields | {{include "api/contact-extra-fields-value"}} | Object | No
 
 ## Response
 

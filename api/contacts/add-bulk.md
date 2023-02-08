@@ -3,7 +3,7 @@ title: Add contacts bulk
 order: -200
 ---
 
-Add new contacts in bulk. When a given phone number already exists, it updates existing contact.
+Add new contacts in bulk. When a given phone number already exists, it updates existing contact. If existing contact gets updated, all information gets overwritten, including all extra fields.
 
 ## Method
 
@@ -17,9 +17,19 @@ Add new contacts in bulk. When a given phone number already exists, it updates e
 
 Name | Value | Data type | Required? {class="compact"}
 --- | ---
-list_id | 0 - to add to "All Contacts" or <br/> List ID - to add to a contact list (List ID is the value shown in the address bar when a list is selected on the Contacts page) | Integer | No (defaults to 0)
+list_id | {{include "api/contact-list-id-value"}} | Integer | No (defaults to 0)
 phone_number_cc | Phone number country dial code (e.g. "1") | String | No
-records |  Array of up to 10,000 contacts `{ phone_number: [phone number starting with country code (required)], name: [contact name (optional)] }` | Array | Yes
+records | See below | Array | Yes
+
+### records
+
+The 'records' field is supposed to be an array of **up to 10,000** contacts. Each item in the array should be as below.
+
+Name | Value | Data type | Required? {class="compact"}
+--- | ---
+phone_number | {{include "api/phone-number-value"}} | String | Yes
+name | Contact person name | String | No
+extra_fields | {{include "api/contact-extra-fields-value"}} | Object | No
 
 ## Response
 
@@ -48,11 +58,17 @@ curl --location --request POST 'https://api.sociocs.com/contact/bulk' \
     "records": [
         {
             "phone_number": "16175551212",
-            "name": "John Johnson"
+            "name": "John Johnson",
+            "extra_fields": {
+                "email_address": john@example.com
+            }
         },
         {
             "phone_number": "16175551111",
-            "name": "David Davidson"
+            "name": "David Davidson",
+            "extra_fields": {
+                "email_address": david@example.com
+            }
         }
     ]
 }'

@@ -24,7 +24,8 @@ phone_number | {{include "api/phone-number-value"}} | Yes
 Name | Value | Data type | Required? {class="compact"}
 --- | ---
 phone_number_cc | Phone number country dial code (e.g. "1") | String | No
-name | Contact person name | String | Yes
+name | Contact person name | String | No
+extra_fields | {{include "api/contact-extra-fields-value"}} | Object | No
 
 ## Response
 
@@ -49,7 +50,10 @@ curl --location --request PUT 'https://api.sociocs.com/contact/16175551212' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "name": "John Davidson",
-    "phone_number_cc": "1"
+    "phone_number_cc": "1",
+    "extra_fields": {
+        "email_address": john@example.com
+    }
 }'
 ```
 
