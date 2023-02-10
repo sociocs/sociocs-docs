@@ -1,1 +1,1 @@
-<!-- markdownlint-disable-line -->`0` - to add to "All Contacts" or <br/> List ID - to add to a contact list (List ID is the value shown in the address bar when a list is selected on the Contacts page)
+<!-- markdownlint-disable-line -->`0` - to add to "All Contacts" or <br/> List ID - to add to a contact list (List ID is the value shown in the header bar when a list is selected on the Contacts page)
