@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.729335214306">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.732395462924">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -33,11 +33,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/images/sociocs-icon-32.png" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.729335214306" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.732395462924" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.729335214306" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.732395462924" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.729335214306" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.732395462924" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-33B2S1ZXGM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -221,7 +221,46 @@
         <span>Using the key in API calls</span>
     </h3>
 </doc-anchor-target>
+<p>There are multiple ways to send API key with the request.</p>
+<doc-anchor-target id="1-apikey-header-recommended">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-apikey-header-recommended">#</doc-anchor-trigger>
+        <span>1. &quot;apikey&quot; header <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+            <span>Recommended</span>
+        </span></span>
+    </h4>
+</doc-anchor-target>
 <p>Pass a request header <code v-pre>apikey</code> with your account&#x27;s API key as value.</p>
+<doc-anchor-target id="2-basic-authorization">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-basic-authorization">#</doc-anchor-trigger>
+        <span>2. Basic authorization</span>
+    </h4>
+</doc-anchor-target>
+<p>The generated API key has two parts with a <code v-pre>:</code> in between. You can use the value before <code v-pre>:</code> as <code v-pre>Username</code>, and value after as <code v-pre>Password</code>.</p>
+<p>For example, if your API key is <code v-pre>e047nbp2UnWuHD9m:Xqc37DHPGMyF0Z4hWX3Afn1Iyj6j7dPc</code>, you can use <code v-pre>e047nbp2UnWuHD9m</code> as <code v-pre>Username</code> and <code v-pre>Xqc37DHPGMyF0Z4hWX3Afn1Iyj6j7dPc</code> as <code v-pre>Password</code>.</p>
+<doc-anchor-target id="3-basic-authorization-in-the-url">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3-basic-authorization-in-the-url">#</doc-anchor-trigger>
+        <span>3. Basic authorization in the URL <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-yellow-900 bg-yellow-100 h-6 px-2 text-xs rounded-md">
+            <span>Not recommended</span>
+        </span></span>
+    </h4>
+</doc-anchor-target>
+<p><em>You should use this approach only when sending header with the request is not possible.</em></p>
+<p>You can use the API BASE URL in this format to send the key with the request <code v-pre>https://[your-api-key]@api.sociocs.com/...</code>.</p>
+<p>For example, if you are calling the <code v-pre>Send message</code> API, and your API key is <code v-pre>e047nbp2UnWuHD9m:Xqc37DHPGMyF0Z4hWX3Afn1Iyj6j7dPc</code>, you can use the API URL as <code v-pre>https://e047nbp2UnWuHD9m:Xqc37DHPGMyF0Z4hWX3Afn1Iyj6j7dPc@api.sociocs.com/message</code>.</p>
+<doc-anchor-target id="4-query-string">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#4-query-string">#</doc-anchor-trigger>
+        <span>4. Query string <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-red-600 bg-red-100 h-6 px-2 text-xs rounded-md">
+            <span>Insecure</span>
+        </span></span>
+    </h4>
+</doc-anchor-target>
+<p><em>This approach is considered insecure because the API key is part of the URL and can be logged by the interim systems.</em></p>
+<p>You can send the API key as query string parameter like this <code v-pre>https://api.sociocs.com/...?apikey=[your-api-key]</code>.</p>
+<p>For example, if you are calling the <code v-pre>Send message</code> API, and your API key is <code v-pre>e047nbp2UnWuHD9m:Xqc37DHPGMyF0Z4hWX3Afn1Iyj6j7dPc</code>, you can pass API key in the URL like this <code v-pre>https://api.sociocs.com/message?apikey=e047nbp2UnWuHD9m:Xqc37DHPGMyF0Z4hWX3Afn1Iyj6j7dPc</code>.</p>
 
                                 
                                 <!-- Required only on API pages -->
