@@ -17,6 +17,17 @@ There are multiple ways to send API key with the request.
 
 Pass a request header `apikey` with your account's API key as value.
 
+For example, if your API key is `e047nbp2UnWuHD9m:Xqc37DHPGMyF0Z4hWX3Afn1Iyj6j7dPc`, you can send the  `apikey` in the request headers like below. 
+
++++ cURL
+
+```shell
+curl --location --request POST 'https://api.sociocs.com' \
+--header 'apikey: e047nbp2UnWuHD9m:Xqc37DHPGMyF0Z4hWX3Afn1Iyj6j7dPc'
+```
+
++++
+
 #### 2. Basic authorization
 
 The generated API key has two parts with a `:` in between. You can use the value before `:` as `Username`, and value after as `Password`.
@@ -25,7 +36,7 @@ For example, if your API key is `e047nbp2UnWuHD9m:Xqc37DHPGMyF0Z4hWX3Afn1Iyj6j7d
 
 #### 3. Basic authorization in the URL [!badge variant="warning" text="Not recommended"]
 
-*You should use this approach only when sending header with the request is not possible.*
+*You should use this approach only when sending a header in the request is not possible.*
 
 You can use the API BASE URL in this format to send the key with the request `https://[your-api-key]@api.sociocs.com/...`.
 
