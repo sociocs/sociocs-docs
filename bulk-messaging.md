@@ -46,7 +46,7 @@ Your account needs to have at least one "*SMS (with Twilio)*" channel.
 
 Enter message content in this field. You can personalize the messages by adding [!badge text="dynamic fields" target="_blank"](/miscellaneous/dynamic-fields.md) from your data source.
 
-![Message example](https://github.com/sociocs/docs/assets/12301512/7681d3cd-8b50-43be-b970-1a6ef57d7ac5)
+![Message example](https://github.com/sociocs/docs/assets/12301512/6f3a05fb-c385-44df-8ec9-9c723cda9ac4)
 
 ### Save as template
 
@@ -132,6 +132,6 @@ You can schedule the campaign up to 30 days in advance.
 
 ---
 
-Once you click *Next*, you will be shown a confirmation popup with a sample preview of the messages that will be sent out. You will also be able to send a test messages to yourself before confirming the campaign.
+Once you click "*Next*", you will be shown a confirmation popup with a sample preview of the message. You will also be able to send a test message to yourself before confirming the campaign.
 
-In case you need to make any changes, you can click cancel in the confirmation popup to close it and make necessary changes.
+In case you need to make any changes, click "*Cancel*" in the confirmation popup to close it.

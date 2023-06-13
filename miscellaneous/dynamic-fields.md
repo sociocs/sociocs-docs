@@ -3,13 +3,13 @@ title: Dynamic fields
 order: -100
 ---
 
-Dynamic fields help personalize the messages by applying values from the matching fields in the data source for each row.
+Dynamic fields help personalize the messages by applying values from the matching fields in the data source for each record.
 
 For example, you can use the message text like below.
 
-![Message example](https://github.com/sociocs/docs/assets/12301512/7681d3cd-8b50-43be-b970-1a6ef57d7ac5)
+![Message example](https://github.com/sociocs/docs/assets/12301512/6f3a05fb-c385-44df-8ec9-9c723cda9ac4)
 
-When the above message is sent, *\{\{BUSINESS_NAME\}\}*, *\{\{CUSTOMER_NAME\}\}*, *\{\{appointment_date\}\}*, *\{\{appointment_time\}\}*, and *\{\{location\}\}* get replaced with appropriate values for each recipient.
+When the above message is sent, *\{\{BUSINESS_NAME\}\}*, *\{\{CUSTOMER_NAME\}\}*, *\{\{appointment_date\}\}*, *\{\{appointment_time\}\}*, and *\{\{location\}\}* get replaced with applicable values for each recipient.
 
 !!!
 Dynamic fields used in the message text are case sensitive. For example, *\{\{appointment_date\}\}* is not same as *\{\{Appointment_Date\}\}*.
@@ -40,7 +40,7 @@ You can use ***FirstName*** column header from the file as a dynamic field like 
 
 ### Contact list
 
-When sending bulk messages using a contact list, you can use the extra fields as the dynamic field within the message text.
+When sending bulk messages using a contact list, you can use the extra field as the dynamic field within the message text.
 
 For example, if you have a contact list like below,
 
@@ -50,7 +50,7 @@ You can use ***email_address*** extra field as a dynamic field like this `Hello 
 
 ## Advanced handling
 
-You can do more with the dynamic fields than just replacing the values from your data source. We have created a few helper functions which can help you get more out of the dynamic fields.
+You can do more with the dynamic fields than just replacing the values from your data source. We have created a few helper functions so that you get more out of the dynamic fields.
 
 ### Date formatting
 
