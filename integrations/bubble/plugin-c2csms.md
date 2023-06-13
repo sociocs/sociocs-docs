@@ -2,9 +2,6 @@
 label: Click to Chat by Text
 title: 'Bubble plugin :: Sociocs - Click to Chat by Text'
 order: -100
-data:
-  text: This is custom alert message defined in a variable.
-  title: Holy cow!
 ---
 
 ## Introduction

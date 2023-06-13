@@ -1,1 +1,1 @@
-retype watch
+retype start --verbose
