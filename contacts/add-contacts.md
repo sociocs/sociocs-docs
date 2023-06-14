@@ -41,13 +41,17 @@ Select a contact list you might have created or you can leave it as "*All contac
 
 ### File
 
-You can upload a CSV or an Excel file with any number of columns in any order. This gives you flexibility to directly upload a file exported from another system without a need of any data manipulation. Necessary data mapping are captured in the fields below.
+You can upload a CSV or an Excel file with any number of columns in any order.
+
+This gives you flexibility to directly upload a file exported from another system without a need of any data manipulation. Necessary data mapping are captured in the fields below.
 
 #### The file's first record doesn't have column headers
 
 When the file you're uploading doesn't have any column headers, you can specify the column headers in text box that shows up once you check this box.
 
+!!! info
 This is very helpful when you're exporting the file from another system which doesn't export with column headers. You can specify the column headers here instead of adding to the exported file.
+!!!
 
 Column headers must be provided separated by comma in the exact order as the file records. For example, if you upload a file like below, you could enter values in the text box like this - `id,full_name,first_name,last_name,phone_number,email_address,date_of_birth,address`.
 
@@ -81,9 +85,9 @@ If the file doesn't have column headers, and you checked "*The file's first reco
 
 ---
 
-- Once you click "*Next*", you will be shown a confirmation popup with sample records.
-- Click "*Confirm*" to upload the contacts.
-- In case you need to make any changes, click "*Back*" button, and make necessary changes.
+Once you click "*Next*", you will be shown a confirmation popup with sample records.
+
+Click "*Confirm*" to upload the contacts. In case you need to make any changes, click "*Back*" button, and make necessary changes.
 
 ## Add contacts using API
 

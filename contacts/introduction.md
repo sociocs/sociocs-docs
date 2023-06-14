@@ -5,7 +5,7 @@ order: -100
 
 {{include "alert-paid-account-required"}}
 
-You can use contact lists in the Contacts page to upload a contact once and use it in the bulk messaging or in the Zapier integration.
+You can use contact lists in the Contacts page to upload a contact once, and use it in the bulk messaging or in the Zapier integration.
 
 ## Useful with channels
 
