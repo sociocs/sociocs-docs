@@ -26,7 +26,7 @@ Below fields are prefilled, and you can always use them in your message text.
 
 ## Fields from your data source
 
-You can use column headers from your CSV/Excel or extra fields from your contact as dynamic field.
+You can use column headers from your CSV/Excel or extra fields from your contact as dynamic fields.
 
 ### CSV/Excel
 
@@ -36,7 +36,7 @@ For example, if you have a CSV or Excel like below,
 
 ![CSV or Excel example](https://github.com/sociocs/docs/assets/12301512/6da7662f-f82d-4c50-8ffb-677bcc507d1a)
 
-You can use ***FirstName*** column header from the file as a dynamic field like this `Hello {%{{{FirstName}}}%}. Nice to see you today...`
+You can use ***FirstName*** column header from the file as a dynamic field like this `Hello {%{{{FirstName}}}%}. Nice to see you today...`. When the message is sent to the first record in the file, it is sent as `Hello Charles. Nice to see you today...`.
 
 ### Contact list
 
@@ -46,24 +46,26 @@ For example, if you have a contact list like below,
 
 ![Contact list example](https://github.com/sociocs/docs/assets/12301512/ba6ef733-c1a0-4227-aad2-e34f4c8c29ca)
 
-You can use ***email_address*** extra field as a dynamic field like this `Hello {%{{{CUSTOMER_NAME}}}%}. We tried to get in touch with you on this email address {%{{{email_address}}}%} ...`
+You can use ***email_address*** extra field as a dynamic field like this `Hello {%{{{CUSTOMER_NAME}}}%}. We tried to get in touch with you on this email address {%{{{email_address}}}%} ...`. When the message is sent to the first record in the file, it is sent as `Hello Charles Clark. We tried to get in touch with you on this email address charles@example.com ...`.
 
 ## Advanced handling
 
-You can do more with the dynamic fields than just replacing the values from your data source. We have created a few helper functions so that you get more out of the dynamic fields.
+You can do more with the dynamic fields than just replacing the values from your data source. We have created a few helper functions which you can use along with the dynamic fields to get more out of the dynamic fields.
 
 ### Date formatting
 
-Helps convert the date into a different format of your choice.
+Convert the date into a different format of your choice.
 
 - Function name: `dateFormat`
-- Usage: `{%{{{#dateFormat "format string"}}}%}{%{{{your dynamic date field}}}%}{%{{{/dateFormat}}}%}`
+- Usage: `{%{{{#dateFormat "Format-string"}}}%}{%{{{your-dynamic-date-field}}}%}{%{{{/dateFormat}}}%}`
 
 #### Example
 
-"*appointment_date*" value in your data source might be "*2023-06-15*", but you would like to send it in the message as "*Thursday, June 31, 2023*". You can do so by using *dateFormat* like this `{%{{{#dateFormat "dddd, mmmm d, yyyy"}}}%}{%{{{appointment_date}}}%}{%{{{/dateFormat}}}%}`
+- "*appointment_date*" value in your data source is "*2023-06-15*",
+- You would like to add it in the message as "*Thursday, June 31, 2023*",
+- You can do so by using *dateFormat* like this `{%{{{#dateFormat "dddd, mmmm d, yyyy"}}}%}{%{{{appointment_date}}}%}{%{{{/dateFormat}}}%}`.
 
-#### Format string options
+#### Format-string options
 
  **Value** | **Description** { class="compact" }
 ---|---
@@ -100,3 +102,39 @@ Helps convert the date into a different format of your choice.
  W | ISO 8601 week number of the year, e.g. 4, 42
  WW | ISO 8601 week number of the year, leading zero for single-digit, e.g. 04, 42
  Z | US timezone abbreviation, e.g. EST or MDT. For non-US timezones, the GMT/UTC offset is returned, e.g. GMT-0500
+
+### Content based on condition
+
+Add content based on specified condition.
+
+- Function name: `ifeq`
+- Usage: `{%{{{#ifeq "value-to-compare" dynamic-field}}}%}content{%{{{else ifeq "different-value-to-compare" dynamic-field}}}%}different-content{%{{{else}}}%}another-content{%{{{/ifeq}}}%}`
+
+!!! info
+You can repeat the `{%{{{else ifeq "different-value-to-compare" dynamic-field}}}%}` as many times as you like to cover more conditions.
+!!!
+
+#### Example 1
+
+- "*location_code*" value in your data source can be "*LOC1*", or "*LOC2*",
+- You would like to add the content for "*LOC1*" as "*Deer Park Location*", and for "*LOC2*" as "*Dix Hills Location*",
+- You can do so by using *ifeq* like this `{%{{{#ifeq "LOC1" location_code}}}%}Deer Park Location{%{{{else}}}%}Dix Hills Location{%{{{/ifeq}}}%}`.
+
+#### Example 2
+
+- "*location_code*" value in your data source can be "*LOC1*", "*LOC2*", or "*LOC3*",
+- You would like to add the content for "*LOC1*" as "*Deer Park Location*", for "*LOC2*" as "*Dix Hills Location*", and for "*LOC3*" as "*Brentwood Location*",
+- You can do so by using *ifeq* like this `{%{{{#ifeq "LOC1" location_code}}}%}Deer Park Location{%{{{else ifeq "LOC2" location_code}}}%}Dix Hills Location{%{{{else}}}%}Brentwood Location{%{{{/ifeq}}}%}`.
+
+### Same conditional content for multiple values
+
+There are times when you would like to add same content for multiple values of the dynamic field. You can either repeat "*ifeq*" and "*else ifeq*" as mentioned above, or use a different function available just for that purpose.
+
+- Function name: `contains` used with `arr`
+- Usage: `{%{{{#contains (arr "value1-to-compare" "value2-to-compare" "value3-to-compare" ...) dynamic-field}}}%}content{%{{{else}}}%}different-content{%{{{/contains}}}%}`
+
+#### Example 1
+
+- "*location_code*" value in your data source can be "*LOC1*", "*LOC2*" or "*LOC3*",
+- You would like to add the content for "*LOC1*" & "*LOC2*" as "*Deer Park Location*", and for "*LOC3*" as "*Dix Hills Location*",
+- You can do so by using *contains* like this `{%{{{#contains (arr "LOC1" "LOC2") location_code}}}%}Deer Park Location{%{{{else}}}%}Dix Hills Location{%{{{/contains}}}%}`.
