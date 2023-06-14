@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.740006552730">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.740061193853">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.0.3">
@@ -35,11 +35,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/images/sociocs-icon-32.png" rel="icon" />
-    <link href="../../resources/css/retype.css?v=3.0.3.740006552730" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=3.0.3.740061193853" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.3.740006552730" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.3.740061193853" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.3.740006552730" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.3.740061193853" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-33B2S1ZXGM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -253,7 +253,7 @@
         <span>Fields from your data source</span>
     </h2>
 </doc-anchor-target>
-<p>You can use column headers from your CSV/Excel or extra fields from your contact as dynamic field.</p>
+<p>You can use column headers from your CSV/Excel or extra fields from your contact as dynamic fields.</p>
 <doc-anchor-target id="csvexcel">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#csvexcel">#</doc-anchor-trigger>
@@ -267,7 +267,7 @@
     <figcaption class="caption">CSV or Excel example</figcaption>
 </figure>
 </p>
-<p>You can use <em><strong>FirstName</strong></em> column header from the file as a dynamic field like this <code v-pre>Hello {{FirstName}}. Nice to see you today...</code></p>
+<p>You can use <em><strong>FirstName</strong></em> column header from the file as a dynamic field like this <code v-pre>Hello {{FirstName}}. Nice to see you today...</code>. When the message is sent to the first record in the file, it is sent as <code v-pre>Hello Charles. Nice to see you today...</code>.</p>
 <doc-anchor-target id="contact-list">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#contact-list">#</doc-anchor-trigger>
@@ -281,24 +281,24 @@
     <figcaption class="caption">Contact list example</figcaption>
 </figure>
 </p>
-<p>You can use <em><strong>email_address</strong></em> extra field as a dynamic field like this <code v-pre>Hello {{CUSTOMER_NAME}}. We tried to get in touch with you on this email address {{email_address}} ...</code></p>
+<p>You can use <em><strong>email_address</strong></em> extra field as a dynamic field like this <code v-pre>Hello {{CUSTOMER_NAME}}. We tried to get in touch with you on this email address {{email_address}} ...</code>. When the message is sent to the first record in the file, it is sent as <code v-pre>Hello Charles Clark. We tried to get in touch with you on this email address charles@example.com ...</code>.</p>
 <doc-anchor-target id="advanced-handling">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#advanced-handling">#</doc-anchor-trigger>
         <span>Advanced handling</span>
     </h2>
 </doc-anchor-target>
-<p>You can do more with the dynamic fields than just replacing the values from your data source. We have created a few helper functions so that you get more out of the dynamic fields.</p>
+<p>You can do more with the dynamic fields than just replacing the values from your data source. We have created a few helper functions which you can use along with the dynamic fields to get more out of the dynamic fields.</p>
 <doc-anchor-target id="date-formatting">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#date-formatting">#</doc-anchor-trigger>
         <span>Date formatting</span>
     </h3>
 </doc-anchor-target>
-<p>Helps convert the date into a different format of your choice.</p>
+<p>Convert the date into a different format of your choice.</p>
 <ul>
 <li>Function name: <code v-pre>dateFormat</code></li>
-<li>Usage: <code v-pre>{{#dateFormat &quot;format string&quot;}}{{your dynamic date field}}{{/dateFormat}}</code></li>
+<li>Usage: <code v-pre>{{#dateFormat &quot;Format-string&quot;}}{{your-dynamic-date-field}}{{/dateFormat}}</code></li>
 </ul>
 <doc-anchor-target id="example">
     <h4>
@@ -306,11 +306,15 @@
         <span>Example</span>
     </h4>
 </doc-anchor-target>
-<p>&quot;<em>appointment_date</em>&quot; value in your data source might be &quot;<em>2023-06-15</em>&quot;, but you would like to send it in the message as &quot;<em>Thursday, June 31, 2023</em>&quot;. You can do so by using <em>dateFormat</em> like this <code v-pre>{{#dateFormat &quot;dddd, mmmm d, yyyy&quot;}}{{appointment_date}}{{/dateFormat}}</code></p>
+<ul>
+<li>&quot;<em>appointment_date</em>&quot; value in your data source is &quot;<em>2023-06-15</em>&quot;,</li>
+<li>You would like to add it in the message as &quot;<em>Thursday, June 31, 2023</em>&quot;,</li>
+<li>You can do so by using <em>dateFormat</em> like this <code v-pre>{{#dateFormat &quot;dddd, mmmm d, yyyy&quot;}}{{appointment_date}}{{/dateFormat}}</code>.</li>
+</ul>
 <doc-anchor-target id="format-string-options">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#format-string-options">#</doc-anchor-trigger>
-        <span>Format string options</span>
+        <span>Format-string options</span>
     </h4>
 </doc-anchor-target>
 <div class="table-wrapper scrollbar overflow-hidden">
@@ -457,6 +461,78 @@
 </tbody>
 </table>
 </div>
+<doc-anchor-target id="content-based-on-condition">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#content-based-on-condition">#</doc-anchor-trigger>
+        <span>Content based on condition</span>
+    </h3>
+</doc-anchor-target>
+<p>Add content based on specified condition.</p>
+<ul>
+<li>Function name: <code v-pre>ifeq</code></li>
+<li>Usage: <code v-pre>{{#ifeq &quot;value-to-compare&quot; dynamic-field}}content{{else ifeq &quot;different-value-to-compare&quot; dynamic-field}}different-content{{else}}another-content{{/ifeq}}</code></li>
+</ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>You can repeat the <code v-pre>{{else ifeq &quot;different-value-to-compare&quot; dynamic-field}}</code> as many times as you like to cover more conditions.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="example-1">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#example-1">#</doc-anchor-trigger>
+        <span>Example 1</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li>&quot;<em>location_code</em>&quot; value in your data source can be &quot;<em>LOC1</em>&quot;, or &quot;<em>LOC2</em>&quot;,</li>
+<li>You would like to add the content for &quot;<em>LOC1</em>&quot; as &quot;<em>Deer Park Location</em>&quot;, and for &quot;<em>LOC2</em>&quot; as &quot;<em>Dix Hills Location</em>&quot;,</li>
+<li>You can do so by using <em>ifeq</em> like this <code v-pre>{{#ifeq &quot;LOC1&quot; location_code}}Deer Park Location{{else}}Dix Hills Location{{/ifeq}}</code>.</li>
+</ul>
+<doc-anchor-target id="example-2">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#example-2">#</doc-anchor-trigger>
+        <span>Example 2</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li>&quot;<em>location_code</em>&quot; value in your data source can be &quot;<em>LOC1</em>&quot;, &quot;<em>LOC2</em>&quot;, or &quot;<em>LOC3</em>&quot;,</li>
+<li>You would like to add the content for &quot;<em>LOC1</em>&quot; as &quot;<em>Deer Park Location</em>&quot;, for &quot;<em>LOC2</em>&quot; as &quot;<em>Dix Hills Location</em>&quot;, and for &quot;<em>LOC3</em>&quot; as &quot;<em>Brentwood Location</em>&quot;,</li>
+<li>You can do so by using <em>ifeq</em> like this <code v-pre>{{#ifeq &quot;LOC1&quot; location_code}}Deer Park Location{{else ifeq &quot;LOC2&quot; location_code}}Dix Hills Location{{else}}Brentwood Location{{/ifeq}}</code>.</li>
+</ul>
+<doc-anchor-target id="same-conditional-content-for-multiple-values">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#same-conditional-content-for-multiple-values">#</doc-anchor-trigger>
+        <span>Same conditional content for multiple values</span>
+    </h3>
+</doc-anchor-target>
+<p>There are times when you would like to add same content for multiple values of the dynamic field. You can either repeat &quot;<em>ifeq</em>&quot; and &quot;<em>else ifeq</em>&quot; as mentioned above, or use a different function available just for that purpose.</p>
+<ul>
+<li>Function name: <code v-pre>contains</code> used with <code v-pre>arr</code></li>
+<li>Usage: <code v-pre>{{#contains (arr &quot;value1-to-compare&quot; &quot;value2-to-compare&quot; &quot;value3-to-compare&quot; ...) dynamic-field}}content{{else}}different-content{{/contains}}</code></li>
+</ul>
+<doc-anchor-target id="example-1-1">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#example-1-1">#</doc-anchor-trigger>
+        <span>Example 1</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li>&quot;<em>location_code</em>&quot; value in your data source can be &quot;<em>LOC1</em>&quot;, &quot;<em>LOC2</em>&quot; or &quot;<em>LOC3</em>&quot;,</li>
+<li>You would like to add the content for &quot;<em>LOC1</em>&quot; &amp; &quot;<em>LOC2</em>&quot; as &quot;<em>Deer Park Location</em>&quot;, and for &quot;<em>LOC3</em>&quot; as &quot;<em>Dix Hills Location</em>&quot;,</li>
+<li>You can do so by using <em>contains</em> like this <code v-pre>{{#contains (arr &quot;LOC1&quot; &quot;LOC2&quot;) location_code}}Deer Park Location{{else}}Dix Hills Location{{/contains}}</code>.</li>
+</ul>
 
                                 
                                 <!-- Required only on API pages -->

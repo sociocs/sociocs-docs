@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.740006552730">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.740061193853">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.0.3">
@@ -35,11 +35,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/images/sociocs-icon-32.png" rel="icon" />
-    <link href="../../resources/css/retype.css?v=3.0.3.740006552730" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=3.0.3.740061193853" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.3.740006552730" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.3.740061193853" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.3.740006552730" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.3.740061193853" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-33B2S1ZXGM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -271,7 +271,8 @@
         <span>File</span>
     </h3>
 </doc-anchor-target>
-<p>You can upload a CSV or an Excel file with any number of columns in any order. This gives you flexibility to directly upload a file exported from another system without a need of any data manipulation. Necessary data mapping are captured in the fields below.</p>
+<p>You can upload a CSV or an Excel file with any number of columns in any order.</p>
+<p>This gives you flexibility to directly upload a file exported from another system without a need of any data manipulation. Necessary data mapping are captured in the fields below.</p>
 <doc-anchor-target id="the-files-first-record-doesnt-have-column-headers">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#the-files-first-record-doesnt-have-column-headers">#</doc-anchor-trigger>
@@ -279,7 +280,23 @@
     </h4>
 </doc-anchor-target>
 <p>When the file you&#x27;re uploading doesn&#x27;t have any column headers, you can specify the column headers in text box that shows up once you check this box.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
 <p>This is very helpful when you&#x27;re exporting the file from another system which doesn&#x27;t export with column headers. You can specify the column headers here instead of adding to the exported file.</p>
+        </div>
+    </div>
+</div>
 <p>Column headers must be provided separated by comma in the exact order as the file records. For example, if you upload a file like below, you could enter values in the text box like this - <code v-pre>id,full_name,first_name,last_name,phone_number,email_address,date_of_birth,address</code>.</p>
 <p><figure class="content-center">
     <img src="https://github.com/sociocs/docs/assets/12301512/6ceaa641-9048-40ed-9ca6-68477a6d35be" alt="File example without column headers" />
@@ -329,11 +346,8 @@
 </p>
 <p>If the file doesn&#x27;t have column headers, and you checked &quot;<em>The file&#x27;s first record doesn&#x27;t have column headers</em>&quot;, provide the value you entered as the column header for the phone number column.</p>
 <hr />
-<ul>
-<li>Once you click &quot;<em>Next</em>&quot;, you will be shown a confirmation popup with sample records.</li>
-<li>Click &quot;<em>Confirm</em>&quot; to upload the contacts.</li>
-<li>In case you need to make any changes, click &quot;<em>Back</em>&quot; button, and make necessary changes.</li>
-</ul>
+<p>Once you click &quot;<em>Next</em>&quot;, you will be shown a confirmation popup with sample records.</p>
+<p>Click &quot;<em>Confirm</em>&quot; to upload the contacts. In case you need to make any changes, click &quot;<em>Back</em>&quot; button, and make necessary changes.</p>
 <doc-anchor-target id="add-contacts-using-api">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#add-contacts-using-api">#</doc-anchor-trigger>
