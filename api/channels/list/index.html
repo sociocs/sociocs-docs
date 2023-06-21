@@ -11,35 +11,34 @@
     <meta name="generator" content="Retype 3.0.3">
 
     <!-- Primary Meta Tags -->
-    <title>Notifications</title>
-    <meta name="title" content="Notifications">
-    <meta name="description" content="We send notifications when new messages arrive in your inbox. You can enable or disable these notifications. " />
+    <title>Get channels</title>
+    <meta name="title" content="Get channels">
+    <meta name="description" content="Gets the list of channels for the given provider." />
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.sociocs.com/settings/notifications/" />
+    <link rel="canonical" href="https://docs.sociocs.com/api/channels/list/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.sociocs.com/settings/notifications/">
-    <meta property="og:title" content="Notifications">
-    <meta property="og:description" content="We send notifications when new messages arrive in your inbox. You can enable or disable these notifications. ">
-    <meta property="og:image" content="https://docs.sociocs.com/static/images/push-notifications-popup.png">
+    <meta property="og:url" content="https://docs.sociocs.com/api/channels/list/">
+    <meta property="og:title" content="Get channels">
+    <meta property="og:description" content="Gets the list of channels for the given provider.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.sociocs.com/settings/notifications/">
-    <meta property="twitter:title" content="Notifications">
-    <meta property="twitter:description" content="We send notifications when new messages arrive in your inbox. You can enable or disable these notifications. ">
-    <meta property="twitter:image" content="https://docs.sociocs.com/static/images/push-notifications-popup.png">
+    <meta property="twitter:url" content="https://docs.sociocs.com/api/channels/list/">
+    <meta property="twitter:title" content="Get channels">
+    <meta property="twitter:description" content="Gets the list of channels for the given provider.">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../static/images/sociocs-icon-32.png" rel="icon" />
-    <link href="../../resources/css/retype.css?v=3.0.3.740650522154" rel="stylesheet" />
+    <link href="../../../static/images/sociocs-icon-32.png" rel="icon" />
+    <link href="../../../resources/css/retype.css?v=3.0.3.740650522154" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.3.740650522154" data-turbo-eval="false" defer></script>
-    <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.3.740650522154" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=3.0.3.740650522154" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/retype.js?v=3.0.3" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=3.0.3.740650522154" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../../resources/js/prism.js?v=3.0.3.740650522154" defer></script>
 </head>
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-33B2S1ZXGM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -56,7 +55,7 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-2xl">
+                        <a id="docs-site-logo" href="../../../" class="flex items-center leading-snug text-2xl">
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Sociocs</span>
                         </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
                     </div>
@@ -203,215 +202,152 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="notifications" class="break-words">
+<doc-anchor-target id="get-channels" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#notifications">#</doc-anchor-trigger>
-        <span>Notifications</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#get-channels">#</doc-anchor-trigger>
+        <span>Get channels</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="push-notifications">
+<p>Gets the list of channels for the given provider.</p>
+<doc-anchor-target id="method">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#push-notifications">#</doc-anchor-trigger>
-        <span>Push notifications</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#method">#</doc-anchor-trigger>
+        <span>Method</span>
     </h2>
 </doc-anchor-target>
-<p>We send notifications when new messages arrive in your inbox. You can enable or disable these notifications. <strong>We recommend that you keep them on so that you can reply to your customers quickly.</strong></p>
-<doc-anchor-target id="web-app">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#web-app">#</doc-anchor-trigger>
-        <span>Web app</span>
-    </h3>
+<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>GET</span>
+</span></p>
+<doc-anchor-target id="path">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#path">#</doc-anchor-trigger>
+        <span>Path</span>
+    </h2>
 </doc-anchor-target>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-yellow-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
-                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>Enabling or disabling notifications takes effect only on the browser you are using. To change notifications setting for a different browser, log in to Sociocs on that browser, and follow the same steps.</p>
-        </div>
-    </div>
+<p><code v-pre>/channels</code></p>
+<doc-anchor-target id="query-string-parameter">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#query-string-parameter">#</doc-anchor-trigger>
+        <span>Query string parameter</span>
+    </h2>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Required?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>provider</td>
+<td><code v-pre>twlo</code> (for Twilio SMS), <br /><code v-pre>twlowa</code> (for Twilio WhatsApp), <br /><code v-pre>gswa</code> (for Gupshup WhatsApp)</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
 </div>
-<doc-anchor-target id="enable-notifications">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#enable-notifications">#</doc-anchor-trigger>
-        <span>Enable notifications</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="first-time-user">
-    <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#first-time-user">#</doc-anchor-trigger>
-        <span>First time user</span>
-    </h5>
-</doc-anchor-target>
-<p>When you go to the inbox for the first time, you will receive a confirmation popup to enable notifications for the browser you are using.</p>
-<p><figure class="content-center">
-    <img src="../../static/images/push-notifications-popup.png" alt="Notifications popup" title="Notifications popup" />
-    <figcaption class="caption">Notifications popup</figcaption>
-</figure>
-</p>
-<ol>
-<li>Click <em>Allow</em> on the confirmation popup.</li>
-<li>You may receive another confirmation popup (from your browser this time) to give notifications access to Sociocs. Click <em>Allow</em>.</li>
-</ol>
-<doc-anchor-target id="returning-user">
-    <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#returning-user">#</doc-anchor-trigger>
-        <span>Returning user</span>
-    </h5>
-</doc-anchor-target>
-<ul>
-<li>Click on the dropdown menu on top right.</li>
-<li>Select <em>Notifications</em> on the left side.</li>
-<li>Toggle <em>Receive notifications on this browser</em> switch to on.</li>
-</ul>
-<doc-anchor-target id="disable-notifications">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#disable-notifications">#</doc-anchor-trigger>
-        <span>Disable notifications</span>
-    </h4>
-</doc-anchor-target>
-<p><strong>We do not recommend disabling notifications.</strong></p>
-<doc-anchor-target id="first-time-user-1">
-    <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#first-time-user-1">#</doc-anchor-trigger>
-        <span>First time user</span>
-    </h5>
-</doc-anchor-target>
-<p>Click <em>No Thanks</em> on the confirmation popup.</p>
-<doc-anchor-target id="returning-user-1">
-    <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#returning-user-1">#</doc-anchor-trigger>
-        <span>Returning user</span>
-    </h5>
-</doc-anchor-target>
-<ul>
-<li>Click on the dropdown menu on top right.</li>
-<li>Select <em>Notifications</em> on the left side.</li>
-<li>Toggle <em>Receive notifications on this browser</em> switch to off.</li>
-</ul>
-<doc-anchor-target id="android-app">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#android-app">#</doc-anchor-trigger>
-        <span>Android app</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="enable-notifications-1">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#enable-notifications-1">#</doc-anchor-trigger>
-        <span>Enable notifications</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="first-time-user-2">
-    <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#first-time-user-2">#</doc-anchor-trigger>
-        <span>First time user</span>
-    </h5>
-</doc-anchor-target>
-<p>Notifications are automatically enabled on the Android app.</p>
-<doc-anchor-target id="returning-user-2">
-    <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#returning-user-2">#</doc-anchor-trigger>
-        <span>Returning user</span>
-    </h5>
-</doc-anchor-target>
-<p>Go to your device&#x27;s notifications setting, and turn notifications on for Sociocs.</p>
-<doc-anchor-target id="disable-notifications-1">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#disable-notifications-1">#</doc-anchor-trigger>
-        <span>Disable notifications</span>
-    </h4>
-</doc-anchor-target>
-<p>Go to your device&#x27;s notifications setting, and turn notifications off for Sociocs.</p>
-<doc-anchor-target id="ios-app">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#ios-app">#</doc-anchor-trigger>
-        <span>iOS app</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="enable-notifications-2">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#enable-notifications-2">#</doc-anchor-trigger>
-        <span>Enable notifications</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="first-time-user-3">
-    <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#first-time-user-3">#</doc-anchor-trigger>
-        <span>First time user</span>
-    </h5>
-</doc-anchor-target>
-<p>After you log in to the app, you will receive a confirmation popup to allow notifications from Sociocs. Tap on <em>Allow</em>.</p>
-<doc-anchor-target id="returning-user-3">
-    <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#returning-user-3">#</doc-anchor-trigger>
-        <span>Returning user</span>
-    </h5>
-</doc-anchor-target>
-<p>Go to your device&#x27;s notifications setting, and turn notifications off for Sociocs.</p>
-<doc-anchor-target id="disable-notifications-2">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#disable-notifications-2">#</doc-anchor-trigger>
-        <span>Disable notifications</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="first-time-user-4">
-    <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#first-time-user-4">#</doc-anchor-trigger>
-        <span>First time user</span>
-    </h5>
-</doc-anchor-target>
-<p>Tap <em>Don&#x27;t Allow</em> on the notifications confirmation popup.</p>
-<doc-anchor-target id="returning-user-4">
-    <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#returning-user-4">#</doc-anchor-trigger>
-        <span>Returning user</span>
-    </h5>
-</doc-anchor-target>
-<p>Go to your device&#x27;s notifications setting, and turn notifications off for Sociocs.</p>
-<doc-anchor-target id="daily-performance-updates">
+<doc-anchor-target id="response">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#daily-performance-updates">#</doc-anchor-trigger>
-        <span>Daily performance updates</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#response">#</doc-anchor-trigger>
+        <span>Response</span>
     </h2>
 </doc-anchor-target>
-<p>We send a performance update email everyday to users having &quot;Owner&quot; or &quot;Admin&quot; role. This email contains a summary of previous day&#x27;s conversations.</p>
-<p><strong>This email is turned on by default.</strong></p>
-<doc-anchor-target id="how-to-disable-or-re-enable-daily-performance-updates">
+<doc-anchor-target id="http-status-codes">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-disable-or-re-enable-daily-performance-updates">#</doc-anchor-trigger>
-        <span>How to disable or re-enable daily performance updates?</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#http-status-codes">#</doc-anchor-trigger>
+        <span>HTTP status codes</span>
     </h3>
 </doc-anchor-target>
-<doc-anchor-target id="web-app-1">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#web-app-1">#</doc-anchor-trigger>
-        <span>Web app</span>
-    </h4>
+<!-- markdownlint-disable-next-line -->
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Code</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Request was successful.</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Validation error or request body was incorrectly formatted.</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Authentication failed. Check <code v-pre>apikey</code> header.</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Requested API endpoint not found.</td>
+</tr>
+<tr>
+<td>429</td>
+<td>The rate limit has been reached.</td>
+</tr>
+<tr>
+<td>500-511</td>
+<td>There was a problem processing the request on our server. Try again later.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="response-object">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#response-object">#</doc-anchor-trigger>
+        <span>Response object</span>
+    </h3>
 </doc-anchor-target>
-<ul>
-<li>Click on the dropdown menu on top right.</li>
-<li>Select <em>Notifications</em> on the left side.</li>
-<li>Toggle <em>Daily performance updates</em> switch to off or on.</li>
-</ul>
-<doc-anchor-target id="mobile-app">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#mobile-app">#</doc-anchor-trigger>
-        <span>Mobile app</span>
-    </h4>
+<p>Array of object</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>Channel ID</td>
+<td>-</td>
+</tr>
+<tr>
+<td>channel_key</td>
+<td>Channel key</td>
+<td>This is the same as the id field.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>Channel name</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="code-sample">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#code-sample">#</doc-anchor-trigger>
+        <span>Code sample</span>
+    </h2>
 </doc-anchor-target>
-<ul>
-<li>Open drawer menu on top left.</li>
-<li>Tap on <em>Profile &amp; settings</em>.</li>
-<li>Select <em>Notifications</em> in the list.</li>
-<li>Toggle <em>Daily performance updates</em> switch to off or on.</li>
-</ul>
+<doc-tabs>
+<doc-tab id="curl">
+<template #title>cURL</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">curl --location --request GET 'https://api.sociocs.com/channels?provider=twlo' \
+--header 'apikey: [your api key]'</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
 
                                 
                                 <!-- Required only on API pages -->
@@ -421,20 +357,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../settings/preferences/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../api/auhentication/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Preferences</span>
+                                                <span class="block mt-1">Authentication</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../integrations/bubble/plugin-c2csms/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../api/channels/get/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Click to Chat by Text</span>
+                                                <span class="block mt-1">Get channel</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -478,6 +414,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Notifications", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Get channels", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
