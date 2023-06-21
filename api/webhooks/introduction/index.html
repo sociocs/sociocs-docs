@@ -11,35 +11,33 @@
     <meta name="generator" content="Retype 3.0.3">
 
     <!-- Primary Meta Tags -->
-    <title>Contact lists</title>
-    <meta name="title" content="Contact lists">
-    <meta name="description" content="Your account already comes with a default contact list named \" All contacts\"." />
+    <title>Introduction</title>
+    <meta name="title" content="Introduction">
+    <meta name="description" content="Webhooks are the REST APIs you created yourself or offered by a third-party software, which get called when a message is received in a Sociocs..." />
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.sociocs.com/contacts/contact-lists/" />
+    <link rel="canonical" href="https://docs.sociocs.com/api/webhooks/introduction/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.sociocs.com/contacts/contact-lists/">
-    <meta property="og:title" content="Contact lists">
-    <meta property="og:description" content="Your account already comes with a default contact list named \" All contacts\".">
-    <meta property="og:image" content="https://static.sociocs.com/icons-docs/pencil.svg">
+    <meta property="og:url" content="https://docs.sociocs.com/api/webhooks/introduction/">
+    <meta property="og:title" content="Introduction">
+    <meta property="og:description" content="Webhooks are the REST APIs you created yourself or offered by a third-party software, which get called when a message is received in a Sociocs...">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.sociocs.com/contacts/contact-lists/">
-    <meta property="twitter:title" content="Contact lists">
-    <meta property="twitter:description" content="Your account already comes with a default contact list named \" All contacts\".">
-    <meta property="twitter:image" content="https://static.sociocs.com/icons-docs/pencil.svg">
+    <meta property="twitter:url" content="https://docs.sociocs.com/api/webhooks/introduction/">
+    <meta property="twitter:title" content="Introduction">
+    <meta property="twitter:description" content="Webhooks are the REST APIs you created yourself or offered by a third-party software, which get called when a message is received in a Sociocs...">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../static/images/sociocs-icon-32.png" rel="icon" />
-    <link href="../../resources/css/retype.css?v=3.0.3.740685397134" rel="stylesheet" />
+    <link href="../../../static/images/sociocs-icon-32.png" rel="icon" />
+    <link href="../../../resources/css/retype.css?v=3.0.3.740685397134" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.3.740685397134" data-turbo-eval="false" defer></script>
-    <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.3.740685397134" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=3.0.3.740685397134" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/retype.js?v=3.0.3" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=3.0.3.740685397134" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-33B2S1ZXGM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -56,7 +54,7 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-2xl">
+                        <a id="docs-site-logo" href="../../../" class="flex items-center leading-snug text-2xl">
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Sociocs</span>
                         </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
                     </div>
@@ -203,98 +201,49 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="contact-lists" class="break-words">
+<doc-anchor-target id="introduction" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#contact-lists">#</doc-anchor-trigger>
-        <span>Contact lists</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#introduction">#</doc-anchor-trigger>
+        <span>Introduction</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="all-contacts-list">
+<p>Webhooks are the REST APIs you created yourself or offered by a third-party software, which get called when a message is received in a Sociocs channel.</p>
+<p>URL of the REST API is referred to as webhook endpoint. You can set multiple webhooks endpoints for the same channel, or the same webhook endpoint for multiple channels.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>As of now, Sociocs calls webhook only for &quot;incoming&quot; messages, that is, for the messages received from someone on your channel.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="channels-supporting-webhooks">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#all-contacts-list">#</doc-anchor-trigger>
-        <span>&quot;All contacts&quot; list</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#channels-supporting-webhooks">#</doc-anchor-trigger>
+        <span>Channels supporting webhooks</span>
     </h2>
 </doc-anchor-target>
-<p>Your account already comes with a default contact list named &quot;<em>All contacts</em>&quot;. You can create additional contact lists to group different contacts as per your needs.</p>
-<p>&quot;<em>All contacts</em>&quot; is a special list which has all the contacts directly added to this list, as well as contacts added to any other list.</p>
-<doc-anchor-target id="create-a-contact-list">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#create-a-contact-list">#</doc-anchor-trigger>
-        <span>Create a contact list</span>
-    </h2>
-</doc-anchor-target>
-<!-- markdownlint-disable-next-line -->
 <ul>
-<li><p>Go to &quot;<em>Contacts</em>&quot; from the left sidebar.</p>
-</li>
-<li><p>Click on &quot;<em>Create a new list</em>&quot;.</p>
-</li>
-<li><p>Enter &quot;<em>List name</em>&quot;, and click &quot;<em>Submit</em>&quot;.</p>
-</li>
+<li>SMS (with Twilio)</li>
+<li>WhatsApp (with Gupshup)</li>
+<li>WhatsApp (with Twilio)</li>
 </ul>
-<doc-anchor-target id="rename-a-contact-list">
+<doc-anchor-target id="how-to-set-it-up">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#rename-a-contact-list">#</doc-anchor-trigger>
-        <span>Rename a contact list</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-set-it-up">#</doc-anchor-trigger>
+        <span>How to set it up?</span>
     </h2>
 </doc-anchor-target>
-<!-- markdownlint-disable-next-line -->
-<ul>
-<li><p>Go to &quot;<em>Contacts</em>&quot; from the left sidebar.</p>
-</li>
-<li><p>Click on the contact list you would like to rename.</p>
-</li>
-<li><p>Click on the <img src="https://static.sociocs.com/icons-docs/pencil.svg" alt="edit" /> button on the top right.</p>
-</li>
-<li><p>Enter a new &quot;<em>List name</em>&quot;, and click &quot;<em>Submit</em>&quot;.</p>
-</li>
-</ul>
-<doc-anchor-target id="delete-a-contact-list">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#delete-a-contact-list">#</doc-anchor-trigger>
-        <span>Delete a contact list</span>
-    </h2>
-</doc-anchor-target>
-<!-- markdownlint-disable-next-line -->
-<ul>
-<li><p>Go to &quot;<em>Contacts</em>&quot; from the left sidebar.</p>
-</li>
-<li><p>Click on the contact list you would like to delete.</p>
-</li>
-<li><p>Click on the <img src="https://static.sociocs.com/icons-docs/trash-can.svg" alt="delete" /> button on the top right.</p>
-</li>
-<li><p>Click &quot;<em>Confirm</em>&quot;.</p>
-</li>
-</ul>
-<doc-anchor-target id="delete-caveats">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#delete-caveats">#</doc-anchor-trigger>
-        <span>Delete caveats</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="when-deleting-all-contacts-list">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#when-deleting-all-contacts-list">#</doc-anchor-trigger>
-        <span>When deleting &quot;All contacts&quot; list</span>
-    </h4>
-</doc-anchor-target>
-<p>It doesn&#x27;t delete the &quot;<em>All contacts</em>&quot; list itself. It actually deletes all the contacts within the list. If a contact also belongs to any other list, it gets deleted from that other list as well.</p>
-<doc-anchor-target id="when-deleting-a-list-you-created">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#when-deleting-a-list-you-created">#</doc-anchor-trigger>
-        <span>When deleting a list you created</span>
-    </h4>
-</doc-anchor-target>
-<p>It deletes the contact list along with all the contacts within the list. If a contact also belongs to any other list, it still stays in that list as well as in the&quot;<em>All contacts</em>&quot; list.</p>
-<doc-anchor-target id="adding-contacts-to-a-list">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#adding-contacts-to-a-list">#</doc-anchor-trigger>
-        <span>Adding contacts to a list</span>
-    </h2>
-</doc-anchor-target>
-<p>See <a href="../add-contacts/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
-    <span>Add contacts</span>
-</a></p>
+<p>In order for Sociocs to start calling your webhook endpoint on receiving incoming messages, you need to subscribe the endpoint for a specific channel. You can add multiple webhooks for the same channel, or same webhook for multiple channels, depending upon your needs.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -304,20 +253,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../contacts/introduction/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../api/send-message/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Introduction</span>
+                                                <span class="block mt-1">Send message</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../contacts/add-contacts/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../api/webhooks/add/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Add contacts</span>
+                                                <span class="block mt-1">Subscribe</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -361,6 +310,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Contact lists", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Introduction", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>

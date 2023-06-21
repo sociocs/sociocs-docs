@@ -11,35 +11,34 @@
     <meta name="generator" content="Retype 3.0.3">
 
     <!-- Primary Meta Tags -->
-    <title>Contact lists</title>
-    <meta name="title" content="Contact lists">
-    <meta name="description" content="Your account already comes with a default contact list named \" All contacts\"." />
+    <title>Get subscriptions</title>
+    <meta name="title" content="Get subscriptions">
+    <meta name="description" content="Get the list of subscriptions." />
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.sociocs.com/contacts/contact-lists/" />
+    <link rel="canonical" href="https://docs.sociocs.com/api/webhooks/list/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.sociocs.com/contacts/contact-lists/">
-    <meta property="og:title" content="Contact lists">
-    <meta property="og:description" content="Your account already comes with a default contact list named \" All contacts\".">
-    <meta property="og:image" content="https://static.sociocs.com/icons-docs/pencil.svg">
+    <meta property="og:url" content="https://docs.sociocs.com/api/webhooks/list/">
+    <meta property="og:title" content="Get subscriptions">
+    <meta property="og:description" content="Get the list of subscriptions.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.sociocs.com/contacts/contact-lists/">
-    <meta property="twitter:title" content="Contact lists">
-    <meta property="twitter:description" content="Your account already comes with a default contact list named \" All contacts\".">
-    <meta property="twitter:image" content="https://static.sociocs.com/icons-docs/pencil.svg">
+    <meta property="twitter:url" content="https://docs.sociocs.com/api/webhooks/list/">
+    <meta property="twitter:title" content="Get subscriptions">
+    <meta property="twitter:description" content="Get the list of subscriptions.">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../static/images/sociocs-icon-32.png" rel="icon" />
-    <link href="../../resources/css/retype.css?v=3.0.3.740685397134" rel="stylesheet" />
+    <link href="../../../static/images/sociocs-icon-32.png" rel="icon" />
+    <link href="../../../resources/css/retype.css?v=3.0.3.740685397134" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.3.740685397134" data-turbo-eval="false" defer></script>
-    <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.3.740685397134" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=3.0.3.740685397134" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/retype.js?v=3.0.3" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=3.0.3.740685397134" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../../resources/js/prism.js?v=3.0.3.740685397134" defer></script>
 </head>
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-33B2S1ZXGM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -56,7 +55,7 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-2xl">
+                        <a id="docs-site-logo" href="../../../" class="flex items-center leading-snug text-2xl">
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Sociocs</span>
                         </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
                     </div>
@@ -203,98 +202,181 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="contact-lists" class="break-words">
+<doc-anchor-target id="get-subscriptions" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#contact-lists">#</doc-anchor-trigger>
-        <span>Contact lists</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#get-subscriptions">#</doc-anchor-trigger>
+        <span>Get subscriptions</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="all-contacts-list">
+<p>Get the list of subscriptions.</p>
+<doc-anchor-target id="method">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#all-contacts-list">#</doc-anchor-trigger>
-        <span>&quot;All contacts&quot; list</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#method">#</doc-anchor-trigger>
+        <span>Method</span>
     </h2>
 </doc-anchor-target>
-<p>Your account already comes with a default contact list named &quot;<em>All contacts</em>&quot;. You can create additional contact lists to group different contacts as per your needs.</p>
-<p>&quot;<em>All contacts</em>&quot; is a special list which has all the contacts directly added to this list, as well as contacts added to any other list.</p>
-<doc-anchor-target id="create-a-contact-list">
+<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>GET</span>
+</span></p>
+<doc-anchor-target id="path">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#create-a-contact-list">#</doc-anchor-trigger>
-        <span>Create a contact list</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#path">#</doc-anchor-trigger>
+        <span>Path</span>
     </h2>
 </doc-anchor-target>
-<!-- markdownlint-disable-next-line -->
-<ul>
-<li><p>Go to &quot;<em>Contacts</em>&quot; from the left sidebar.</p>
-</li>
-<li><p>Click on &quot;<em>Create a new list</em>&quot;.</p>
-</li>
-<li><p>Enter &quot;<em>List name</em>&quot;, and click &quot;<em>Submit</em>&quot;.</p>
-</li>
-</ul>
-<doc-anchor-target id="rename-a-contact-list">
+<p><code v-pre>/webhook-subscriptions</code></p>
+<doc-anchor-target id="response">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#rename-a-contact-list">#</doc-anchor-trigger>
-        <span>Rename a contact list</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#response">#</doc-anchor-trigger>
+        <span>Response</span>
     </h2>
 </doc-anchor-target>
-<!-- markdownlint-disable-next-line -->
-<ul>
-<li><p>Go to &quot;<em>Contacts</em>&quot; from the left sidebar.</p>
-</li>
-<li><p>Click on the contact list you would like to rename.</p>
-</li>
-<li><p>Click on the <img src="https://static.sociocs.com/icons-docs/pencil.svg" alt="edit" /> button on the top right.</p>
-</li>
-<li><p>Enter a new &quot;<em>List name</em>&quot;, and click &quot;<em>Submit</em>&quot;.</p>
-</li>
-</ul>
-<doc-anchor-target id="delete-a-contact-list">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#delete-a-contact-list">#</doc-anchor-trigger>
-        <span>Delete a contact list</span>
-    </h2>
-</doc-anchor-target>
-<!-- markdownlint-disable-next-line -->
-<ul>
-<li><p>Go to &quot;<em>Contacts</em>&quot; from the left sidebar.</p>
-</li>
-<li><p>Click on the contact list you would like to delete.</p>
-</li>
-<li><p>Click on the <img src="https://static.sociocs.com/icons-docs/trash-can.svg" alt="delete" /> button on the top right.</p>
-</li>
-<li><p>Click &quot;<em>Confirm</em>&quot;.</p>
-</li>
-</ul>
-<doc-anchor-target id="delete-caveats">
+<doc-anchor-target id="http-status-codes">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#delete-caveats">#</doc-anchor-trigger>
-        <span>Delete caveats</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#http-status-codes">#</doc-anchor-trigger>
+        <span>HTTP status codes</span>
     </h3>
 </doc-anchor-target>
-<doc-anchor-target id="when-deleting-all-contacts-list">
+<!-- markdownlint-disable-next-line -->
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Code</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Request was successful.</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Validation error or request body was incorrectly formatted.</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Authentication failed. Check <code v-pre>apikey</code> header.</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Requested API endpoint not found.</td>
+</tr>
+<tr>
+<td>429</td>
+<td>The rate limit has been reached.</td>
+</tr>
+<tr>
+<td>500-511</td>
+<td>There was a problem processing the request on our server. Try again later.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="response-object">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#response-object">#</doc-anchor-trigger>
+        <span>Response object</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td><code v-pre>success</code> or <code v-pre>error</code></td>
+<td>-</td>
+</tr>
+<tr>
+<td>errors</td>
+<td>Array of object <code v-pre>{ msg: [error detail] }</code></td>
+<td>Only present when status is <code v-pre>error</code></td>
+</tr>
+<tr>
+<td>data</td>
+<td>Array of subscription object. See below</td>
+<td>Only present when status is <code v-pre>success</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="subscription-object">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#when-deleting-all-contacts-list">#</doc-anchor-trigger>
-        <span>When deleting &quot;All contacts&quot; list</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#subscription-object">#</doc-anchor-trigger>
+        <span>Subscription object</span>
     </h4>
 </doc-anchor-target>
-<p>It doesn&#x27;t delete the &quot;<em>All contacts</em>&quot; list itself. It actually deletes all the contacts within the list. If a contact also belongs to any other list, it gets deleted from that other list as well.</p>
-<doc-anchor-target id="when-deleting-a-list-you-created">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#when-deleting-a-list-you-created">#</doc-anchor-trigger>
-        <span>When deleting a list you created</span>
-    </h4>
-</doc-anchor-target>
-<p>It deletes the contact list along with all the contacts within the list. If a contact also belongs to any other list, it still stays in that list as well as in the&quot;<em>All contacts</em>&quot; list.</p>
-<doc-anchor-target id="adding-contacts-to-a-list">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>Subscription ID</td>
+</tr>
+<tr>
+<td>channel_key</td>
+<td>Channel key linked to this webhook</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>Milliseconds timestamp of when the subscription was created</td>
+</tr>
+<tr>
+<td>integration</td>
+<td>Platform hosting the endpoint</td>
+</tr>
+<tr>
+<td>provider</td>
+<td><code v-pre>twlo</code> (for Twilio SMS), <br /><code v-pre>twlowa</code> (for Twilio WhatsApp), <br /><code v-pre>gswa</code> (for Gupshup WhatsApp)</td>
+</tr>
+<tr>
+<td>status</td>
+<td>Status of the webhook subscription. <code v-pre>active</code> or <code v-pre>paused</code></td>
+</tr>
+<tr>
+<td>subscriber_reference_id</td>
+<td>Unique identifier for the subscription provided during the subscription creation</td>
+</tr>
+<tr>
+<td>trigger_direction</td>
+<td>Value will always be <code v-pre>incoming</code></td>
+</tr>
+<tr>
+<td>webhook_url</td>
+<td>Webhook endpoint URL</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="code-sample">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#adding-contacts-to-a-list">#</doc-anchor-trigger>
-        <span>Adding contacts to a list</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#code-sample">#</doc-anchor-trigger>
+        <span>Code sample</span>
     </h2>
 </doc-anchor-target>
-<p>See <a href="../add-contacts/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
-    <span>Add contacts</span>
-</a></p>
+<doc-tabs>
+<doc-tab id="curl">
+<template #title>cURL</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">curl --location --request GET 'https://api.sociocs.com/webhook-subscriptions' \
+--header 'apikey: [your api key]' \</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
 
                                 
                                 <!-- Required only on API pages -->
@@ -304,20 +386,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../contacts/introduction/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../api/webhooks/add/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Introduction</span>
+                                                <span class="block mt-1">Subscribe</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../contacts/add-contacts/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../api/webhooks/get/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Add contacts</span>
+                                                <span class="block mt-1">Get subscription</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -361,6 +443,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Contact lists", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Get subscriptions", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
