@@ -13,7 +13,7 @@ order: -300
 
 ## Path
 
-`/message`
+`/messages`
 
 ## Body parameters
 
@@ -115,3 +115,22 @@ curl --location --request POST 'https://api.sociocs.com/message' \
 ```
 
 +++
+
+### Response object examples
+
+#### When the API call was successful
+
+```json
+{
+    "status": "success"
+}
+```
+
+#### When the API call was unsuccessful
+
+```json
+{
+    "status": "error",
+    "errors": [{ "msg": "Invalid channel_key." }]
+}
+```
