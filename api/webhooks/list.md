@@ -31,7 +31,7 @@ data | Array of subscription object. See below | Only present when status is `su
 
 #### Subscription object
 
-{{include "subscription-object-table"}}
+{{include "object-table/subscription"}}
 
 ## Code sample
 

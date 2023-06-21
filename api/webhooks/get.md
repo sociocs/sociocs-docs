@@ -38,7 +38,7 @@ data | Subscription object. See below | Only present when status is `success`
 
 #### Subscription object
 
-{{include "subscription-object-table"}}
+{{include "object-table/subscription"}}
 
 ## Code sample
 
