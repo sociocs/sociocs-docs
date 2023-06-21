@@ -38,3 +38,6 @@ footer:
 integrations:
   googleTagManager:
     id: G-33B2S1ZXGM
+
+data:
+  apiBaseUrl: "https://api.sociocs.com"

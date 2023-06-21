@@ -1,0 +1,1 @@
+channel_key | Channel key value from *Profile & settings -> API* | String | Yes
