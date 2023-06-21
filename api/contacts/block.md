@@ -11,7 +11,7 @@ Block bulk & automated messages to a contact. Incoming messages are not blocked.
 
 ## Path
 
-`/contact/block/[phone_number]`
+`/contacts/block/[phone_number]`
 
 ## Path parameter
 

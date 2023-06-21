@@ -11,7 +11,7 @@ Check if a contact is blocked.
 
 ## Path
 
-`/contact/isblocked/[phone_number]`
+`/contacts/isblocked/[phone_number]`
 
 ## Path parameter
 

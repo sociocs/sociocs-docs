@@ -11,7 +11,7 @@ Unblock bulk & automated messages to a contact.
 
 ## Path
 
-`/contact/unblock/[phone_number]`
+`/contacts/unblock/[phone_number]`
 
 ## Path parameter
 

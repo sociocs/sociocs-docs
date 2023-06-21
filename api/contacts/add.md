@@ -11,7 +11,7 @@ Add a new contact. When a given phone number already exists, it updates existing
 
 ## Path
 
-`/contact/[phone_number]`
+`/contacts/[phone_number]`
 
 ## Path parameter
 

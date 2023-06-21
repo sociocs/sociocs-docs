@@ -11,7 +11,7 @@ Delete a contact.
 
 ## Path
 
-`/contact/[phone_number]`
+`/contacts/[phone_number]`
 
 ## Path parameter
 

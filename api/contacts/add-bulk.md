@@ -11,7 +11,7 @@ Add new contacts in bulk. When a given phone number already exists, it updates e
 
 ## Path
 
-`/contact/bulk`
+`/contacts/bulk`
 
 ## Body parameters
 
