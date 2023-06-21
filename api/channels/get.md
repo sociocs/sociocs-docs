@@ -3,7 +3,7 @@ title: Get channel
 order: -200
 ---
 
-Gets a channel.
+Get a channel.
 
 ## Method
 

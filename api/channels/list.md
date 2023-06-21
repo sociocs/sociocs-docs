@@ -3,7 +3,7 @@ title: Get channels
 order: -100
 ---
 
-Gets the list of channels for the given provider.
+Get the list of channels for the given provider.
 
 ## Method
 
