@@ -1,5 +1,5 @@
 <!-- markdownlint-disable-next-line -->
-Code | Description {class="compact"}
+Code | Remarks {class="compact"}
 --- | ---
 200 | Request was successful.
 400 | Validation error or request body was incorrectly formatted.

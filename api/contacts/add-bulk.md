@@ -39,7 +39,7 @@ extra_fields | {{include "api/contact-extra-fields-value"}} | Object | No
 
 ### Response object
 
-Name | Value | Description {class="compact"}
+Name | Value | Remarks {class="compact"}
 --- | ---
 status | `success` or `error` | -
 errors | Array of object `{ msg: [error detail] }` | Only present when status is `error`

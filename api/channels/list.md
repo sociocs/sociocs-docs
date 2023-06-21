@@ -29,7 +29,7 @@ provider | `twlo` (for Twilio SMS), <br />`twlowa` (for Twilio WhatsApp), <br />
 
 Array of object
 
-Name | Value | Description {class="compact"}
+Name | Value | Remarks {class="compact"}
 --- | --- | ---
 id | Channel ID | -
 channel_key | Channel key | This is the same as the id field.

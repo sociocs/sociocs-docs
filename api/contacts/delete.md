@@ -33,7 +33,7 @@ list_id | 0 - to delete the contact (including from all the contact lists) or <b
 
 ### Response object
 
-Name | Value | Description {class="compact"}
+Name | Value | Remarks {class="compact"}
 --- | ---
 status | `success` or `error` | -
 errors | Array of object `{ msg: [error detail] }` | Only present when status is `error`
