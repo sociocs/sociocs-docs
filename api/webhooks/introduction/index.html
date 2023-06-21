@@ -5,14 +5,14 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.740686656689">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.740689390067">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.0.3">
 
     <!-- Primary Meta Tags -->
-    <title>Introduction</title>
-    <meta name="title" content="Introduction">
+    <title>Information</title>
+    <meta name="title" content="Information">
     <meta name="description" content="Webhooks are the REST APIs you created yourself or offered by a third-party software, which get called when a message is received in a Sociocs..." />
 
     <!-- Canonical -->
@@ -21,23 +21,23 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.sociocs.com/api/webhooks/introduction/">
-    <meta property="og:title" content="Introduction">
+    <meta property="og:title" content="Information">
     <meta property="og:description" content="Webhooks are the REST APIs you created yourself or offered by a third-party software, which get called when a message is received in a Sociocs...">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.sociocs.com/api/webhooks/introduction/">
-    <meta property="twitter:title" content="Introduction">
+    <meta property="twitter:title" content="Information">
     <meta property="twitter:description" content="Webhooks are the REST APIs you created yourself or offered by a third-party software, which get called when a message is received in a Sociocs...">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../static/images/sociocs-icon-32.png" rel="icon" />
-    <link href="../../../resources/css/retype.css?v=3.0.3.740686656689" rel="stylesheet" />
+    <link href="../../../resources/css/retype.css?v=3.0.3.740689390067" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../resources/js/config.js?v=3.0.3.740686656689" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=3.0.3.740689390067" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../resources/js/retype.js?v=3.0.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=3.0.3.740686656689" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=3.0.3.740689390067" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-33B2S1ZXGM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -201,10 +201,10 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="introduction" class="break-words">
+<doc-anchor-target id="information" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#introduction">#</doc-anchor-trigger>
-        <span>Introduction</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#information">#</doc-anchor-trigger>
+        <span>Information</span>
     </h1>
 </doc-anchor-target>
 <p>Webhooks are the REST APIs you created yourself or offered by a third-party software, which get called when a message is received in a Sociocs channel.</p>
@@ -222,7 +222,7 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>As of now, Sociocs calls webhook only for &quot;incoming&quot; messages, that is, for the messages received from someone on your channel.</p>
+<p>As of now, Sociocs calls webhook only for &quot;incoming&quot; messages, that is, for the messages received from someone to your Sociocs connected channel.</p>
         </div>
     </div>
 </div>
@@ -244,6 +244,86 @@
     </h2>
 </doc-anchor-target>
 <p>In order for Sociocs to start calling your webhook endpoint on receiving incoming messages, you need to subscribe the endpoint for a specific channel. You can add multiple webhooks for the same channel, or same webhook for multiple channels, depending upon your needs.</p>
+<doc-anchor-target id="webhook-endpoint-invocation-details">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#webhook-endpoint-invocation-details">#</doc-anchor-trigger>
+        <span>Webhook endpoint invocation details</span>
+    </h2>
+</doc-anchor-target>
+<p>Sociocs calls the webhook endpoints with an assumption that it&#x27;s a REST API accepting JSON body parameters.</p>
+<doc-anchor-target id="method-used">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#method-used">#</doc-anchor-trigger>
+        <span>Method used</span>
+    </h3>
+</doc-anchor-target>
+<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>POST</span>
+</span></p>
+<doc-anchor-target id="body-parameters">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#body-parameters">#</doc-anchor-trigger>
+        <span>Body parameters</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Data type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>provider</td>
+<td><code v-pre>twlo</code> (for Twilio SMS), <br /><code v-pre>twlowa</code> (for Twilio WhatsApp), <br /><code v-pre>gswa</code> (for Gupshup WhatsApp)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>channel_key</td>
+<td>Channel key associated to the webhook</td>
+<td>String</td>
+</tr>
+<tr>
+<td>from</td>
+<td>Sending phone number</td>
+<td>String</td>
+</tr>
+<tr>
+<td>to</td>
+<td>Receiving phone number</td>
+<td>String</td>
+</tr>
+<tr>
+<td>name</td>
+<td>Sender&#x27;s name (if available)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>text</td>
+<td>Message text</td>
+<td>String</td>
+</tr>
+<tr>
+<td>image_url</td>
+<td>Not available yet. Value is always empty.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>image_urls</td>
+<td>Not available yet. Value is always <code v-pre>null</code></td>
+<td>-</td>
+</tr>
+<tr>
+<td>file_url</td>
+<td>Not available yet. Value is always empty.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</div>
 
                                 
                                 <!-- Required only on API pages -->
@@ -310,6 +390,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Introduction", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Information", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
