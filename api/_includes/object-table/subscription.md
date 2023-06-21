@@ -1,7 +1,7 @@
 Name | Value {class="compact"}
 --- | ---
 id | Subscription ID
-channel_key | Channel key linked to this webhook
+channel_key | Channel key associated to this webhook
 created_at | Milliseconds timestamp of when the subscription was created
 platform | Platform hosting the endpoint (value provided by the caller when creating the subscription)
 provider | {{include "providers"}}
