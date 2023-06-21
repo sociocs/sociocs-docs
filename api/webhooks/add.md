@@ -20,8 +20,8 @@ Subscribe a webhook endpoint to receive incoming messages received on your chann
 Name | Value | Data type | Required? {class="compact"}
 --- | ---
 platform | A value that identifies the platform hosting the endpoint (e.g., "salesforce") | String | Yes
-{{include "body-param-row/provider"}}
-{{include "body-param-row/channel-key"}}
+{{include "param-row/provider"}}
+{{include "param-row/channel-key"}}
 subscriber_reference_id | Unique identifier for the subscription. If you call the API again with the same value for this field, it will update the existing subscription. | String | Yes
 webhook_url | Webhook endpoint URL | String | URL
 

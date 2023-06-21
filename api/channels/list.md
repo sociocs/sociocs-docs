@@ -1,6 +1,9 @@
 ---
 title: Get channels
 order: -100
+data:
+    path: "/channels"
+    path_for_sample: "/channels?provider=twlo"
 ---
 
 Get the list of channels for the given provider.
@@ -11,13 +14,13 @@ Get the list of channels for the given provider.
 
 ## Path
 
-`/channels`
+`{{path}}`
 
 ## Query string parameter
 
 Name | Value | Required? {class="compact"}
 --- | ---
-provider | `twlo` (for Twilio SMS), <br />`twlowa` (for Twilio WhatsApp), <br />`gswa` (for Gupshup WhatsApp) | Yes
+provider | {{include "providers"}} | Yes
 
 ## Response
 
@@ -40,8 +43,7 @@ name | Channel name | -
 +++ cURL
 
 ```shell
-curl --location --request GET 'https://api.sociocs.com/channels?provider=twlo' \
---header 'apikey: [your api key]'
+{{include "curl/get"}}
 ```
 
 +++
