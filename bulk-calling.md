@@ -1,20 +1,18 @@
 ---
-title: "Bulk messaging"
-icon: "https://static.sociocs.com/icons-docs/bulk-messaging.svg"
-order: -200
+title: "Bulk calling"
+icon: "https://static.sociocs.com/icons-docs/bulk-calling.svg"
+order: -212
 ---
 
 {{include "alert-paid-account-required"}}
 
 ## Introduction
 
-With bulk messaging, as the name suggests, you can send bulk messages to your target audience.
+With bulk calling, as the name suggests, you can make numerous voice calls at once to your target audience.
 
-## Channels supporting bulk messaging
+## Channels supporting bulk calling
 
 - SMS (with Twilio)
-- WhatsApp (with Gupshup) (*Future plan, not available at the moment.*)
-- WhatsApp (with Twilio) (*Future plan, not available at the moment.*)
 
 ## Prerequisite
 
@@ -28,13 +26,11 @@ Your account needs to have at least one "*SMS (with Twilio)*" channel.
 
 ## Message content types supported
 
-- Text
-- Image (gif, jpg, or png)
-- Video (mp4 or 3gp)
+- Audio file (aiff, mp3 or wav file of size up to 100mb) [!badge text="Best practices for audio recording" target="_blank"](https://support.twilio.com/hc/en-us/articles/223180588-Best-Practices-for-Audio-Recordings)
 
-## Sending bulk messages
+## Executing bulk calls
 
-- Go to "*Bulk messaging*" from the left sidebar.
+- Go to "*Bulk calling*" from the left sidebar.
 
 - Select a channel from the list of eligible channels in your account.
 
@@ -42,23 +38,13 @@ Your account needs to have at least one "*SMS (with Twilio)*" channel.
 
 **Provide information for the below fields.**
 
-### Message text
+### Name
 
-Enter message content in this field. You can personalize the messages by adding [!badge text="dynamic fields" target="_blank"](/miscellaneous/dynamic-fields.md) from your data source.
+Provide a name to easily identify the bulk job/campaign later. For your internal use.
 
-![Message example](https://github.com/sociocs/docs/assets/12301512/6f3a05fb-c385-44df-8ec9-9c723cda9ac4)
+### Audio file
 
-### Save as template
-
-You can use this check box to save the entered messages text as a template. It can update an existing template with new text or create a new template.
-
-!!!
-One benefit of using templates for the bulk messaging is that we link all the campaign information you enter to the template. So when you select the same template next time, it will prefill the information you used last time. :bulb:
-!!!
-
-### Attach media file
-
-In addition to the text, you can also send an image or video in the message. To see the list of allowed file types, go to [!badge text="Message content types supported"](#message-content-types-supported).
+Upload a pre-recorded audio file which will be played when the user picks up the phone or the call goes to the voicemail. To see the list of allowed file types, go to [!badge text="Message content types supported"](#message-content-types-supported).
 
 ### Data source
 
@@ -74,7 +60,7 @@ This gives you flexibility to directly upload a file exported from another syste
 
 ##### Duplicates allowed
 
-Check this box if you would like to send multiple messages to the same number if duplicates found in the file. When unchecked, message is sent only once per phone number.
+Check this box if you would like to call the same number multiple times if duplicates found in the file. Please note that subsequent calls do no wait for the previous call to finish. When unchecked, message is sent only once per phone number. *We recommend to keep this option unchecked unless you have a specific reason not to.*
 
 ##### The file's first record doesn't have column headers
 
@@ -101,12 +87,16 @@ If the value shown by default is correct, there is no need to change it.
 This option must be checked when the phone numbers in the file you're uploading already start with the country dial code (e.g., +1 or 1).
 
 !!!warning
-If the phone numbers in the file already have country dial code, and you don't check this box, the messages may not get delivered because we will apply country code from the "*To country code*" dropdown list.
+If the phone numbers in the file already have country dial code, and you don't check this box, the calls may not get delivered because we will apply country code from the "*To country code*" dropdown list.
 
-On the flip side, if the phone numbers in the file do not have country code, and you check this box, the messages may not get delivered at all because they cannot be routed to correct destination number, or they may get delivered incorrectly to recipients in the same country as the source phone number.
+On the flip side, if the phone numbers in the file do not have country code, and you check this box, the calls may not get delivered at all because they cannot be routed to correct destination number, or they may get delivered incorrectly to recipients in the same country as the source phone number.
 !!!
 
 #### Recipient name column header (optional)
+
+!!! info
+This field is used only for displaying name when looking at the call list on the "History" page.
+!!!
 
 Specify the column header of the recipient name column in the uploaded file.
 
@@ -134,9 +124,9 @@ Select one of the contact lists you have already created. See Contacts for more 
 
 +++
 
-### Send on
+### Execute on
 
-You can send the messages immediately or schedule it for a later date and time.
+You can execute calls immediately or schedule it for a later date and time.
 
 !!! info
 You can schedule the campaign up to 30 days in advance.
@@ -144,6 +134,6 @@ You can schedule the campaign up to 30 days in advance.
 
 ---
 
-Once you click "*Next*", you will be shown a confirmation popup with a sample preview of the message. You will also be able to send a test message to yourself before confirming the campaign.
+Once you click "*Next*", you will be shown a confirmation popup. You will also be able to make a test call to yourself before confirming the campaign.
 
 In case you need to make any changes, click "*Cancel*" in the confirmation popup to close it.
