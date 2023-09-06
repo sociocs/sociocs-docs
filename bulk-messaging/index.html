@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.3.0.747333515579">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.3.0.747336433755">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.3.0">
@@ -35,11 +35,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../static/images/sociocs-icon-32.png" rel="icon">
-    <link href="../resources/css/retype.css?v=3.3.0.747333515579" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.3.0.747336433755" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.3.0.747333515579" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.3.0.747336433755" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.3.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.3.0.747333515579" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.3.0.747336433755" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-33B2S1ZXGM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -484,6 +484,45 @@
 <p>Select one of the contact lists you have already created. See Contacts for more information.</p>
 </doc-tab>
 </doc-tabs>
+<doc-anchor-target id="auto-translate">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#auto-translate">#</doc-anchor-trigger>
+        <span>Auto translate</span>
+    </h3>
+</doc-anchor-target>
+<p>Check this box if you would like to have the message text auto translated to recipient&#x27;s language. For this to work, the source data also needs to have <code v-pre>language</code> value from the <a href="../miscellaneous/translation-languages/" target="_blank" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>list of supported languages</span>
+</a>.</p>
+<doc-anchor-target id="when-using-a-csvexcel-file">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#when-using-a-csvexcel-file">#</doc-anchor-trigger>
+        <span>When using a CSV/Excel file</span>
+    </h4>
+</doc-anchor-target>
+<p>The file needs to have a column with header <code v-pre>language</code> (<em>must be in all lowercase</em>). The value should be <code v-pre>Language code</code> from <a href="../miscellaneous/translation-languages/" target="_blank" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>this page</span>
+</a>.</p>
+<p>For example, to auto translate message text to a specific recipient to Spanish, you upload a file like below.</p>
+<p><figure class="content-center">
+    <img src="https://github.com/sociocs/docs/assets/12301512/9e8b6b81-d450-4a48-acb2-01a2e016ff0e" alt="File example">
+    <figcaption class="caption">File example</figcaption>
+</figure>
+</p>
+<doc-anchor-target id="when-using-a-contact-list">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#when-using-a-contact-list">#</doc-anchor-trigger>
+        <span>When using a contact list</span>
+    </h4>
+</doc-anchor-target>
+<p>The contact requiring translation should have an <code v-pre>Extra field</code> with key <code v-pre>language</code> (<em>must be in all lowercase</em>). The value should be <code v-pre>Language code</code> from <a href="../miscellaneous/translation-languages/" target="_blank" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>this page</span>
+</a>.</p>
+<p>For example, to auto translate message text to a specific contact to Spanish, you add language extra field like below.</p>
+<p><figure class="content-center">
+    <img src="https://github.com/sociocs/docs/assets/12301512/da14ca29-b062-4711-9723-bd65c0f7e7fd" alt="Contact example">
+    <figcaption class="caption">Contact example</figcaption>
+</figure>
+</p>
 <doc-anchor-target id="send-on">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#send-on">#</doc-anchor-trigger>
