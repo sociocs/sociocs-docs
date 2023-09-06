@@ -134,6 +134,26 @@ Select one of the contact lists you have already created. See Contacts for more 
 
 +++
 
+### Auto translate
+
+Check this box if you would like to have the message text auto translated to recipient's language. For this to work, the source data also needs to have `language` value from the [!badge text="list of supported languages" target="_blank"](/miscellaneous/translation-languages/).
+
+#### When using a CSV/Excel file
+
+The file needs to have a column with header `language` (*must be in all lowercase*). The value should be `Language code` from [!badge text="this page" target="_blank"](/miscellaneous/translation-languages/).
+
+For example, to auto translate message text to a specific recipient to Spanish, you upload a file like below.
+
+![File example](https://github.com/sociocs/docs/assets/12301512/9e8b6b81-d450-4a48-acb2-01a2e016ff0e)
+
+#### When using a contact list
+
+The contact requiring translation should have an `Extra field` with key `language` (*must be in all lowercase*). The value should be `Language code` from [!badge text="this page" target="_blank"](/miscellaneous/translation-languages/).
+
+For example, to auto translate message text to a specific contact to Spanish, you add language extra field like below.
+
+![Contact example](https://github.com/sociocs/docs/assets/12301512/da14ca29-b062-4711-9723-bd65c0f7e7fd)
+
 ### Send on
 
 You can send the messages immediately or schedule it for a later date and time.
