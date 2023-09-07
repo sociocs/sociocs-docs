@@ -17,7 +17,7 @@ There are multiple ways to send API key with the request.
 
 Pass a request header `apikey` with your account's API key as value.
 
-For example, if your API key is `e047nbp2UnWuHD9m:Xqc37DHPGMyF0Z4hWX3Afn1Iyj6j7dPc`, you can send the  `apikey` in the request headers like below. 
+For example, if your API key is `e047nbp2UnWuHD9m:Xqc37DHPGMyF0Z4hWX3Afn1Iyj6j7dPc`, you can send the  `apikey` in the request headers like below.
 
 +++ cURL
 
