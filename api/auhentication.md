@@ -22,8 +22,7 @@ For example, if your API key is `e047nbp2UnWuHD9m:Xqc37DHPGMyF0Z4hWX3Afn1Iyj6j7d
 +++ cURL
 
 ```shell
-curl --location --request POST 'https://api.sociocs.com' \
---header 'apikey: e047nbp2UnWuHD9m:Xqc37DHPGMyF0Z4hWX3Afn1Iyj6j7dPc'
+curl --location 'https://api.sociocs.com' --header 'apikey: e047nbp2UnWuHD9m:Xqc37DHPGMyF0Z4hWX3Afn1Iyj6j7dPc'
 ```
 
 +++
@@ -42,6 +41,14 @@ You can use the API BASE URL in this format to send the key with the request `ht
 
 For example, if you are calling the `Send message` API, and your API key is `e047nbp2UnWuHD9m:Xqc37DHPGMyF0Z4hWX3Afn1Iyj6j7dPc`, you can use the API URL as `https://e047nbp2UnWuHD9m:Xqc37DHPGMyF0Z4hWX3Afn1Iyj6j7dPc@api.sociocs.com/message`.
 
++++ cURL
+
+```shell
+curl --location 'https://e047nbp2UnWuHD9m:Xqc37DHPGMyF0Z4hWX3Afn1Iyj6j7dPc@api.sociocs.com'
+```
+
++++
+
 #### 4. Query string [!badge variant="danger" text="Insecure"]
 
 *This approach is considered insecure because the API key is part of the URL and can be logged by the interim systems.*
@@ -49,3 +56,11 @@ For example, if you are calling the `Send message` API, and your API key is `e04
 You can send the API key as query string parameter like this `https://api.sociocs.com/...?apikey=[your-api-key]`.
 
 For example, if you are calling the `Send message` API, and your API key is `e047nbp2UnWuHD9m:Xqc37DHPGMyF0Z4hWX3Afn1Iyj6j7dPc`, you can pass API key in the URL like this `https://api.sociocs.com/message?apikey=e047nbp2UnWuHD9m:Xqc37DHPGMyF0Z4hWX3Afn1Iyj6j7dPc`.
+
++++ cURL
+
+```shell
+curl --location 'https://api.sociocs.com/message?apikey=e047nbp2UnWuHD9m:Xqc37DHPGMyF0Z4hWX3Afn1Iyj6j7dPc'
+```
+
++++
