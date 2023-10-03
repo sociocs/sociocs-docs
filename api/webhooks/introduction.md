@@ -39,6 +39,6 @@ from | Sending phone number | String
 to | Receiving phone number | String
 name | Sender's name (if available) | String
 text | Message text | String
-image_url | Not available yet. Value is always empty. | -
-image_urls | Not available yet. Value is always `null` | -
-file_url | Not available yet. Value is always empty. | -
+file_urls | Publicly accessible links to files in the message | Array of String
+image_urls | Publicly accessible links to images in the message | Array of String
+video_urls | Publicly accessible links to videos in the message | Array of String
