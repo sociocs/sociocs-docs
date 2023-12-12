@@ -65,7 +65,7 @@ If you are already using Twilio app for sending SMS, you can replace it with the
 
 1. Select "*Provider*" depending upon the type of the channel you added on Sociocs. For example, if you added the "*SMS (with Twilio)*" channel on Sociocs, you should select "Twilio SMS" in the dropdown list.
 
-1. Select "*Channel key*" depending upon the phone number you would to use for sending messages. If you have only one channel on Sociocs, you should see only one option in the dropdown list.
+1. Select "*Channel*" depending upon the phone number you would like to use for sending messages. If you have only one channel on Sociocs, you should see only one option in the dropdown list.
 
 1. Enter "*Message text*" (with personalization if you like), and click "*Finish*".
 
