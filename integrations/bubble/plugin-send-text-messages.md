@@ -49,10 +49,9 @@ This plugin offers two actions, you can use either or both depending upon your u
 1. Go to "*Profile & settings -> API*".
     ![image](https://user-images.githubusercontent.com/12301512/163997321-90b286f5-e1aa-4df8-bc18-e453b20d26e8.png)
 
-1. Find "*API Key*" (referred to as "*api_key*" in Bubble editor steps below). If you're using Sociocs API for the first time, you need to enable it by clicking on "*Enable API*" button.
+1. Find "*API Key*" (referred to as "*api_key*" in Bubble editor steps below). If you're using Sociocs API for the first time, you need to enable it by clicking on "*Enable API*" button. You will need this key later.
 
-1. Scroll down to code sample on the same page, and find values for these in the code sample: "*provider*", "*channel_key*".
-    ![image](https://user-images.githubusercontent.com/12301512/163997897-82d5bf2a-80dc-4737-8188-2d7fca38feea.png)
+1. Under the "*Provider and Channel Key for the API calls*" section, select the channel you would like to use for communication. You should see values for "*provider*", and "*channel_key*", which you will need later.
 
 ### Bubble Editor
 
@@ -88,4 +87,4 @@ This plugin offers two actions, you can use either or both depending upon your u
         - To send a file, enter "*File URL*" or set it to use a dynamic URL value. Support for file types in the SMS/MMS clients is very limited, so all your recipients may not be able to see/open the received file.
         ![image](https://user-images.githubusercontent.com/12301512/164025420-907402bd-61dd-4fdd-89bc-9ae5f9a75daa.png)
 
-That's it, you are all set to send messages to you users!
+That's it, you are all set to send messages to your users!
