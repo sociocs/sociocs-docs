@@ -14,6 +14,8 @@ When the recipient replies to the message, it shows up in your Sociocs Inbox, fr
 If you are already using Twilio app for sending SMS, you can replace it with the Sociocs app to enable a two-way conversation with the recipients.
 !!!
 
+[!button variant="info" target="blank" text="App page on ActiveCampaign"](https://www.activecampaign.com/apps/sociocs-integration)
+
 ## Supported channels
 
 - SMS (with Twilio)
