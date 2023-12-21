@@ -1,16 +1,20 @@
 ---
-title: Unblock contact
-order: -700
+title: Delete scheduled message
+order: -400
 data:
-    path: /contacts/unblock/[phone_number]
-    path_for_sample: /contact/unblock/16175551212
+    path: "/messages/scheduled/[message_id]"
+    path_for_sample: "/messages/scheduled/Xyz12345"
 ---
 
-Unblock bulk & automated messages to a contact.
+Delete a scheduled message.
+
+!!!warning
+You cannot delete a scheduled message which is already being sent or is already sent.
+!!!
 
 ## Method
 
-[!badge POST]
+[!badge DELETE]
 
 ## Path
 
@@ -20,7 +24,7 @@ Unblock bulk & automated messages to a contact.
 
 Name | Value | Required? {class="compact"}
 --- | ---
-phone_number | {{include "api/phone-number-value"}} | Yes
+message_id | ID of the scheduled message. | Yes
 
 ## Response
 
@@ -40,7 +44,7 @@ Name | Value | Remarks {class="compact"}
 +++ cURL
 
 ```shell
-{{include "curl/post"}}
+{{include "curl/delete"}}
 ```
 
 +++

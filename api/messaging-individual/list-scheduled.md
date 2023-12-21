@@ -1,12 +1,11 @@
 ---
-title: Get contact
+title: Get scheduled messages
 order: -300
 data:
-    path: "/contacts/[phone_number]"
-    path_for_sample: "/contacts/16175551212"
+    path: "/messages/scheduled"
 ---
 
-Get a contact.
+Get the list of scheduled messages. The list will have max 100 records, ordered by the scheduled date in descending order. Pagination is not available at the moment.
 
 ## Method
 
@@ -15,12 +14,6 @@ Get a contact.
 ## Path
 
 `{{path}}`
-
-## Path parameter
-
-Name | Value | Required? {class="compact"}
---- | ---
-phone_number | {{include "api/phone-number-value"}} | Yes
 
 ## Response
 
@@ -34,7 +27,7 @@ Name | Value | Remarks {class="compact"}
 --- | ---
 {{include "resp-obj-row/status"}}
 {{include "resp-obj-row/errors"}}
-data | Object with the contact fields | Only present when status is `success`
+data | Array of object with the scheduled message fields. | Only present when status is `success`.
 
 ## Code sample
 

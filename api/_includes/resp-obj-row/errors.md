@@ -1,1 +1,1 @@
-errors | Array of object `{ msg: [error detail] }` | Only present when status is `error`
+errors | Array of object `{ msg: [error detail] }` | Only present when status is `error`.

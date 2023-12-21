@@ -1,6 +1,8 @@
 ---
 title: Save incoming message
-order: -200
+order: -100
+data:
+    path: /incoming
 ---
 
 Save a message in the inbox. You can use it to save a message received on an external platform or create a mock message with information you may need during the conversation.
@@ -11,7 +13,7 @@ Save a message in the inbox. You can use it to save a message received on an ext
 
 ## Path
 
-`/incoming`
+`{{path}}`
 
 ## Body parameters
 
@@ -33,17 +35,17 @@ text | Message text | String | Yes
 
 Name | Value | Remarks {class="compact"}
 --- | ---
-status | `success` or `error` | -
-errors | Array of object `{ msg: [error detail] }` | Only present when status is `error`
+{{include "resp-obj-row/status"}}
+{{include "resp-obj-row/errors"}}
 
 ## Code sample
 
 +++ cURL
 
 ```shell
-curl --location --request POST 'https://api.sociocs.com/incoming' \
---header 'apikey: [your api key]' \
---header 'Content-Type: application/json' \
+curl --location --request POST '{{apiBaseUrl}}{{path_for_sample ?? path}}' \
+{{include "curl/header-apikey"}} \
+{{include "curl/header-ct-json"}} \
 --data-raw '{
     "provider": "[provider]",
     "channel_key": "[your channel key]",

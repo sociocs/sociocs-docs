@@ -3,6 +3,7 @@ title: Get channel
 order: -200
 data:
     path: "/channels/[channel_key]"
+    path_for_sample: "/channels/your_channel_key"
 ---
 
 Get a channel.
@@ -31,9 +32,9 @@ Name | Value | Data type | Required? {class="compact"}
 
 Name | Value | Remarks {class="compact"}
 --- | ---
-status | `success` or `error` | -
-errors | Array of object `{ msg: [error detail] }` | Only present when status is `error`
-data | Channel object. See blow | Only present when status is `success`
+{{include "resp-obj-row/status"}}
+{{include "resp-obj-row/errors"}}
+data | Channel object. See below. | Only present when status is `success`
 
 #### Channel object
 

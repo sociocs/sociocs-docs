@@ -1,6 +1,8 @@
 ---
 title: Add contacts bulk
 order: -200
+data:
+    path: "/contacts/bulk"
 ---
 
 Add new contacts in bulk. When a given phone number already exists, it updates existing contact. If existing contact gets updated, all information gets overwritten, including all extra fields.
@@ -11,7 +13,7 @@ Add new contacts in bulk. When a given phone number already exists, it updates e
 
 ## Path
 
-`/contacts/bulk`
+`{{path}}`
 
 ## Body parameters
 
@@ -41,17 +43,17 @@ extra_fields | {{include "api/contact-extra-fields-value"}} | Object | No
 
 Name | Value | Remarks {class="compact"}
 --- | ---
-status | `success` or `error` | -
-errors | Array of object `{ msg: [error detail] }` | Only present when status is `error`
+{{include "resp-obj-row/status"}}
+{{include "resp-obj-row/errors"}}
 
 ## Code sample
 
 +++ cURL
 
 ```shell
-curl --location --request POST 'https://api.sociocs.com/contact/bulk' \
---header 'apikey: [your api key]' \
---header 'Content-Type: application/json' \
+curl --location --request POST '{{apiBaseUrl}}{{path_for_sample ?? path}}' \
+{{include "curl/header-apikey"}} \
+{{include "curl/header-ct-json"}} \
 --data-raw '{
     "list_id": 0,
     "phone_number_cc": "1",

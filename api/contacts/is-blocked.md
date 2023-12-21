@@ -1,6 +1,9 @@
 ---
 title: Is contact blocked
 order: -800
+data:
+    path: /contacts/isblocked/[phone_number]
+    path_for_sample: /contact/isblocked/16175551212
 ---
 
 Check if a contact is blocked.
@@ -11,7 +14,7 @@ Check if a contact is blocked.
 
 ## Path
 
-`/contacts/isblocked/[phone_number]`
+`{{path}}`
 
 ## Path parameter
 
@@ -29,8 +32,8 @@ phone_number | {{include "api/phone-number-value"}} | Yes
 
 Name | Value | Remarks {class="compact"}
 --- | ---
-status | `success` or `error` | -
-errors | Array of object `{ msg: [error detail] }` | Only present when status is `error`
+{{include "resp-obj-row/status"}}
+{{include "resp-obj-row/errors"}}
 data | Object `{ is_blocked: true | false}` | Only present when status is `success`
 
 ## Code sample
@@ -38,8 +41,7 @@ data | Object `{ is_blocked: true | false}` | Only present when status is `succe
 +++ cURL
 
 ```shell
-curl --location --request GET 'https://api.sociocs.com/contact/isblocked/16175551212' \
---header 'apikey: [your api key]'
+{{include "curl/get"}}
 ```
 
 +++

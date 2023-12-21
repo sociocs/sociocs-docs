@@ -1,1 +1,1 @@
---header 'apikey: [your api key]'
+--header 'apikey: your_api_key'

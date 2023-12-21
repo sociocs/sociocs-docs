@@ -1,16 +1,20 @@
 ---
-title: Unblock contact
-order: -700
+title: Delete bulk messaging job
+order: -400
 data:
-    path: /contacts/unblock/[phone_number]
-    path_for_sample: /contact/unblock/16175551212
+    path: "/messages/bulk/[job_id]"
+    path_for_sample: "/messages/bulk/Xyz12345"
 ---
 
-Unblock bulk & automated messages to a contact.
+Delete a bulk messaging job.
+
+!!!warning
+You cannot delete a bulk messaging job which is already executing or has already executed.
+!!!
 
 ## Method
 
-[!badge POST]
+[!badge DELETE]
 
 ## Path
 
@@ -20,7 +24,7 @@ Unblock bulk & automated messages to a contact.
 
 Name | Value | Required? {class="compact"}
 --- | ---
-phone_number | {{include "api/phone-number-value"}} | Yes
+job_id | ID of the scheduled bulk messaging job. | Yes
 
 ## Response
 
@@ -40,7 +44,7 @@ Name | Value | Remarks {class="compact"}
 +++ cURL
 
 ```shell
-{{include "curl/post"}}
+{{include "curl/delete"}}
 ```
 
 +++

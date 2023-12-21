@@ -1,6 +1,9 @@
 ---
 title: Update contact
 order: -400
+data:
+    path: "/contacts/[phone_number]"
+    path_for_sample: "/contacts/16175551212"
 ---
 
 Update a contact.
@@ -11,7 +14,7 @@ Update a contact.
 
 ## Path
 
-`/contacts/[phone_number]`
+`{{path}}`
 
 ## Path parameter
 
@@ -37,17 +40,17 @@ extra_fields | {{include "api/contact-extra-fields-value"}} | Object | No
 
 Name | Value | Remarks {class="compact"}
 --- | ---
-status | `success` or `error` | -
-errors | Array of object `{ msg: [error detail] }` | Only present when status is `error`
+{{include "resp-obj-row/status"}}
+{{include "resp-obj-row/errors"}}
 
 ## Code sample
 
 +++ cURL
 
 ```shell
-curl --location --request PUT 'https://api.sociocs.com/contact/16175551212' \
---header 'apikey: [your api key]' \
---header 'Content-Type: application/json' \
+curl --location --request PUT '{{apiBaseUrl}}{{path_for_sample ?? path}}' \
+{{include "curl/header-apikey"}} \
+{{include "curl/header-ct-json"}} \
 --data-raw '{
     "name": "John Davidson",
     "phone_number_cc": "1",

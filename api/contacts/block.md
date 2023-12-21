@@ -1,6 +1,9 @@
 ---
 title: Block contact
 order: -600
+data:
+    path: /contacts/block/[phone_number]
+    path_for_sample: /contact/block/16175551212
 ---
 
 Block bulk & automated messages to a contact. Incoming messages are not blocked.
@@ -11,7 +14,7 @@ Block bulk & automated messages to a contact. Incoming messages are not blocked.
 
 ## Path
 
-`/contacts/block/[phone_number]`
+`{{path}}`
 
 ## Path parameter
 
@@ -29,16 +32,15 @@ phone_number | {{include "api/phone-number-value"}} | Yes
 
 Name | Value | Remarks {class="compact"}
 --- | ---
-status | `success` or `error` | -
-errors | Array of object `{ msg: [error detail] }` | Only present when status is `error`
+{{include "resp-obj-row/status"}}
+{{include "resp-obj-row/errors"}}
 
 ## Code sample
 
 +++ cURL
 
 ```shell
-curl --location --request POST 'https://api.sociocs.com/contact/block/16175551212' \
---header 'apikey: [your api key]'
+{{include "curl/post"}}
 ```
 
 +++

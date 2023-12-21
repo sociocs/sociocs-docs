@@ -1,6 +1,9 @@
 ---
 title: Add contact
 order: -100
+data:
+    path: "/contacts/[phone_number]"
+    path_for_sample: "/contacts/16175551212"
 ---
 
 Add a new contact. When a given phone number already exists, it updates existing contact. If existing contact gets updated, all information gets overwritten, including all extra fields.
@@ -11,7 +14,7 @@ Add a new contact. When a given phone number already exists, it updates existing
 
 ## Path
 
-`/contacts/[phone_number]`
+`{{path}}`
 
 ## Path parameter
 
@@ -38,8 +41,8 @@ extra_fields | {{include "api/contact-extra-fields-value"}} | Object | No
 
 Name | Value | Remarks {class="compact"}
 --- | ---
-status | `success` or `error` | -
-errors | Array of object `{ msg: [error detail] }` | Only present when status is `error`
+{{include "resp-obj-row/status"}}
+{{include "resp-obj-row/errors"}}
 data | Object `{ id: [new contact id]}` | Only present when status is `success`
 
 ## Code sample
@@ -47,9 +50,9 @@ data | Object `{ id: [new contact id]}` | Only present when status is `success`
 +++ cURL
 
 ```shell
-curl --location --request POST 'https://api.sociocs.com/contact/16175551212' \
---header 'apikey: [your api key]' \
---header 'Content-Type: application/json' \
+curl --location --request POST '{{apiBaseUrl}}{{path_for_sample ?? path}}' \
+{{include "curl/header-apikey"}} \
+{{include "curl/header-ct-json"}} \
 --data-raw '{
     "list_id": 0,
     "phone_number_cc": "1",
