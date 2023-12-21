@@ -28,6 +28,7 @@ text | Message text | String | No (when image_url, image_urls or file_url is pre
 image_url | Publicly accessible image URL | String | No (when text, video_url or file_url is present)
 video_url | Publicly accessible video URL | String | No (when text, image_url or file_url is present)
 file_url | Publicly accessible file URL | String | No (when text, image_url or video_url is present)
+duplicates_allowed | `true` - Send message to duplicate phone numbers (if there are any), <br /> `false` - Send message only once per phone number (first occurrence) | Boolean | No (defaults to false)
 schedule | ISO 8601 date & time (e.g., "2006-01-02T15:04:05-04:00"). If the value is in the past, messages will be sent immediately. | String | No
 
 ## Response
