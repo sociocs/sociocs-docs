@@ -134,7 +134,7 @@ Select one of the contact lists you have already created. See Contacts for more 
 
 +++
 
-### Auto translate
+### Auto translation
 
 Check this box if you would like to have the message text auto translated to recipient's language. For this to work, the source data also needs to have `language` value from the [!badge text="list of supported languages" target="_blank"](/miscellaneous/translation-languages/).
 
