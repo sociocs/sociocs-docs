@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.757252708666">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.758212715730">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -33,12 +33,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../static/images/sociocs-icon-32.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.5.0.757252708666" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.5.0.758212715730" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.757252708666" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.758212715730" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.757252708666" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.5.0.757252708666" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.758212715730" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.5.0.758212715730" defer></script>
 </head>
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-33B2S1ZXGM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -903,10 +903,10 @@ print(response.text)</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="sending-only-images">
+<doc-anchor-target id="sending-only-an-image">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#sending-only-images">#</doc-anchor-trigger>
-        <span>Sending only images</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#sending-only-an-image">#</doc-anchor-trigger>
+        <span>Sending only an image</span>
     </h3>
 </doc-anchor-target>
 <doc-tabs>
@@ -921,18 +921,14 @@ print(response.text)</code></pre>
     &quot;channel_key&quot;: &quot;your_channel_key&quot;,
     &quot;to&quot;: &quot;phone_number&quot;,
     &quot;name&quot;: &quot;recipient_name&quot;,
-    &quot;image_urls&quot;: [
-        &quot;https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI&quot;,
-        &quot;https://fastly.picsum.photos/id/14/200/300.jpg?hmac=FMdb1SH_oeEo4ibDe66-ORzb8p0VYJUS3xWfN3h2qDU&quot;,
-        &quot;https://fastly.picsum.photos/id/100/200/300.jpg?hmac=MeTp97vw7VNDswRcCqUFkGNC8ILDvNfI4MRoHFyGcQ8&quot;
-    ]
+    &quot;image_url&quot;: &quot;https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI&quot;
 }'</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 <doc-tab v-cloak id="curl-windows">
 <template #title>cURL (Windows)</template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-bash"><code v-pre class="language-bash">curl --location &quot;https://api.sociocs.com/message&quot; --header &quot;Content-Type: application/json&quot; --header &quot;apikey: your_api_key&quot; --data &quot;{ \&quot;provider\&quot;: \&quot;twlo\&quot;, \&quot;channel_key\&quot;: \&quot;your_channel_key\&quot;, \&quot;to\&quot;: \&quot;phone_number\&quot;, \&quot;name\&quot;: \&quot;recipient_name\&quot;, \&quot;image_urls\&quot;: [\&quot;https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI\&quot;, \&quot;https://fastly.picsum.photos/id/14/200/300.jpg?hmac=FMdb1SH_oeEo4ibDe66-ORzb8p0VYJUS3xWfN3h2qDU\&quot;, \&quot;https://fastly.picsum.photos/id/100/200/300.jpg?hmac=MeTp97vw7VNDswRcCqUFkGNC8ILDvNfI4MRoHFyGcQ8\&quot;] }&quot;</code></pre>
+<pre class="language-bash"><code v-pre class="language-bash">curl --location &quot;https://api.sociocs.com/message&quot; --header &quot;Content-Type: application/json&quot; --header &quot;apikey: your_api_key&quot; --data &quot;{ \&quot;provider\&quot;: \&quot;twlo\&quot;, \&quot;channel_key\&quot;: \&quot;your_channel_key\&quot;, \&quot;to\&quot;: \&quot;phone_number\&quot;, \&quot;name\&quot;: \&quot;recipient_name\&quot;, \&quot;image_url\&quot;: \&quot;https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI\&quot; }&quot;</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 <doc-tab v-cloak id="c">
@@ -941,7 +937,7 @@ print(response.text)</code></pre>
 <pre class="language-csharp"><code v-pre class="language-csharp">var client = new HttpClient();
 var request = new HttpRequestMessage(HttpMethod.Post, &quot;https://api.sociocs.com/message&quot;);
 request.Headers.Add(&quot;apikey&quot;, &quot;your_api_key&quot;);
-var content = new StringContent(&quot;{ \&quot;provider\&quot;: \&quot;twlo\&quot;, \&quot;channel_key\&quot;: \&quot;your_channel_key\&quot;, \&quot;to\&quot;: \&quot;phone_number\&quot;, \&quot;name\&quot;: \&quot;recipient_name\&quot;, \&quot;image_urls\&quot;: [\&quot;https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI\&quot;, \&quot;https://fastly.picsum.photos/id/14/200/300.jpg?hmac=FMdb1SH_oeEo4ibDe66-ORzb8p0VYJUS3xWfN3h2qDU\&quot;, \&quot;https://fastly.picsum.photos/id/100/200/300.jpg?hmac=MeTp97vw7VNDswRcCqUFkGNC8ILDvNfI4MRoHFyGcQ8\&quot;] }&quot;, null, &quot;application/json&quot;);
+var content = new StringContent(&quot;{ \&quot;provider\&quot;: \&quot;twlo\&quot;, \&quot;channel_key\&quot;: \&quot;your_channel_key\&quot;, \&quot;to\&quot;: \&quot;phone_number\&quot;, \&quot;name\&quot;: \&quot;recipient_name\&quot;, \&quot;image_url\&quot;: \&quot;https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI\&quot; }&quot;, null, &quot;application/json&quot;);
 request.Content = content;
 var response = await client.SendAsync(request);
 response.EnsureSuccessStatusCode();
@@ -962,11 +958,7 @@ request.body = json.encode({
   &quot;channel_key&quot;: &quot;your_channel_key&quot;,
   &quot;to&quot;: &quot;phone_number&quot;,
   &quot;name&quot;: &quot;recipient_name&quot;,
-  &quot;image_urls&quot;: [
-    &quot;https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI&quot;,
-    &quot;https://fastly.picsum.photos/id/14/200/300.jpg?hmac=FMdb1SH_oeEo4ibDe66-ORzb8p0VYJUS3xWfN3h2qDU&quot;,
-    &quot;https://fastly.picsum.photos/id/100/200/300.jpg?hmac=MeTp97vw7VNDswRcCqUFkGNC8ILDvNfI4MRoHFyGcQ8&quot;
-  ]
+  &quot;image_url&quot;: &quot;https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI&quot;,
 });
 request.headers.addAll(headers);
 
@@ -1007,15 +999,7 @@ func main() {
 &quot;+`
     &quot;name&quot;: &quot;recipient_name&quot;,`+&quot;
 &quot;+`
-    &quot;image_urls&quot;: [`+&quot;
-&quot;+`
-        &quot;https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI&quot;,`+&quot;
-&quot;+`
-        &quot;https://fastly.picsum.photos/id/14/200/300.jpg?hmac=FMdb1SH_oeEo4ibDe66-ORzb8p0VYJUS3xWfN3h2qDU&quot;,`+&quot;
-&quot;+`
-        &quot;https://fastly.picsum.photos/id/100/200/300.jpg?hmac=MeTp97vw7VNDswRcCqUFkGNC8ILDvNfI4MRoHFyGcQ8&quot;`+&quot;
-&quot;+`
-    ]`+&quot;
+    &quot;image_url&quot;: &quot;https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI&quot;,`+&quot;
 &quot;+`
 }`)
 
@@ -1053,7 +1037,7 @@ func main() {
 OkHttpClient client = new OkHttpClient().newBuilder()
   .build();
 MediaType mediaType = MediaType.parse(&quot;application/json&quot;);
-RequestBody body = RequestBody.create(mediaType, &quot;{\r\n    \&quot;provider\&quot;: \&quot;twlo\&quot;,\r\n    \&quot;channel_key\&quot;: \&quot;your_channel_key\&quot;,\r\n    \&quot;to\&quot;: \&quot;phone_number\&quot;,\r\n    \&quot;name\&quot;: \&quot;recipient_name\&quot;,\r\n    \&quot;image_urls\&quot;: [\r\n        \&quot;https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI\&quot;,\r\n        \&quot;https://fastly.picsum.photos/id/14/200/300.jpg?hmac=FMdb1SH_oeEo4ibDe66-ORzb8p0VYJUS3xWfN3h2qDU\&quot;,\r\n        \&quot;https://fastly.picsum.photos/id/100/200/300.jpg?hmac=MeTp97vw7VNDswRcCqUFkGNC8ILDvNfI4MRoHFyGcQ8\&quot;\r\n    ]\r\n}&quot;);
+RequestBody body = RequestBody.create(mediaType, &quot;{\r\n    \&quot;provider\&quot;: \&quot;twlo\&quot;,\r\n    \&quot;channel_key\&quot;: \&quot;your_channel_key\&quot;,\r\n    \&quot;to\&quot;: \&quot;phone_number\&quot;,\r\n    \&quot;name\&quot;: \&quot;recipient_name\&quot;,\r\n    \&quot;image_url\&quot;: \&quot;https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI\&quot;,\r\n }&quot;);
 Request request = new Request.Builder()
   .url(&quot;https://api.sociocs.com/message&quot;)
   .method(&quot;POST&quot;, body)
@@ -1073,11 +1057,7 @@ let data = JSON.stringify({
   &quot;channel_key&quot;: &quot;your_channel_key&quot;,
   &quot;to&quot;: &quot;phone_number&quot;,
   &quot;name&quot;: &quot;recipient_name&quot;,
-  &quot;image_urls&quot;: [
-    &quot;https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI&quot;,
-    &quot;https://fastly.picsum.photos/id/14/200/300.jpg?hmac=FMdb1SH_oeEo4ibDe66-ORzb8p0VYJUS3xWfN3h2qDU&quot;,
-    &quot;https://fastly.picsum.photos/id/100/200/300.jpg?hmac=MeTp97vw7VNDswRcCqUFkGNC8ILDvNfI4MRoHFyGcQ8&quot;
-  ]
+  &quot;image_url&quot;: &quot;https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI&quot;,
 });
 
 let config = {
@@ -1115,11 +1095,7 @@ $body = '{
   &quot;channel_key&quot;: &quot;your_channel_key&quot;,
   &quot;to&quot;: &quot;phone_number&quot;,
   &quot;name&quot;: &quot;recipient_name&quot;,
-  &quot;image_urls&quot;: [
-    &quot;https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI&quot;,
-    &quot;https://fastly.picsum.photos/id/14/200/300.jpg?hmac=FMdb1SH_oeEo4ibDe66-ORzb8p0VYJUS3xWfN3h2qDU&quot;,
-    &quot;https://fastly.picsum.photos/id/100/200/300.jpg?hmac=MeTp97vw7VNDswRcCqUFkGNC8ILDvNfI4MRoHFyGcQ8&quot;
-  ]
+  &quot;image_url&quot;: &quot;https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI&quot;
 }';
 $request = new Request('POST', 'https://api.sociocs.com/message', $headers, $body);
 $res = $client-&gt;sendAsync($request)-&gt;wait();
@@ -1140,11 +1116,7 @@ payload = json.dumps({
   &quot;channel_key&quot;: &quot;your_channel_key&quot;,
   &quot;to&quot;: &quot;phone_number&quot;,
   &quot;name&quot;: &quot;recipient_name&quot;,
-  &quot;image_urls&quot;: [
-    &quot;https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI&quot;,
-    &quot;https://fastly.picsum.photos/id/14/200/300.jpg?hmac=FMdb1SH_oeEo4ibDe66-ORzb8p0VYJUS3xWfN3h2qDU&quot;,
-    &quot;https://fastly.picsum.photos/id/100/200/300.jpg?hmac=MeTp97vw7VNDswRcCqUFkGNC8ILDvNfI4MRoHFyGcQ8&quot;
-  ]
+  &quot;image_url&quot;: &quot;https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI&quot;
 })
 headers = {
   'Content-Type': 'application/json',
@@ -1224,7 +1196,7 @@ print(response.text)</code></pre>
                                     <ul class="flex flex-wrap items-center text-sm">
                                     </ul>
                                 </div>
-                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© 2023. All rights reserved.</p></div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© 2024. All rights reserved.</p></div>
                             </footer>
                         </div>
                     </div>
