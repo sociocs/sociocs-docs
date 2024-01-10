@@ -532,16 +532,14 @@ curl --location --request POST '{{apiBaseUrl}}{{path_for_sample ?? path}}' \
     "channel_key": "your_channel_key",
     "to": "phone_number",
     "name": "recipient_name",
-    "image_url": [
-        "https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI",
-    ]
+    "image_url": "https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI"
 }'
 ```
 
 +++ cURL (Windows)
 
 ```shell
-curl --location "{{apiBaseUrl}}{{path_for_sample ?? path}}" --header "Content-Type: application/json" --header "apikey: your_api_key" --data "{ \"provider\": \"twlo\", \"channel_key\": \"your_channel_key\", \"to\": \"phone_number\", \"name\": \"recipient_name\", \"image_urls\": [\"https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI\", \"https://fastly.picsum.photos/id/14/200/300.jpg?hmac=FMdb1SH_oeEo4ibDe66-ORzb8p0VYJUS3xWfN3h2qDU\", \"https://fastly.picsum.photos/id/100/200/300.jpg?hmac=MeTp97vw7VNDswRcCqUFkGNC8ILDvNfI4MRoHFyGcQ8\"] }"
+curl --location "{{apiBaseUrl}}{{path_for_sample ?? path}}" --header "Content-Type: application/json" --header "apikey: your_api_key" --data "{ \"provider\": \"twlo\", \"channel_key\": \"your_channel_key\", \"to\": \"phone_number\", \"name\": \"recipient_name\", \"image_url\": \"https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI\" }"
 ```
 
 +++ C#
@@ -550,7 +548,7 @@ curl --location "{{apiBaseUrl}}{{path_for_sample ?? path}}" --header "Content-Ty
 var client = new HttpClient();
 var request = new HttpRequestMessage(HttpMethod.Post, "{{apiBaseUrl}}{{path_for_sample ?? path}}");
 request.Headers.Add("apikey", "your_api_key");
-var content = new StringContent("{ \"provider\": \"twlo\", \"channel_key\": \"your_channel_key\", \"to\": \"phone_number\", \"name\": \"recipient_name\", \"image_urls\": [\"https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI\", \"https://fastly.picsum.photos/id/14/200/300.jpg?hmac=FMdb1SH_oeEo4ibDe66-ORzb8p0VYJUS3xWfN3h2qDU\", \"https://fastly.picsum.photos/id/100/200/300.jpg?hmac=MeTp97vw7VNDswRcCqUFkGNC8ILDvNfI4MRoHFyGcQ8\"] }", null, "application/json");
+var content = new StringContent("{ \"provider\": \"twlo\", \"channel_key\": \"your_channel_key\", \"to\": \"phone_number\", \"name\": \"recipient_name\", \"image_url\": \"https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI\" }", null, "application/json");
 request.Content = content;
 var response = await client.SendAsync(request);
 response.EnsureSuccessStatusCode();
@@ -571,9 +569,7 @@ request.body = json.encode({
   "channel_key": "your_channel_key",
   "to": "phone_number",
   "name": "recipient_name",
-  "image_url": [
-    "https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI",
-  ]
+  "image_url": "https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI",
 });
 request.headers.addAll(headers);
 
@@ -614,11 +610,7 @@ func main() {
 "+`
     "name": "recipient_name",`+"
 "+`
-    "image_url": [`+"
-"+`
-        "https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI",`+"
-"+`
-    ]`+"
+    "image_url": "https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI",`+"
 "+`
 }`)
 
@@ -656,7 +648,7 @@ func main() {
 OkHttpClient client = new OkHttpClient().newBuilder()
   .build();
 MediaType mediaType = MediaType.parse("application/json");
-RequestBody body = RequestBody.create(mediaType, "{\r\n    \"provider\": \"twlo\",\r\n    \"channel_key\": \"your_channel_key\",\r\n    \"to\": \"phone_number\",\r\n    \"name\": \"recipient_name\",\r\n    \"image_urls\": [\r\n        \"https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI\",\r\n        \"https://fastly.picsum.photos/id/14/200/300.jpg?hmac=FMdb1SH_oeEo4ibDe66-ORzb8p0VYJUS3xWfN3h2qDU\",\r\n        \"https://fastly.picsum.photos/id/100/200/300.jpg?hmac=MeTp97vw7VNDswRcCqUFkGNC8ILDvNfI4MRoHFyGcQ8\"\r\n    ]\r\n}");
+RequestBody body = RequestBody.create(mediaType, "{\r\n    \"provider\": \"twlo\",\r\n    \"channel_key\": \"your_channel_key\",\r\n    \"to\": \"phone_number\",\r\n    \"name\": \"recipient_name\",\r\n    \"image_url\": \"https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI\",\r\n }");
 Request request = new Request.Builder()
   .url("{{apiBaseUrl}}{{path_for_sample ?? path}}")
   .method("POST", body)
@@ -676,9 +668,7 @@ let data = JSON.stringify({
   "channel_key": "your_channel_key",
   "to": "phone_number",
   "name": "recipient_name",
-  "image_url": [
-    "https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI",
-  ]
+  "image_url": "https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI",
 });
 
 let config = {
@@ -716,9 +706,7 @@ $body = '{
   "channel_key": "your_channel_key",
   "to": "phone_number",
   "name": "recipient_name",
-  "image_url": [
-    "https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI"
-  ]
+  "image_url": "https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI"
 }';
 $request = new Request('POST', '{{apiBaseUrl}}{{path_for_sample ?? path}}', $headers, $body);
 $res = $client->sendAsync($request)->wait();
@@ -739,9 +727,7 @@ payload = json.dumps({
   "channel_key": "your_channel_key",
   "to": "phone_number",
   "name": "recipient_name",
-  "image_url": [
-    "https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI"
-  ]
+  "image_url": "https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI"
 })
 headers = {
   'Content-Type': 'application/json',
