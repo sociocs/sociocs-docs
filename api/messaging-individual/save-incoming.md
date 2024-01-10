@@ -24,6 +24,8 @@ channel_key | Channel key value from *Profile & settings -> API*  | String| Yes
 from | {{include "api/phone-number-value"}} | String | Yes
 name | Sender name | String | No
 text | Message text | String | Yes
+media_url | Publicly accessible image, video or file URL | String | No
+media_type | MIME type of the media (e.g., `image/png`, `video/mp4`, `application/pdf`, etc). [!button variant="info" size="xs" target="blank" text="List of common MIME types"](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types) | String | Only when `media_url` is present
 
 ## Response
 
