@@ -519,7 +519,7 @@ print(response.text)
 
 +++
 
-### Sending only images
+### Sending only an image
 
 +++ cURL
 
@@ -532,10 +532,8 @@ curl --location --request POST '{{apiBaseUrl}}{{path_for_sample ?? path}}' \
     "channel_key": "your_channel_key",
     "to": "phone_number",
     "name": "recipient_name",
-    "image_urls": [
+    "image_url": [
         "https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI",
-        "https://fastly.picsum.photos/id/14/200/300.jpg?hmac=FMdb1SH_oeEo4ibDe66-ORzb8p0VYJUS3xWfN3h2qDU",
-        "https://fastly.picsum.photos/id/100/200/300.jpg?hmac=MeTp97vw7VNDswRcCqUFkGNC8ILDvNfI4MRoHFyGcQ8"
     ]
 }'
 ```
@@ -573,10 +571,8 @@ request.body = json.encode({
   "channel_key": "your_channel_key",
   "to": "phone_number",
   "name": "recipient_name",
-  "image_urls": [
+  "image_url": [
     "https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI",
-    "https://fastly.picsum.photos/id/14/200/300.jpg?hmac=FMdb1SH_oeEo4ibDe66-ORzb8p0VYJUS3xWfN3h2qDU",
-    "https://fastly.picsum.photos/id/100/200/300.jpg?hmac=MeTp97vw7VNDswRcCqUFkGNC8ILDvNfI4MRoHFyGcQ8"
   ]
 });
 request.headers.addAll(headers);
@@ -618,13 +614,9 @@ func main() {
 "+`
     "name": "recipient_name",`+"
 "+`
-    "image_urls": [`+"
+    "image_url": [`+"
 "+`
         "https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI",`+"
-"+`
-        "https://fastly.picsum.photos/id/14/200/300.jpg?hmac=FMdb1SH_oeEo4ibDe66-ORzb8p0VYJUS3xWfN3h2qDU",`+"
-"+`
-        "https://fastly.picsum.photos/id/100/200/300.jpg?hmac=MeTp97vw7VNDswRcCqUFkGNC8ILDvNfI4MRoHFyGcQ8"`+"
 "+`
     ]`+"
 "+`
@@ -684,10 +676,8 @@ let data = JSON.stringify({
   "channel_key": "your_channel_key",
   "to": "phone_number",
   "name": "recipient_name",
-  "image_urls": [
+  "image_url": [
     "https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI",
-    "https://fastly.picsum.photos/id/14/200/300.jpg?hmac=FMdb1SH_oeEo4ibDe66-ORzb8p0VYJUS3xWfN3h2qDU",
-    "https://fastly.picsum.photos/id/100/200/300.jpg?hmac=MeTp97vw7VNDswRcCqUFkGNC8ILDvNfI4MRoHFyGcQ8"
   ]
 });
 
@@ -726,10 +716,8 @@ $body = '{
   "channel_key": "your_channel_key",
   "to": "phone_number",
   "name": "recipient_name",
-  "image_urls": [
-    "https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI",
-    "https://fastly.picsum.photos/id/14/200/300.jpg?hmac=FMdb1SH_oeEo4ibDe66-ORzb8p0VYJUS3xWfN3h2qDU",
-    "https://fastly.picsum.photos/id/100/200/300.jpg?hmac=MeTp97vw7VNDswRcCqUFkGNC8ILDvNfI4MRoHFyGcQ8"
+  "image_url": [
+    "https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI"
   ]
 }';
 $request = new Request('POST', '{{apiBaseUrl}}{{path_for_sample ?? path}}', $headers, $body);
@@ -751,10 +739,8 @@ payload = json.dumps({
   "channel_key": "your_channel_key",
   "to": "phone_number",
   "name": "recipient_name",
-  "image_urls": [
-    "https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI",
-    "https://fastly.picsum.photos/id/14/200/300.jpg?hmac=FMdb1SH_oeEo4ibDe66-ORzb8p0VYJUS3xWfN3h2qDU",
-    "https://fastly.picsum.photos/id/100/200/300.jpg?hmac=MeTp97vw7VNDswRcCqUFkGNC8ILDvNfI4MRoHFyGcQ8"
+  "image_url": [
+    "https://fastly.picsum.photos/id/701/200/300.jpg?hmac=gVWdD9Rh_J0iGXpXOJAN7MZpGPrpeHX_M5JwGGvTSsI"
   ]
 })
 headers = {
