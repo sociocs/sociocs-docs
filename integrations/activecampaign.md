@@ -11,7 +11,7 @@ This app adds ability for you to send text/SMS (using your Twilio account) or Wh
 When the recipient replies to the message, it shows up in your Sociocs Inbox, from where you can reply, and continue the conversation.
 
 !!!
-If you are already using Twilio app in ActiveCampaign for sending SMS, you can replace it with the Sociocs app to enable a two-way conversation with the recipients.
+If you're already using Twilio app in ActiveCampaign for sending SMS, you can replace it with the Sociocs app to enable a two-way conversation with the recipients.
 !!!
 
 [!button variant="info" target="blank" text="App page on ActiveCampaign"](https://www.activecampaign.com/apps/sociocs-integration)
@@ -26,12 +26,14 @@ If you are already using Twilio app in ActiveCampaign for sending SMS, you can r
 
 {{include "signup-or-login"}}
 
-1. Connect "*SMS (with Twilio)*", "*WhatsApp (with Gupshup)*", or "*WhatsApp (with Twilio)*" channel on the "*Connect a new channel*" page. If you are an existing user, after logging in, click on "*Channels*" menu on the top, click on "*+*" button to go to the "*Connect a new channel*" page.
+1. Connect "*SMS (with Twilio)*", "*WhatsApp (with Gupshup)*", or "*WhatsApp (with Twilio)*" channel on the "*Connect a new channel*" page. If you're an existing user, after logging in, click on "*Channels*" menu on the top, click on "*+*" button to go to the "*Connect a new channel*" page.
 
 1. Go to "*Profile & settings -> API*".
-    ![image](https://user-images.githubusercontent.com/12301512/163997321-90b286f5-e1aa-4df8-bc18-e453b20d26e8.png)
+    ![settings](https://user-images.githubusercontent.com/12301512/163997321-90b286f5-e1aa-4df8-bc18-e453b20d26e8.png)
 
-1. Find "*API key*". If you're using Sociocs API for the first time, you need to enable it by clicking on "*Enable API*" button. You will need this key later.
+    ![api](https://github.com/sociocs/docs/assets/12301512/4168b133-c8e2-4834-9b7b-d62b5203349c)
+
+1. Find "*API key*". You'll need it later. (If you're using Sociocs API for the first time, you need to enable it by clicking on "*Enable API*" button.)
 
 ## Setup on ActiveCampaign
 
