@@ -11,7 +11,7 @@ This app adds ability for you to send text/SMS (using your Twilio account) or Wh
 When the recipient replies to the message, it shows up in your Sociocs Inbox, from where you can reply, and continue the conversation.
 
 !!!
-If you are already using Twilio app for sending SMS, you can replace it with the Sociocs app to enable a two-way conversation with the recipients.
+If you are already using Twilio app in ActiveCampaign for sending SMS, you can replace it with the Sociocs app to enable a two-way conversation with the recipients.
 !!!
 
 [!button variant="info" target="blank" text="App page on ActiveCampaign"](https://www.activecampaign.com/apps/sociocs-integration)
