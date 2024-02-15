@@ -69,4 +69,6 @@ You need a FREE TRIAL or PAID account on Sociocs to use the necessary API for th
 
     ![test](https://github.com/sociocs/docs/assets/12301512/685ae2df-fbde-47cc-b01e-9efbe293b318)
 
+{{include "alert-whatsapp-apprvd-tmplt-reqd"}}
+
 *That's it, you are all set to send messages to your target recipients!*

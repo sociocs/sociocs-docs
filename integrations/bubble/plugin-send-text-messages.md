@@ -87,4 +87,6 @@ This plugin offers two actions, you can use either or both depending upon your u
         - To send a file, enter "*File URL*" or set it to use a dynamic URL value. Support for file types in the SMS/MMS clients is very limited, so all your recipients may not be able to see/open the received file.
         ![image](https://user-images.githubusercontent.com/12301512/164025420-907402bd-61dd-4fdd-89bc-9ae5f9a75daa.png)
 
+{{include "alert-whatsapp-apprvd-tmplt-reqd"}}
+
 That's it, you are all set to send messages to your users!
