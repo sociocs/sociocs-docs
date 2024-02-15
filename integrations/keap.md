@@ -14,6 +14,10 @@ When the recipient replies to the message, it shows up in your Sociocs Inbox, fr
 If you're already using Twilio API under "Send HTTP Post" in Keap for sending SMS, you can replace it with the Sociocs app to enable a two-way conversation with the recipients.
 !!!
 
+!!!
+You need a FREE TRIAL or PAID account on Sociocs to use the necessary API for this integration.
+!!!
+
 ## Supported channels
 
 - SMS (with Twilio)

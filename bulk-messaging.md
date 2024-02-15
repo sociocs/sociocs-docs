@@ -48,6 +48,12 @@ Enter message content in this field. You can personalize the messages by adding 
 
 ![Message example](https://github.com/sociocs/docs/assets/12301512/6f3a05fb-c385-44df-8ec9-9c723cda9ac4)
 
+!!!warning
+If you're using a WhatsApp channel, make sure the message text is approved as a template by WhatsApp, and enter it exactly as the approved template's text.
+
+You can submit the template for approval on the website of the provider you used (e.g., Twilio) for creating your WhatsApp account.
+!!!
+
 ### Save as template
 
 You can use this check box to save the entered messages text as a template. It can update an existing template with new text or create a new template.

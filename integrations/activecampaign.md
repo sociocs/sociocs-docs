@@ -14,6 +14,10 @@ When the recipient replies to the message, it shows up in your Sociocs Inbox, fr
 If you're already using Twilio app in ActiveCampaign for sending SMS, you can replace it with the Sociocs app to enable a two-way conversation with the recipients.
 !!!
 
+!!!
+You need a FREE TRIAL or PAID account on Sociocs to use the necessary API for this app.
+!!!
+
 [!button variant="info" target="blank" text="App page on ActiveCampaign"](https://www.activecampaign.com/apps/sociocs-integration)
 
 ## Supported channels
@@ -72,6 +76,11 @@ If you're already using Twilio app in ActiveCampaign for sending SMS, you can re
 1. Select "*Channel*" depending upon the phone number you would like to use for sending messages. If you have only one channel on Sociocs, you should see only one option in the dropdown list.
 
 1. Enter "*Message text*" (with personalization if you like), and click "*Finish*".
+    !!!warning
+    If you're using a WhatsApp channel, make sure the message text is approved as a template by WhatsApp, and enter it exactly as the approved template's text.
+
+    You can submit the template for approval on the website of the provider you used (e.g., Twilio) for creating your WhatsApp account.
+    !!!
 
 ![image](https://github.com/sociocs/docs/assets/12301512/c5ddc3ba-8e6d-4db8-a637-8082e53da84f)
 
