@@ -18,7 +18,7 @@ If you're already using Twilio app in ActiveCampaign for sending SMS, you can re
 You need a FREE TRIAL or PAID account on Sociocs to use the necessary API for this app.
 !!!
 
-[!button variant="info" target="blank" text="App page on ActiveCampaign"](https://www.activecampaign.com/apps/sociocs-integration?_r=43KC4S4U)
+[!badge size="xl" target="blank" text="App page on ActiveCampaign" icon="link-external" iconAlign="right"](https://www.activecampaign.com/apps/sociocs-integration?_r=43KC4S4U)
 
 ## Supported channels
 
