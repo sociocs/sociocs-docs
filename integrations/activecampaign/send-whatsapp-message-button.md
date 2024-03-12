@@ -47,8 +47,8 @@ This feature is available for both the FREE and PAID accounts.
     --- | ---
     \{\{BUSINESS_NAME\}\} | Your business name.
     \{\{CUSTOMER_NAME\}\} | Name of the recipient.
-    \{\{FIRST_NAME\}\} | First name of the recipient.
-    \{\{LAST_NAME\}\} | Last name of the recipient.
+    \{\{first_name\}\} | First name of the recipient.
+    \{\{last_name\}\} | Last name of the recipient.
     \{\{PHONE_NUMBER\}\} | Phone number of the recipient starting with the country dial code (e.g., 16317471111).
     \{\{SENDER_NAME\}\} | Name of the person sending the bulk messages.
 
