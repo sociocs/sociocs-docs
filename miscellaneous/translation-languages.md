@@ -3,7 +3,7 @@ title: Translation languages
 order: -200
 ---
 
-List of languages supported for auto translation. When using auto translation in the [!badge text="bulk messaging" target="_blank"](/bulk-messaging/#auto-translate), you should use the `Language code` value when adding `language` (as a contact `Extra field` or a column in the uploaded file).
+List of languages supported for auto translation. When using auto translation in the [!badge text="bulk messaging" target="_blank"](/bulk-messaging/#auto-translation), you should use the `Language code` value when adding `language` (as a contact `Extra field` or a column in the uploaded file).
 
 **Language** | **Native name** | **Language code** { class="compact" }
 ---|---|---
