@@ -1,7 +1,7 @@
 ---
-label: ActiveCampaign
-title: "ActiveCampaign app :: Sociocs"
-order: -100
+label: Automation
+title: "Sociocs app for ActiveCampaign automation"
+order: -200
 ---
 
 ## Introduction
