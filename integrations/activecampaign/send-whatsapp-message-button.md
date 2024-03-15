@@ -41,7 +41,7 @@ This feature is available for both the FREE and PAID accounts.
 1. You should see a WhatsApp icon button next to the phone number. Click on the icon which opens the Sociocs Outbound Compose page.
     ![WhatsApp Icon Button](https://github.com/sociocs/docs/assets/12301512/65f3705d-ca4d-4919-aff2-911e8b3f94df)
 
-1. Enter "*Message text*" (with personalization if you like), and click "*Send*". Below [!badge text="dynamic fields" target="_blank"](/miscellaneous/dynamic-fields.md) supported on the Compose page with this feature.
+1. Enter "*Message text*" (with personalization if you like), and click "*Send*". Below [!badge text="dynamic fields" target="_blank"](/miscellaneous/dynamic-fields.md) supported on the Compose page with this feature. **Dynamic fields are case sensitive.**
 
     Dynamic field | Remarks {class="compact"}
     --- | ---
@@ -49,7 +49,6 @@ This feature is available for both the FREE and PAID accounts.
     \{\{CUSTOMER_NAME\}\} | Name of the recipient.
     \{\{first_name\}\} | First name of the recipient.
     \{\{last_name\}\} | Last name of the recipient.
-    \{\{PHONE_NUMBER\}\} | Phone number of the recipient starting with the country dial code (e.g., 16317471111).
     \{\{SENDER_NAME\}\} | Name of the person sending the bulk messages.
 
 {{include "alert-whatsapp-apprvd-tmplt-reqd"}}
