@@ -36,7 +36,7 @@ footer:
   copyright: "&copy; {{ year }}. All rights reserved."
 
 integrations:
-  googleTagManager:
+  googleAnalytics:
     id: G-33B2S1ZXGM
 
 data:
