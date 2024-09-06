@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.775723156613">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.778938159649">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -34,12 +34,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../static/images/sociocs-icon-32.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.5.0.775723156613" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.5.0.778938159649" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.775723156613" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.778938159649" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.775723156613" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.5.0.775723156613" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.778938159649" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.5.0.778938159649" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -272,25 +272,31 @@
 <td>text</td>
 <td>Message text</td>
 <td>String</td>
-<td>No (when image_url, image_urls or file_url is present)</td>
+<td>No (when image_url, image_urls or file_url or template is present)</td>
 </tr>
 <tr>
 <td>image_url</td>
 <td>Publicly accessible image URL</td>
 <td>String</td>
-<td>No (when text, video_url or file_url is present)</td>
+<td>No (when text, video_url or file_url or template is present)</td>
 </tr>
 <tr>
 <td>video_url</td>
 <td>Publicly accessible video URL</td>
 <td>String</td>
-<td>No (when text, image_url or file_url is present)</td>
+<td>No (when text, image_url or file_url or template is present)</td>
 </tr>
 <tr>
 <td>file_url</td>
 <td>Publicly accessible file URL</td>
 <td>String</td>
-<td>No (when text, image_url or video_url is present)</td>
+<td>No (when text, image_url or video_url or template is present)</td>
+</tr>
+<tr>
+<td>template</td>
+<td>Object with template ID and variables. Used only when provider is either <code v-pre>twlowa</code> or <code v-pre>gswa</code>. See below for object format for each provider.</td>
+<td>Object</td>
+<td>No (when text, image_url or video_url or file_url is present)</td>
 </tr>
 <tr>
 <td>contact_saving</td>
@@ -303,6 +309,77 @@
 <td>ISO 8601 date &amp; time (e.g., &quot;2006-01-02T15:04:05-04:00&quot;)</td>
 <td>String</td>
 <td>No</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="template">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#template">#</doc-anchor-trigger>
+        <span>template</span>
+    </h3>
+</doc-anchor-target>
+<p>This field is used for passing template details when sending a WhatsApp template message. Applicable only when provider is either <code v-pre>twlowa</code> or <code v-pre>gswa</code>.</p>
+<doc-anchor-target id="template-for-provider-twlowa">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#template-for-provider-twlowa">#</doc-anchor-trigger>
+        <span>template for provider <code v-pre>twlowa</code></span>
+    </h4>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Data type</th>
+<th>Required?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>Template SID from Twilio Content Template Builder</td>
+<td>String</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>variables</td>
+<td>Key value pair object with all the variables in the template. <br/><br/>Example: <br/><code v-pre>{ &quot;1&quot;: &quot;John&quot;, &quot;2&quot;: &quot;john@example.com&quot;, &quot;3&quot;: &quot;11-Jul-2024&quot; }</code></td>
+<td>Object</td>
+<td>Yes (only when there are variables in the template)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="template-for-provider-gswa">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#template-for-provider-gswa">#</doc-anchor-trigger>
+        <span>template for provider <code v-pre>gswa</code></span>
+    </h4>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Data type</th>
+<th>Required?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>Template ID for the template created in the Gupshup console</td>
+<td>String</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>variables</td>
+<td>Object with <code v-pre>MEDIA_URL</code> and/or key value pair object maps for each component (<code v-pre>Header</code>, <code v-pre>Body</code>, <code v-pre>Buttons</code>) with variables in the template. <br/><br/>Example: <br/><code v-pre>{ &quot;MEDIA_URL&quot;: &quot;https://placehold.co/600x400&quot;, &quot;Header&quot;: { &quot;1&quot;: &quot;John&quot;}, &quot;Body&quot;: { &quot;1&quot;: &quot;john@example.com&quot;, &quot;2&quot;: &quot;11-Jul-2024&quot;}, &quot;Buttons&quot;: {&quot;1&quot;: &quot;Quick Reply Text&quot;} }</code></td>
+<td>Object</td>
+<td>Yes (only when there are variables in the template)</td>
 </tr>
 </tbody>
 </table>
