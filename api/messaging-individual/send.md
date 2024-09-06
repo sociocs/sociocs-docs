@@ -27,12 +27,31 @@ provider | `twlo` (for Twilio SMS), <br />`twlowa` (for Twilio WhatsApp), <br />
 channel_key | Channel key value from *Profile & settings -> API* | String | Yes
 to | {{include "api/phone-number-value"}} | String | Yes
 name | Recipient name | String | No
-text | Message text | String | No (when image_url, image_urls or file_url is present)
-image_url | Publicly accessible image URL | String | No (when text, video_url or file_url is present)
-video_url | Publicly accessible video URL | String | No (when text, image_url or file_url is present)
-file_url | Publicly accessible file URL | String | No (when text, image_url or video_url is present)
+text | Message text | String | No (when image_url, image_urls or file_url or template is present)
+image_url | Publicly accessible image URL | String | No (when text, video_url or file_url or template is present)
+video_url | Publicly accessible video URL | String | No (when text, image_url or file_url or template is present)
+file_url | Publicly accessible file URL | String | No (when text, image_url or video_url or template is present)
+template | Object with template ID and variables. Used only when provider is either `twlowa` or `gswa`. See below for object format for each provider. | Object | No (when text, image_url or video_url or file_url is present)
 contact_saving | Object with instruction to save phone number and name as a contact after sending the message. See below | Object | No
 schedule | ISO 8601 date & time (e.g., "2006-01-02T15:04:05-04:00") | String | No
+
+### template
+
+This field is used for passing template details when sending a WhatsApp template message. Applicable only when provider is either `twlowa` or `gswa`.
+
+#### template for provider `twlowa`
+
+Name | Value | Data type | Required? {class="compact"}
+--- | ---
+id | Template SID from Twilio Content Template Builder | String | Yes
+variables | Key value pair object with all the variables in the template. <br/><br/>Example: <br/>`{ "1": "John", "2": "john@example.com", "3": "11-Jul-2024" }` | Object | Yes (only when there are variables in the template)
+
+#### template for provider `gswa`
+
+Name | Value | Data type | Required? {class="compact"}
+--- | ---
+id | Template ID for the template created in the Gupshup console | String | Yes
+variables | Object with `MEDIA_URL` and/or key value pair object maps for each component (`Header`, `Body`, `Buttons`) with variables in the template. <br/><br/>Example: <br/>`{ "MEDIA_URL": "https://placehold.co/600x400", "Header": { "1": "John"}, "Body": { "1": "john@example.com", "2": "11-Jul-2024"}, "Buttons": {"1": "Quick Reply Text"} }` | Object | Yes (only when there are variables in the template)
 
 ### contact_saving
 
