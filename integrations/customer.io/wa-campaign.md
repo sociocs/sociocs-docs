@@ -12,6 +12,10 @@ You can send WhatsApp campaigns from Customer.io using Sociocs and manage the co
 You need a FREE TRIAL or PAID account on Sociocs to use the necessary API for this integration.
 !!!
 
+!!!
+This integration requires an approved WhatsApp template to successfully send the message. You need to get one approved on the website of the provider you will be using (i.e., Twilio or Gupshup).
+!!!
+
 ## Supported channels
 
 - WhatsApp (with Twilio)
