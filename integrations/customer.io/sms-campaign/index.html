@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.781363108667">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.781383076279">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -36,11 +36,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../static/images/sociocs-icon-32.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.6.0.781363108667" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.6.0.781383076279" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.781363108667" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.781383076279" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.781363108667" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.781383076279" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -301,12 +301,12 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Select &quot;<em>Every re-match</em>&quot; under the &quot;<em>Frequency</em>&quot; if you would like to send SMS each time the contact enters the segment. <span class="docs-emoji">&#x1F4A1;</span></p>
+<p>Select &quot;<em>Every re-match</em>&quot; or &quot;<em>On every event</em>&quot; under the &quot;<em>Frequency</em>&quot; if you would like to send SMS each time the condition occurs. <span class="docs-emoji">&#x1F4A1;</span></p>
         </div>
     </div>
 </div>
 <ol>
-<li><p>Finish &quot;<em>Settings</em>&quot; and &quot;<em>Goal &amp; Exit</em>&quot; steps and go to the &quot;<em>Workflow</em>&quot; step.</p>
+<li><p>Finish &quot;<em>Settings</em>&quot; and &quot;<em>Goal &amp; Exit</em>&quot; steps. Go to the &quot;<em>Workflow</em>&quot; step.</p>
 </li>
 <li><p>Drag and drop &quot;<em>Send and Receive Data</em>&quot; action in your workflow.
 <img src="https://github.com/user-attachments/assets/ec886715-8e7c-4949-80e9-901ac6524b18" alt="send and receive data action" /></p>
@@ -341,7 +341,7 @@
 </li>
 <li><p>Click on &quot;<em>Add header</em>&quot;. Add <code v-pre>apikey</code> in the &quot;<em>NAME</em>&quot; field, and your api key in the &quot;<em>VALUE</em>&quot; field.</p>
 </li>
-<li><p>In the API data payload box shown below, add below JSON data.</p>
+<li><p>In the API data payload box shown below, add below JSON object.</p>
 </li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -359,6 +359,8 @@
     }    
 }</code></pre>
 </doc-codeblock></div>
+<p>Here&#x27;s a sample of the API request parameters.
+<img src="https://github.com/user-attachments/assets/bc13053f-4270-4d18-aa32-b5c8119073b1" alt="sample api params" /></p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -372,7 +374,24 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>If you not want to save contact in Sociocs, you can remove the &quot;contact_saving&quot; object from the above. If you do, please ensure to remove comma at the end of the previous line.</p>
+<p>If you not want to save contact in Sociocs, you can remove the &quot;contact_saving&quot; object from the above. If you choose to do so, please ensure that you remove the comma at the end of the previous line.</p>
+        </div>
+    </div>
+</div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>You can send any attribute from the Customer.io contact to save with the Sociocs contact. Add any field under the &quot;<em>contact_saving → extra_fields</em>&quot; object like how the &quot;<em>email</em>&quot; field is shown above.</p>
         </div>
     </div>
 </div>
@@ -395,7 +414,9 @@
     </div>
 </div>
 </li>
-<li><p>Click on &quot;<em>Send test...</em>&quot; button to verify that the message gets sent to the sample contact.</p>
+<li><p>Click on the &quot;<em>Send test...</em>&quot; button to verify that the message gets sent to the sample contact.</p>
+</li>
+<li><p>Complete the &quot;<em>Review</em>&quot; step and start the campaign.</p>
 </li>
 </ol>
 <p><em>That&#x27;s it, you are all set to send messages to your target recipients!</em></p>
