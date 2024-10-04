@@ -12,24 +12,21 @@
     <meta name="generator" content="Retype 3.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Unsubscribe</title>
-    <meta name="title" content="Unsubscribe">
-    <meta name="description" content="Unsubscribe a webhook to stop receiving messages.">
+    <title>Sync Customer.io contacts with Sociocs</title>
+    <meta name="title" content="Sync Customer.io contacts with Sociocs">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.sociocs.com/api/webhooks/delete/">
+    <link rel="canonical" href="https://docs.sociocs.com/integrations/customer.io/contact-sync/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.sociocs.com/api/webhooks/delete/">
-    <meta property="og:title" content="Unsubscribe">
-    <meta property="og:description" content="Unsubscribe a webhook to stop receiving messages.">
+    <meta property="og:url" content="https://docs.sociocs.com/integrations/customer.io/contact-sync/">
+    <meta property="og:title" content="Sync Customer.io contacts with Sociocs">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.sociocs.com/api/webhooks/delete/">
-    <meta property="twitter:title" content="Unsubscribe">
-    <meta property="twitter:description" content="Unsubscribe a webhook to stop receiving messages.">
+    <meta property="twitter:url" content="https://docs.sociocs.com/integrations/customer.io/contact-sync/">
+    <meta property="twitter:title" content="Sync Customer.io contacts with Sociocs">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -39,7 +36,6 @@
     <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.781363108667" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
     <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.781363108667" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.6.0.781363108667" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -198,146 +194,12 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="unsubscribe" class="break-words">
+<doc-anchor-target id="sync-customerio-contacts-with-sociocs" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#unsubscribe">#</doc-anchor-trigger>
-        <span>Unsubscribe</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#sync-customerio-contacts-with-sociocs">#</doc-anchor-trigger>
+        <span>Sync Customer.io contacts with Sociocs</span>
     </h1>
 </doc-anchor-target>
-<p>Unsubscribe a webhook to stop receiving messages.</p>
-<doc-anchor-target id="method">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#method">#</doc-anchor-trigger>
-        <span>Method</span>
-    </h2>
-</doc-anchor-target>
-<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>DELETE</span>
-</span></p>
-<doc-anchor-target id="path">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#path">#</doc-anchor-trigger>
-        <span>Path</span>
-    </h2>
-</doc-anchor-target>
-<p><code v-pre>/webhook-subscriptions/[subscription_id]</code></p>
-<doc-anchor-target id="path-parameter">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#path-parameter">#</doc-anchor-trigger>
-        <span>Path parameter</span>
-    </h2>
-</doc-anchor-target>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="compact">
-<thead>
-<tr>
-<th>Name</th>
-<th>Value</th>
-<th>Required?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>subscription_id</td>
-<td>Subscription ID</td>
-<td>Yes</td>
-</tr>
-</tbody>
-</table>
-</div>
-<doc-anchor-target id="response">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#response">#</doc-anchor-trigger>
-        <span>Response</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="http-status-codes">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#http-status-codes">#</doc-anchor-trigger>
-        <span>HTTP status codes</span>
-    </h3>
-</doc-anchor-target>
-<!-- markdownlint-disable-next-line -->
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="compact">
-<thead>
-<tr>
-<th>Code</th>
-<th>Remarks</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>200</td>
-<td>Request was successful.</td>
-</tr>
-<tr>
-<td>400</td>
-<td>Validation error or request body was incorrectly formatted.</td>
-</tr>
-<tr>
-<td>401</td>
-<td>Authentication failed. Check <code v-pre>apikey</code> header.</td>
-</tr>
-<tr>
-<td>404</td>
-<td>Requested API endpoint not found.</td>
-</tr>
-<tr>
-<td>429</td>
-<td>The rate limit has been reached.</td>
-</tr>
-<tr>
-<td>500-511</td>
-<td>There was a problem processing the request on our server. Try again later.</td>
-</tr>
-</tbody>
-</table>
-</div>
-<doc-anchor-target id="response-object">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#response-object">#</doc-anchor-trigger>
-        <span>Response object</span>
-    </h3>
-</doc-anchor-target>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="compact">
-<thead>
-<tr>
-<th>Name</th>
-<th>Value</th>
-<th>Remarks</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>status</td>
-<td><code v-pre>success</code> or <code v-pre>error</code></td>
-<td>-</td>
-</tr>
-<tr>
-<td>errors</td>
-<td>Array of object <code v-pre>{ msg: [error detail] }</code></td>
-<td>Only present when status is <code v-pre>error</code>.</td>
-</tr>
-</tbody>
-</table>
-</div>
-<doc-anchor-target id="code-sample">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#code-sample">#</doc-anchor-trigger>
-        <span>Code sample</span>
-    </h2>
-</doc-anchor-target>
-<doc-tabs>
-<doc-tab v-cloak id="curl">
-<template #title>cURL</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-bash"><code v-pre class="language-bash">curl --location --request DELETE 'https://api.sociocs.com/webhook-subscriptions/ABC1234567890XYZ' \
---header 'apikey: your_api_key'</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
 
                                 
                                 <!-- Required only on API pages -->
@@ -347,16 +209,23 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../api/webhooks/get/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../integrations/customer.io/sms-campaign/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Get subscription</span>
+                                                <span class="block mt-1">Text/SMS Campaign</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../integrations/bubble/plugin-c2csms/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">Click to Chat by Text</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
                                     </div>
                                 </nav>
                             </footer>
@@ -397,6 +266,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Unsubscribe", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Contact Sync", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
