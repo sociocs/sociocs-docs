@@ -43,7 +43,7 @@ You need a FREE TRIAL or PAID account on Sociocs to use the necessary API for th
 Select "*Every re-match*" under the "*Frequency*" if you would like to send SMS each time the contact enters the segment. :bulb:
 !!!
 
-1. Finish "*Settings*" and "*Goal & Exit*" steps and go to the "*Workflow*" step.
+1. Finish "*Settings*" and "*Goal & Exit*" steps. Go to the "*Workflow*" step.
 
 1. Drag and drop "*Send and Receive Data*" action in your workflow.
     ![send and receive data action](https://github.com/user-attachments/assets/ec886715-8e7c-4949-80e9-901ac6524b18)
@@ -81,9 +81,11 @@ Select "*Every re-match*" under the "*Frequency*" if you would like to send SMS 
         }    
     }
     ```
+    Here's a sample of the API request parameters.
+    ![sample api params](https://github.com/user-attachments/assets/bc13053f-4270-4d18-aa32-b5c8119073b1)
 
     !!!
-    If you not want to save contact in Sociocs, you can remove the "contact_saving" object from the above. If you do, please ensure to remove comma at the end of the previous line.
+    If you not want to save contact in Sociocs, you can remove the "contact_saving" object from the above. If you choose to do so, please ensure that you remove the comma at the end of the previous line.
     !!!
 
     !!!
