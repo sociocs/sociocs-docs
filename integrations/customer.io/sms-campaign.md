@@ -40,7 +40,7 @@ You need a FREE TRIAL or PAID account on Sociocs to use the necessary API for th
 ![trigger](https://github.com/user-attachments/assets/5a250df1-0c65-413d-ba12-b5af8b20f141)
 
 !!!
-Select "*Every re-match*" under the "*Frequency*" if you would like to send SMS each time the contact enters the segment. :bulb:
+Select "*Every re-match*" or "*On every event*" under the "*Frequency*" if you would like to send SMS each time the condition occurs. :bulb:
 !!!
 
 1. Finish "*Settings*" and "*Goal & Exit*" steps. Go to the "*Workflow*" step.
@@ -64,7 +64,7 @@ Select "*Every re-match*" under the "*Frequency*" if you would like to send SMS 
 
     - Click on "*Add header*". Add `apikey` in the "*NAME*" field, and your api key in the "*VALUE*" field.
 
-    - In the API data payload box shown below, add below JSON data.
+    - In the API data payload box shown below, add below JSON object.
 
     ```
     {
@@ -89,11 +89,17 @@ Select "*Every re-match*" under the "*Frequency*" if you would like to send SMS 
     !!!
 
     !!!
+    You can send any attribute from the Customer.io contact to save with the Sociocs contact. Add any field under the "*contact_saving → extra_fields*" object like how the "*email*" field is shown above.
+    !!!
+
+    !!!
     Notice how every field and value is wrapped in double quotes, including attributes from the Customer.io contact. You can use any attribute from your contact by clicking the ‘+’ button in your sample contact; however, you need to manually wrap the variable placement with double quotes.
     
     If you would like to use empty as the default value, make sure it's represented only with two quotes (two single quotes for better readability). When adding the field using the Customer.io UI, be aware that it wraps the quotes with an additional set, which should be corrected.
     !!!
 
-1. Click on "*Send test...*" button to verify that the message gets sent to the sample contact.
+1. Click on the "*Send test...*" button to verify that the message gets sent to the sample contact.
+
+1. Complete the "*Review*" step and start the campaign.
 
 *That's it, you are all set to send messages to your target recipients!*
