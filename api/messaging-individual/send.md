@@ -34,6 +34,7 @@ file_url | Publicly accessible file URL | String | No (when text, image_url or v
 template | Object with template ID and variables. Used only when provider is either `twlowa` or `gswa`. See below for object format for each provider. | Object | No (when text, image_url or video_url or file_url is present)
 contact_saving | Object with instruction to save phone number and name as a contact after sending the message. See below | Object | No
 schedule | ISO 8601 date & time (e.g., "2006-01-02T15:04:05-04:00") | String | No
+user_id | Sociocs user ID to show as sender of the message. When not provided, message is show as sent by `Sociocs API`. Use [/team-members](/api/team-members/list.md) endpoint to find out User IDs. | String | No
 
 ### template
 
