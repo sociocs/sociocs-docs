@@ -1,6 +1,6 @@
 ---
 title: Reschedule bulk messaging job
-order: -300
+order: -700
 data:
     path: "/messages/bulk/[job_id]"
     path_for_sample: "/messages/bulk/Xyz12345"

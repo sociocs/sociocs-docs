@@ -1,6 +1,6 @@
 ---
 title: Get bulk messaging jobs
-order: -200
+order: -600
 data:
     path: "/messages/bulk"
     path_for_sample: "/messages/bulk"

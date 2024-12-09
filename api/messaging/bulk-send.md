@@ -1,6 +1,6 @@
 ---
 title: Send bulk messages
-order: -100
+order: -500
 data:
     path: "/messages/bulk"
 ---

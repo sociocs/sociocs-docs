@@ -1,6 +1,6 @@
 ---
 title: Delete bulk messaging job
-order: -400
+order: -800
 data:
     path: "/messages/bulk/[job_id]"
     path_for_sample: "/messages/bulk/Xyz12345"
