@@ -12,26 +12,24 @@
     <meta name="generator" content="Retype 3.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Sociocs app for ActiveCampaign automation</title>
-    <meta name="title" content="Sociocs app for ActiveCampaign automation">
-    <meta name="description" content="This app adds ability for you to send text/SMS (using your Twilio account) or WhatsApp messages (using your Twilio or Gupshup account) from your...">
+    <title>Add contacts to list</title>
+    <meta name="title" content="Add contacts to list">
+    <meta name="description" content="Add one or more contacts to a contact list using phone numbers.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.sociocs.com/integrations/activecampaign/automation/">
+    <link rel="canonical" href="https://docs.sociocs.com/api/contacts/add-to-list/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.sociocs.com/integrations/activecampaign/automation/">
-    <meta property="og:title" content="Sociocs app for ActiveCampaign automation">
-    <meta property="og:description" content="This app adds ability for you to send text/SMS (using your Twilio account) or WhatsApp messages (using your Twilio or Gupshup account) from your...">
-    <meta property="og:image" content="https://user-images.githubusercontent.com/12301512/163997321-90b286f5-e1aa-4df8-bc18-e453b20d26e8.png">
+    <meta property="og:url" content="https://docs.sociocs.com/api/contacts/add-to-list/">
+    <meta property="og:title" content="Add contacts to list">
+    <meta property="og:description" content="Add one or more contacts to a contact list using phone numbers.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.sociocs.com/integrations/activecampaign/automation/">
-    <meta property="twitter:title" content="Sociocs app for ActiveCampaign automation">
-    <meta property="twitter:description" content="This app adds ability for you to send text/SMS (using your Twilio account) or WhatsApp messages (using your Twilio or Gupshup account) from your...">
-    <meta property="twitter:image" content="https://user-images.githubusercontent.com/12301512/163997321-90b286f5-e1aa-4df8-bc18-e453b20d26e8.png">
+    <meta property="twitter:url" content="https://docs.sociocs.com/api/contacts/add-to-list/">
+    <meta property="twitter:title" content="Add contacts to list">
+    <meta property="twitter:description" content="Add one or more contacts to a contact list using phone numbers.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -41,6 +39,7 @@
     <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.787064609984" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
     <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.787064609984" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.6.0.787064609984" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -199,185 +198,159 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="sociocs-app-for-activecampaign-automation" class="break-words">
+<doc-anchor-target id="add-contacts-to-list" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#sociocs-app-for-activecampaign-automation">#</doc-anchor-trigger>
-        <span>Sociocs app for ActiveCampaign automation</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#add-contacts-to-list">#</doc-anchor-trigger>
+        <span>Add contacts to list</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="introduction">
+<p>Add one or more contacts to a contact list using phone numbers.</p>
+<doc-anchor-target id="method">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#introduction">#</doc-anchor-trigger>
-        <span>Introduction</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#method">#</doc-anchor-trigger>
+        <span>Method</span>
     </h2>
 </doc-anchor-target>
-<p>This app adds ability for you to send text/SMS (using your Twilio account) or WhatsApp messages (using your Twilio or Gupshup account) from your ActiveCampaign automation.</p>
-<p>When the recipient replies to the message, it shows up in your Sociocs Inbox, from where you can reply, and continue the conversation.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>If you&#x27;re already using Twilio app in ActiveCampaign for sending SMS, you can replace it with the Sociocs app to enable a two-way conversation with the recipients.</p>
-        </div>
-    </div>
-</div>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>You need a FREE TRIAL or PAID account on Sociocs to use the necessary API for this app.</p>
-        </div>
-    </div>
-</div>
-<p><a href="https://www.activecampaign.com/apps/sociocs-integration?_r=43KC4S4U" target="_blank" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-8 px-4 text-base rounded-md">
-    <span>App page on ActiveCampaign</span>
-    <span><svg xmlns="http://www.w3.org/2000/svg" class="mb-px inline-flex ml-2" width="22" height="22" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></span>
-</a></p>
-<doc-anchor-target id="supported-channels">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>POST</span>
+</span></p>
+<doc-anchor-target id="path">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#supported-channels">#</doc-anchor-trigger>
-        <span>Supported channels</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#path">#</doc-anchor-trigger>
+        <span>Path</span>
     </h2>
 </doc-anchor-target>
-<ul>
-<li>SMS (with Twilio)</li>
-<li>WhatsApp (with Twilio)</li>
-<li>WhatsApp (with Gupshup)</li>
-</ul>
-<doc-anchor-target id="setup-on-sociocs">
+<p><code v-pre>/contacts/add-to-list</code></p>
+<doc-anchor-target id="body-parameters">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#setup-on-sociocs">#</doc-anchor-trigger>
-        <span>Setup on Sociocs</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#body-parameters">#</doc-anchor-trigger>
+        <span>Body parameters</span>
     </h2>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Data type</th>
+<th>Required?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dest_list_id</td>
+<td>Destination contact list ID</td>
+<td>Integer</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>phone_numbers</td>
+<td>Array of the phone numbers of the contacts to be added to the list (e.g. <code v-pre>[&quot;16317471111&quot;]</code>)</td>
+<td>Array of string</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="response">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#response">#</doc-anchor-trigger>
+        <span>Response</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="http-status-codes">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#http-status-codes">#</doc-anchor-trigger>
+        <span>HTTP status codes</span>
+    </h3>
 </doc-anchor-target>
 <!-- markdownlint-disable-next-line -->
-<ol>
-<li><p>Sign up or log in on <a href="https://app.sociocs.com" target="_blank">app.sociocs.com</a>.</p>
-</li>
-<li><p>Connect &quot;<em>SMS (with Twilio)</em>&quot;, &quot;<em>WhatsApp (with Gupshup)</em>&quot;, or &quot;<em>WhatsApp (with Twilio)</em>&quot; channel on the &quot;<em>Connect a new channel</em>&quot; page. If you&#x27;re an existing user, after logging in, click on &quot;<em>Channels</em>&quot; menu on the top, click on &quot;<em>+</em>&quot; button to go to the &quot;<em>Connect a new channel</em>&quot; page.</p>
-</li>
-<li><p>Go to &quot;<em>Profile &amp; settings -&gt; API</em>&quot;.
-<img src="https://user-images.githubusercontent.com/12301512/163997321-90b286f5-e1aa-4df8-bc18-e453b20d26e8.png" alt="settings" /></p>
-<p><img src="https://github.com/sociocs/docs/assets/12301512/4168b133-c8e2-4834-9b7b-d62b5203349c" alt="api" /></p>
-</li>
-<li><p>Find &quot;<em>API key</em>&quot;. You&#x27;ll need it later. (If you&#x27;re using Sociocs API for the first time, you need to enable it by clicking on &quot;<em>Enable API</em>&quot; button.)</p>
-</li>
-</ol>
-<doc-anchor-target id="setup-on-activecampaign">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Code</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Request was successful.</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Validation error or request body was incorrectly formatted.</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Authentication failed. Check <code v-pre>apikey</code> header.</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Requested API endpoint not found.</td>
+</tr>
+<tr>
+<td>429</td>
+<td>The rate limit has been reached.</td>
+</tr>
+<tr>
+<td>500-511</td>
+<td>There was a problem processing the request on our server. Try again later.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="response-object">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#response-object">#</doc-anchor-trigger>
+        <span>Response object</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td><code v-pre>success</code> or <code v-pre>error</code></td>
+<td>-</td>
+</tr>
+<tr>
+<td>errors</td>
+<td>Array of object <code v-pre>{ msg: [error detail] }</code></td>
+<td>Only present when status is <code v-pre>error</code>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="code-sample">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#setup-on-activecampaign">#</doc-anchor-trigger>
-        <span>Setup on ActiveCampaign</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#code-sample">#</doc-anchor-trigger>
+        <span>Code sample</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="add-the-activecampaign-action">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#add-the-activecampaign-action">#</doc-anchor-trigger>
-        <span>Add the ActiveCampaign &quot;Action&quot;</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="option-1">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#option-1">#</doc-anchor-trigger>
-        <span>Option 1</span>
-    </h4>
-</doc-anchor-target>
-<ol>
-<li><p>In your ActiveCampaign automation, Click on the &quot;<em>+</em>&quot; button to add a new action.</p>
-</li>
-<li><p>In the resulting popup, click on &quot;<em>CX Apps</em>&quot; on the left sidebar.</p>
-</li>
-<li><p>Look for &quot;<em>Sociocs - Send Message</em>&quot; in the result, and click on it.</p>
-</li>
-</ol>
-<doc-anchor-target id="option-2">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#option-2">#</doc-anchor-trigger>
-        <span>Option 2</span>
-    </h4>
-</doc-anchor-target>
-<ol>
-<li><p>In your ActiveCampaign automation, search for <em>Sociocs - Send Message</em> in the right sidebar.</p>
-</li>
-<li><p>Drag and drop the &quot;<em>Sociocs - Send Message</em>&quot; action at an appropriate step in your automation.</p>
-</li>
-</ol>
-<doc-anchor-target id="connect-your-sociocs-account">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#connect-your-sociocs-account">#</doc-anchor-trigger>
-        <span>Connect your Sociocs Account</span>
-    </h3>
-</doc-anchor-target>
-<ol>
-<li><p>Once you add the action, a popup opens up.</p>
-</li>
-<li><p>Paste the Sociocs &quot;<em>API key</em>&quot;.</p>
-</li>
-<li><p>Click &quot;<em>Connect</em>&quot;.</p>
-</li>
-</ol>
-<p><figure class="content-center">
-    <img src="https://github.com/sociocs/docs/assets/12301512/d9a31e0a-08f0-45ef-9202-156682f9530e" alt="Connect">
-    <figcaption class="caption">Connect</figcaption>
-</figure>
-</p>
-<doc-anchor-target id="complete-the-message-sending-setup">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#complete-the-message-sending-setup">#</doc-anchor-trigger>
-        <span>Complete the Message Sending setup</span>
-    </h3>
-</doc-anchor-target>
-<ol>
-<li><p>Once you connect your Sociocs account, you should see a second step named &quot;Setup&quot;</p>
-</li>
-<li><p>Select &quot;<em>Provider</em>&quot; depending upon the type of the channel you added on Sociocs. For example, if you added the &quot;<em>SMS (with Twilio)</em>&quot; channel on Sociocs, you should select &quot;Twilio SMS&quot; in the dropdown list.</p>
-</li>
-<li><p>Select &quot;<em>Channel</em>&quot; depending upon the phone number you would like to use for sending messages. If you have only one channel on Sociocs, you should see only one option in the dropdown list.</p>
-</li>
-<li><p>Enter &quot;<em>Message text</em>&quot; (with personalization if you like), and click &quot;<em>Finish</em>&quot;.</p>
- <!-- markdownlint-disable-next-line -->
-</li>
-</ol>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-yellow-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
-                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>Whenever you&#x27;re using a WhatsApp channel to initiate a message, please make sure the message text is approved as a template by WhatsApp, and enter it exactly as the approved template&#x27;s text.</p>
-<p>You can submit the template for approval on the website of the provider you used (e.g., Twilio) for creating your WhatsApp account.</p>
-        </div>
-    </div>
-</div>
-<p><figure class="content-center">
-    <img src="https://github.com/sociocs/docs/assets/12301512/c5ddc3ba-8e6d-4db8-a637-8082e53da84f" alt="image">
-    <figcaption class="caption">image</figcaption>
-</figure>
-</p>
-<p><em>That&#x27;s it, you are all set to send messages to your target recipients!</em></p>
+<doc-tabs>
+<doc-tab v-cloak id="curl">
+<template #title>cURL</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">curl --location --request POST 'https://api.sociocs.com/contact/add-to-list' \
+--header 'apikey: your_api_key'
+--header 'Content-Type: application/json' \
+--data-raw '{
+    &quot;dest_list_id&quot;: 10001,
+    &quot;phone_numbers&quot;: [&quot;16317471111&quot;, &quot;16317472222&quot;]
+}'</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
 
                                 
                                 <!-- Required only on API pages -->
@@ -387,20 +360,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../integrations/activecampaign/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../api/contacts/is-blocked/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Active​Campaign</span>
+                                                <span class="block mt-1">Is contact blocked</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../integrations/activecampaign/send-whatsapp-message-button/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../api/contacts/move-to-list/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Send Whats​App Message Button</span>
+                                                <span class="block mt-1">Move contacts to list</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -444,6 +417,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Automation", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Add contacts to list", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
