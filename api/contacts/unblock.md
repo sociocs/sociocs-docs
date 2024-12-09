@@ -3,7 +3,7 @@ title: Unblock contact
 order: -700
 data:
     path: /contacts/unblock/[phone_number]
-    path_for_sample: /contact/unblock/16175551212
+    path_for_sample: /contacts/unblock/16175551212
 ---
 
 Unblock bulk & automated messages to a contact.

@@ -3,7 +3,7 @@ title: Block contact
 order: -600
 data:
     path: /contacts/block/[phone_number]
-    path_for_sample: /contact/block/16175551212
+    path_for_sample: /contacts/block/16175551212
 ---
 
 Block bulk & automated messages to a contact. Incoming messages are not blocked.

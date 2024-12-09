@@ -3,7 +3,7 @@ title: Is contact blocked
 order: -800
 data:
     path: /contacts/isblocked/[phone_number]
-    path_for_sample: /contact/isblocked/16175551212
+    path_for_sample: /contacts/isblocked/16175551212
 ---
 
 Check if a contact is blocked.
