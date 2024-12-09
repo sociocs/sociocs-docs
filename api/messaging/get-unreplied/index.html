@@ -12,26 +12,24 @@
     <meta name="generator" content="Retype 3.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Webflow :: Sociocs - Form</title>
-    <meta name="title" content="Webflow :: Sociocs - Form">
-    <meta name="description" content="Form integration (e.g. Contact Us, Appointment Request, Pricing Inquiry form etc.) for Webflow websites.">
+    <title>Get unreplied messages</title>
+    <meta name="title" content="Get unreplied messages">
+    <meta name="description" content="Get all the unreplied messages from last 90 days.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.sociocs.com/integrations/webflow/form/">
+    <link rel="canonical" href="https://docs.sociocs.com/api/messaging/get-unreplied/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.sociocs.com/integrations/webflow/form/">
-    <meta property="og:title" content="Webflow :: Sociocs - Form">
-    <meta property="og:description" content="Form integration (e.g. Contact Us, Appointment Request, Pricing Inquiry form etc.) for Webflow websites.">
-    <meta property="og:image" content="https://user-images.githubusercontent.com/12301512/202721606-37bb57fe-5f4a-4bb8-b840-9cdd011c49ac.png">
+    <meta property="og:url" content="https://docs.sociocs.com/api/messaging/get-unreplied/">
+    <meta property="og:title" content="Get unreplied messages">
+    <meta property="og:description" content="Get all the unreplied messages from last 90 days.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.sociocs.com/integrations/webflow/form/">
-    <meta property="twitter:title" content="Webflow :: Sociocs - Form">
-    <meta property="twitter:description" content="Form integration (e.g. Contact Us, Appointment Request, Pricing Inquiry form etc.) for Webflow websites.">
-    <meta property="twitter:image" content="https://user-images.githubusercontent.com/12301512/202721606-37bb57fe-5f4a-4bb8-b840-9cdd011c49ac.png">
+    <meta property="twitter:url" content="https://docs.sociocs.com/api/messaging/get-unreplied/">
+    <meta property="twitter:title" content="Get unreplied messages">
+    <meta property="twitter:description" content="Get all the unreplied messages from last 90 days.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -41,6 +39,7 @@
     <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.787070231183" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
     <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.787070231183" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.6.0.787070231183" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -199,196 +198,159 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="webflow--sociocs---form" class="break-words">
+<doc-anchor-target id="get-unreplied-messages" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#webflow--sociocs---form">#</doc-anchor-trigger>
-        <span>Webflow :: Sociocs - Form</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#get-unreplied-messages">#</doc-anchor-trigger>
+        <span>Get unreplied messages</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="introduction">
+<p>Get all the unreplied messages from last 90 days.</p>
+<doc-anchor-target id="method">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#introduction">#</doc-anchor-trigger>
-        <span>Introduction</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#method">#</doc-anchor-trigger>
+        <span>Method</span>
     </h2>
 </doc-anchor-target>
-<p>Form integration (e.g. Contact Us, Appointment Request, Pricing Inquiry form etc.) for Webflow websites.</p>
-<p>When the end user submits the form, it is received in the Sociocs Inbox, form where, you can reply back.</p>
-<doc-anchor-target id="form-submission-options">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>GET</span>
+</span></p>
+<doc-anchor-target id="path">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#form-submission-options">#</doc-anchor-trigger>
-        <span>Form submission options</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#path">#</doc-anchor-trigger>
+        <span>Path</span>
     </h2>
 </doc-anchor-target>
-<ol>
-<li><p><strong>Direct posting to Sociocs</strong>: With this option, Webflow form is submitted directly to Sociocs form handler. <a href="https://sociocs-form-demo.webflow.io/" target="_blank" class="no-link inline-flex align-middle items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-blue-100 hover:bg-blue-200 text-blue-600 px-4 h-10 text-sm rounded-md">
-    <span>Demo</span>
-</a></p>
-<ul>
-<li>This option allows multiple forms on Webflow submitting to different channels on Sociocs.</li>
-<li>It is a better choice when you have multiple forms on your website.</li>
-<li>In the Sociocs Inbox, you can see form name in each conversation to easily identify the type of the form.</li>
-<li>One downside with this approach is that the user gets redirected from Webflow website to Sociocs form handler page, and gets redirected back to Webflow page after the form data is received. <em>FYI - unless there is any error, the user won&#x27;t see the Sociocs page</em>.</li>
-</ul>
-</li>
-<li><p><strong>Webhook based submission</strong>: With this option, Webflow handles the form submission, and calls Sociocs webhook from their server to submit form data to Sociocs channel. <a href="https://sociocs-form-demo-2.webflow.io/" target="_blank" class="no-link inline-flex align-middle items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-blue-100 hover:bg-blue-200 text-blue-600 px-4 h-10 text-sm rounded-md">
-    <span>Demo</span>
-</a></p>
-<ul>
-<li>Webflow allows only one webhook for the forms, and hence all the conversations in the Sociocs Inbox have the same form name attached to them.</li>
-<li>It is a better choice when you have only one form on your website.</li>
-<li>Form submission takes place using AJAX without user getting redirected.</li>
-<li>If avoiding user redirects is a must have, one workaround for multiple forms is to add additional hidden field (e.g. &quot;form_type&quot;) in each form to identify form type in the Sociocs Inbox. Still, it&#x27;s not as convenient as seeing specific form name attached to the conversations.</li>
-</ul>
-</li>
-</ol>
-<doc-anchor-target id="setup-for-option-1---direct-submission-to-sociocs">
+<p><code v-pre>/messages/unreplied</code></p>
+<doc-anchor-target id="query-string-parameter">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#setup-for-option-1---direct-submission-to-sociocs">#</doc-anchor-trigger>
-        <span>Setup for Option 1 - Direct submission to Sociocs</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#query-string-parameter">#</doc-anchor-trigger>
+        <span>Query string parameter</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="sociocs">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Required?</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>start_date</td>
+<td>Date in YYYY-MM-DD format (e.g., <code v-pre>2024-01-01</code>)</td>
+<td>No. Defaults to 90 days before today.</td>
+<td>Results include given date.</td>
+</tr>
+<tr>
+<td>end_date</td>
+<td>Date in YYYY-MM-DD format (e.g., <code v-pre>2024-01-31</code>)</td>
+<td>No. Defaults to today.</td>
+<td>Results include given date.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="response">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#response">#</doc-anchor-trigger>
+        <span>Response</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="http-status-codes">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#sociocs">#</doc-anchor-trigger>
-        <span>Sociocs</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#http-status-codes">#</doc-anchor-trigger>
+        <span>HTTP status codes</span>
     </h3>
 </doc-anchor-target>
 <!-- markdownlint-disable-next-line -->
-<!-- markdownlint-disable-next-line -->
-<ol>
-<li><p>Sign up or log in on <a href="https://app.sociocs.com" target="_blank">app.sociocs.com</a>.</p>
-</li>
-<li><p>Select &quot;<em>Form</em>&quot; in the &quot;<em>Connect a new channel</em>&quot; page. If you are an existing user, after logging in, click on &quot;<em>Channels</em>&quot; menu on the top, click on &quot;<em>+</em>&quot; button to go to the &quot;<em>Connect a new channel</em>&quot; page.</p>
-</li>
-<li><p>Enter &quot;<em>Form name</em>&quot;, check &quot;<em>Restrict to domain</em>&quot;, enter your website domain (e.g. sociocs-form-demo.webflow.io).
-<img src="https://user-images.githubusercontent.com/12301512/202721606-37bb57fe-5f4a-4bb8-b840-9cdd011c49ac.png" alt="image" /></p>
-</li>
-<li><p>If you are planning to add reCAPTCHA to your Webflow form, check &quot;<em>reCAPTCHA v2</em>&quot;, enter your reCAPTCHA secret key.
-<img src="https://user-images.githubusercontent.com/12301512/202721739-297755c4-cd44-452a-91f6-b73c574c1776.png" alt="image" /></p>
-</li>
-<li><p>In the &quot;<em>Redirect URL</em>&quot;, enter URL of the page where the user should be redirected after the form submission (e.g. thank you page), If you don&#x27;t add a URL, user will be shown a thank you page on Sociocs form page, with a button to go back to your site. <em>This step is optional.</em></p>
-</li>
-<li><p>Enter &quot;<em>Website URL</em>&quot;, which gets added to the conversation emails sent to the user. <em>This step is optional.</em>
-<img src="https://user-images.githubusercontent.com/12301512/202721761-bc6ce0e8-1ad6-4c32-ad4f-a47f199fb0d0.png" alt="image" /></p>
-</li>
-<li><p>Click &quot;<em>Next</em>&quot;. On the next page, click &quot;<em>Done</em>&quot;, which should take you to the Channels page.</p>
-</li>
-<li><p>Click on the &quot;<em>Form</em>&quot; channel you just added, and find form&#x27;s endpoint URL.
-<img src="https://user-images.githubusercontent.com/12301512/202722000-3e197f36-097a-41f3-a84d-f23a1155ddda.png" alt="image" /></p>
-</li>
-</ol>
-<doc-anchor-target id="webflow">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Code</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Request was successful.</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Validation error or request body was incorrectly formatted.</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Authentication failed. Check <code v-pre>apikey</code> header.</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Requested API endpoint not found.</td>
+</tr>
+<tr>
+<td>429</td>
+<td>The rate limit has been reached.</td>
+</tr>
+<tr>
+<td>500-511</td>
+<td>There was a problem processing the request on our server. Try again later.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="response-object">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#webflow">#</doc-anchor-trigger>
-        <span>Webflow</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#response-object">#</doc-anchor-trigger>
+        <span>Response object</span>
     </h3>
 </doc-anchor-target>
-<doc-anchor-target id="create-a-form-in-the-designer">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#create-a-form-in-the-designer">#</doc-anchor-trigger>
-        <span>Create a form in the Designer</span>
-    </h4>
-</doc-anchor-target>
-<!-- markdownlint-disable-next-line -->
-<ol>
-<li><p>Add a &quot;<em>Form Block</em>&quot; on your page.
-<img src="https://user-images.githubusercontent.com/12301512/202722113-35368347-f3ff-4878-a481-13a5b6f1f4ae.png" alt="image" /></p>
-</li>
-<li><p>By default Webflow adds &quot;<em>Name</em>&quot; and &quot;<em>Email address</em>&quot; fields in the form. <strong>Email address is required for the form to work correctly in Sociocs.</strong></p>
-</li>
-<li><p>In the field settings, go to &quot;<em>Element Settings</em>&quot;. In &quot;<em>Text Fields Settings -&gt; Name</em>&quot;, change value for the &quot;<em>Name</em>&quot; to &quot;name&quot; and for the &quot;<em>Email Address</em>&quot; field to &quot;email&quot; in lowercase. <strong>These field names MUST be exactly as mentioned and in lowercase.</strong>
-<img src="https://user-images.githubusercontent.com/12301512/202722401-5406007d-2296-48ba-a6d5-d02c2b6b607f.png" alt="image" /></p>
-</li>
-<li><p>Add additional fields you would like to capture (e.g. &quot;<em>Message</em>&quot;). Unlike &quot;<em>Name</em>&quot;, and &quot;<em>Email Address</em>&quot; fields, you can name these additional fields whatever you like.</p>
-</li>
-<li><p>If you enabled &quot;<em>reCAPTCHA v2</em>&quot; in the Sociocs Form channel, add the reCAPTCHA element to the form.</p>
-</li>
-<li><p>Select any field or form block on your form, and go to &quot;<em>Element Settings</em>&quot; again. In &quot;<em>Form Settings -&gt; Action</em>&quot;, enter form&#x27;s endpoint URL from Sociocs. Select &quot;<em>Method</em>&quot; as &quot;<em>POST</em>&quot;.
-<img src="https://user-images.githubusercontent.com/12301512/202722857-2122e68c-5e64-406e-8413-4cb89c823097.png" alt="image" /></p>
-</li>
-<li><p>Publish your website. You are all set to accept form submissions in your Webflow site!</p>
-</li>
-</ol>
-<doc-anchor-target id="setup-for-option-2---webhook-based-submission">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="compact">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td><code v-pre>success</code> or <code v-pre>error</code></td>
+<td>-</td>
+</tr>
+<tr>
+<td>errors</td>
+<td>Array of object <code v-pre>{ msg: [error detail] }</code></td>
+<td>Only present when status is <code v-pre>error</code>.</td>
+</tr>
+<tr>
+<td>data</td>
+<td>Array of message objects</td>
+<td>Only present when status is <code v-pre>success</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="code-sample">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#setup-for-option-2---webhook-based-submission">#</doc-anchor-trigger>
-        <span>Setup for Option 2 - Webhook based submission</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#code-sample">#</doc-anchor-trigger>
+        <span>Code sample</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="sociocs-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#sociocs-1">#</doc-anchor-trigger>
-        <span>Sociocs</span>
-    </h3>
-</doc-anchor-target>
-<!-- markdownlint-disable-next-line -->
-<!-- markdownlint-disable-next-line -->
-<ol>
-<li><p>Sign up or log in on <a href="https://app.sociocs.com" target="_blank">app.sociocs.com</a>.</p>
-</li>
-<li><p>Select &quot;<em>Form</em>&quot; in the &quot;<em>Connect a new channel</em>&quot; page. If you are an existing user, after logging in, click on &quot;<em>Channels</em>&quot; menu on the top, click on &quot;<em>+</em>&quot; button to go to the &quot;<em>Connect a new channel</em>&quot; page.</p>
-</li>
-<li><p>Enter &quot;<em>Form name</em>&quot;, check &quot;<em>Key authorization</em>&quot;. (Even if you would like to add &quot;<em>reCAPTCHA</em>&quot; validation in your form, leave &quot;<em>reCAPTCHA v2</em>&quot; unchecked in Sociocs. reCAPTCHA validation is completely handled by Webflow in this case.)</p>
-</li>
-<li><p>Enter &quot;<em>Website URL</em>&quot;, which gets added to the conversation emails sent to the user. <em>This step is optional.</em></p>
-</li>
-<li><p>Click &quot;<em>Next</em>&quot;. On the next page, click &quot;<em>Done</em>&quot;, which should take you to the Channels page.</p>
-</li>
-<li><p>Click on the &quot;<em>Form</em>&quot; channel you just added, and find form&#x27;s API URL, and secret key (value shown under &quot;<em>Key authorization</em>&quot;).</p>
-</li>
-</ol>
-<doc-anchor-target id="webflow-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#webflow-1">#</doc-anchor-trigger>
-        <span>Webflow</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="create-a-form-in-the-designer-1">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#create-a-form-in-the-designer-1">#</doc-anchor-trigger>
-        <span>Create a form in the Designer</span>
-    </h4>
-</doc-anchor-target>
-<!-- markdownlint-disable-next-line -->
-<ol>
-<li><p>Add a &quot;<em>Form Block</em>&quot; on your page.
-<img src="https://user-images.githubusercontent.com/12301512/202722113-35368347-f3ff-4878-a481-13a5b6f1f4ae.png" alt="image" /></p>
-</li>
-<li><p>By default Webflow adds &quot;<em>Name</em>&quot; and &quot;<em>Email address</em>&quot; fields in the form. <strong>Email address is required for the form to work correctly in Sociocs.</strong></p>
-</li>
-<li><p>In the field settings, go to &quot;<em>Element Settings</em>&quot;. In &quot;<em>Text Fields Settings -&gt; Name</em>&quot;, change value for the &quot;<em>Name</em>&quot; to &quot;name&quot; and for the &quot;<em>Email Address</em>&quot; field to &quot;email&quot; in lowercase. <strong>These field names MUST be exactly as mentioned and in lowercase.</strong>
-<img src="https://user-images.githubusercontent.com/12301512/202722401-5406007d-2296-48ba-a6d5-d02c2b6b607f.png" alt="image" /></p>
-</li>
-<li><p>Add additional fields you would like to capture (e.g. &quot;<em>Message</em>&quot;). Unlike &quot;<em>Name</em>&quot;, and &quot;<em>Email Address</em>&quot; fields, you can name these additional fields whatever you like.</p>
-</li>
-<li><p>Select any field or form block on your form, and go to &quot;<em>Element Settings</em>&quot; again. Make sure &quot;<em>Form Settings -&gt; Action</em>&quot; value is blank.</p>
-</li>
-</ol>
-<doc-anchor-target id="add-webhook-in-project-settings">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#add-webhook-in-project-settings">#</doc-anchor-trigger>
-        <span>Add webhook in Project Settings</span>
-    </h4>
-</doc-anchor-target>
-<ol>
-<li><p>Go to &quot;<em>Project Settings</em>&quot;, and go to &quot;<em>Integrations</em>&quot; tab.
-<img src="https://user-images.githubusercontent.com/12301512/202723776-26a92bd4-d635-4eec-bd16-cc11246ed8fa.png" alt="image" /></p>
-</li>
-<li><p>Scroll down to &quot;<em>Webhooks</em>&quot; section, and click on &quot;<em>+ Add Webhook</em>&quot;.
-<img src="https://user-images.githubusercontent.com/12301512/202723863-94ad6f07-e35a-4b32-8679-049551e582f6.png" alt="image" /></p>
-</li>
-<li><p>Under &quot;<em>Trigger Type</em>&quot;, select &quot;Form submission&quot;. Under &quot;<em>Webhook URL</em>&quot;, enter form&#x27;s API URL from Sociocs with &quot;<em>apikey</em>&quot; as query string.</p>
-<ul>
-<li>Here is the format of how the URL should be entered - <code v-pre>[your form's API URL]?apikey=[your secret key]</code>.</li>
-<li>Example URL (<strong>NOT A REAL URL. DO NOT USE IT IN YOUR FORM</strong>): <code v-pre>https://forms.sociocs.com/v1/ABXLpcxfV78tngkZq6bbq3/1238703332685678?apikey=ABCDTeuZJMTkAbkWs8O456KAa09CsXYZ</code>.
-<img src="https://user-images.githubusercontent.com/12301512/202724033-9607053b-dca3-4ce5-8843-58fd529576f2.png" alt="image" /></li>
-</ul>
-</li>
-<li><p>Click &quot;<em>Add Webhook</em>&quot;.</p>
-</li>
-<li><p>Publish your website. You are all set to accept form submissions in your Webflow site!</p>
-</li>
-</ol>
+<doc-tabs>
+<doc-tab v-cloak id="curl">
+<template #title>cURL</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">curl --location --request GET 'https://api.sociocs.com/messages/unreplied' \
+--header 'apikey: your_api_key' \</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
 
                                 
                                 <!-- Required only on API pages -->
@@ -398,20 +360,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../integrations/webflow/c2csms/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../api/messaging/bulk-delete/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Click to Chat by Text</span>
+                                                <span class="block mt-1">Delete bulk messaging job</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../integrations/wordpress/c2csms/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../api/messaging/search/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Click to Chat by Text</span>
+                                                <span class="block mt-1">Search messages</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -455,6 +417,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Form", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Get unreplied messages", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
