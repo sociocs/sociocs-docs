@@ -41,8 +41,7 @@ data | Object `{ id: [new contact list id]}` | Only present when status is `succ
 +++ cURL
 
 ```shell
-curl --location --request POST '{{apiBaseUrl}}{{path_for_sample ?? path}}' \
-{{include "curl/header-apikey"}} \
+{{include "curl/post"}} \
 {{include "curl/header-ct-json"}} \
 --data-raw '{
     "name": "My Contact List"
